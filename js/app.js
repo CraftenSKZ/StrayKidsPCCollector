@@ -65,7 +65,14 @@ function showStatusMessage(text, color = '#aaa', autoFade = false) {
 window.undoImport = undoImport;
 
 function undoImport() {
-  if (!preImportOwnedSnapshot) return;
+  if (!preImportOwnedSnapshot) {
+    showStatusMessage(
+      'Nothing to undo',
+      '#FFB347',
+      true
+    );
+    return;
+  }
 
   owned = preImportOwnedSnapshot;
   save();
@@ -80,6 +87,7 @@ function undoImport() {
   );
 }
 
+
 window.undoImport = undoImport;
 
 // 🔑 IMPORTANT: expose for GitHub Pages + external binding
@@ -91,7 +99,7 @@ function renderUndoStatus() {
 
   el.innerHTML = `
     ✔ Import successful
-    <button class="undo-btn">
+    <button class="undo-btn" type="button">
       Undo (${undoSecondsLeft}s)
     </button>
   `;
@@ -230,6 +238,28 @@ window.importData = importData;
     ? '⚠ Backup recommended'
     : 'Backup up to date';
 }*/
+
+function cleanupUndoState() {
+  preImportOwnedSnapshot = null;
+  undoSecondsLeft = 0;
+
+  if (undoImportTimer) {
+    clearTimeout(undoImportTimer);
+    undoImportTimer = null;
+  }
+
+  if (undoCountdownTimer) {
+    clearInterval(undoCountdownTimer);
+    undoCountdownTimer = null;
+  }
+
+  const el = document.getElementById('backupStatus');
+  if (el) {
+    el.onclick = null;
+    el.style.cursor = 'default';
+  }
+}
+
 
 function updateBackupStatus(justBackedUp = false) {
   const meta = JSON.parse(localStorage.getItem(META_KEY) || '{}');
