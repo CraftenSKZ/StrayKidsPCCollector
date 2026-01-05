@@ -32,7 +32,7 @@ function exportData() {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 
-  const now = Date.now();
+    const now = Date.now();
   localStorage.setItem(META_KEY, JSON.stringify({ lastBackup: now }));
   updateBackupStatus(true);
 }
@@ -97,17 +97,39 @@ function updateBackupStatus(justBackedUp = false) {
   const el = document.getElementById('backupStatus');
   if (!el) return;
 
+  el.style.transition = 'opacity 0.5s';
+  el.style.opacity = '1';
+
   if (!meta.lastBackup) {
     el.textContent = 'No backup yet';
+    el.style.color = '#aaa';
     return;
   }
 
+  const now = Date.now();
+  const ageMs = now - meta.lastBackup;
+  const ageDays = ageMs / (1000 * 60 * 60 * 24);
   const formatted = formatDateTime(meta.lastBackup);
 
   if (justBackedUp) {
-    el.textContent = `Backup complete: ${formatted}`;
+    el.textContent = `✔ Backup complete: ${formatted}`;
+    el.style.color = '#7CFF9B';
+
+    // Fade out after 4 seconds
+    setTimeout(() => {
+      el.style.opacity = '0';
+    }, 4000);
+
+    return;
+  }
+
+  // Auto-remind after 2 days
+  if (ageDays >= 2) {
+    el.textContent = `⚠ Backup recommended (last: ${formatted})`;
+    el.style.color = '#FFB347';
   } else {
     el.textContent = `Last backup: ${formatted}`;
+    el.style.color = '#aaa';
   }
 }
 
