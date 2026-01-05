@@ -55,6 +55,15 @@
 
 <!-- STEP 1: JS MOVED TO /js/app.js -->
 <script src="js/app.js" defer></script>
+<script>
+// Failsafe binding for Export button on GitHub Pages
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('exportBtn');
+  if (btn && typeof window.exportData === 'function') {
+    btn.addEventListener('click', window.exportData);
+  }
+});
+</script>
 
 <!-- =====================================================
      FILE CONTENTS FOR STEP 1 (COPY INTO REAL FILES)
