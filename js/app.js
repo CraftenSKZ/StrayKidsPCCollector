@@ -32,8 +32,9 @@ function exportData() {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 
-  localStorage.setItem(META_KEY, JSON.stringify({ lastBackup: Date.now() }));
-  updateBackupStatus();
+  const now = Date.now();
+  localStorage.setItem(META_KEY, JSON.stringify({ lastBackup: now }));
+  updateBackupStatus(true);
 }
 
 // 🔑 IMPORTANT: expose for GitHub Pages + external binding
@@ -61,9 +62,18 @@ function importData(event) {
   reader.readAsText(file);
 }
 
+//This updates the BackUp completed text to show when you last backed up your files.
+function formatDateTime(ts) {
+  const d = new Date(ts);
+  const pad = n => String(n).padStart(2, '0');
+
+  return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${d.getFullYear()} ` +
+         `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
 window.importData = importData;
 
-function updateBackupStatus() {
+/*function updateBackupStatus() {
   const meta = JSON.parse(localStorage.getItem(META_KEY) || '{}');
   const el = document.getElementById('backupStatus');
   if (!el) return;
@@ -80,6 +90,25 @@ function updateBackupStatus() {
   el.textContent = days > 7
     ? '⚠ Backup recommended'
     : 'Backup up to date';
+}*/
+
+function updateBackupStatus(justBackedUp = false) {
+  const meta = JSON.parse(localStorage.getItem(META_KEY) || '{}');
+  const el = document.getElementById('backupStatus');
+  if (!el) return;
+
+  if (!meta.lastBackup) {
+    el.textContent = 'No backup yet';
+    return;
+  }
+
+  const formatted = formatDateTime(meta.lastBackup);
+
+  if (justBackedUp) {
+    el.textContent = `Backup complete: ${formatted}`;
+  } else {
+    el.textContent = `Last backup: ${formatted}`;
+  }
 }
 
 /********************
