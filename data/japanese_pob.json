@@ -5,7 +5,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_pob",
-    "img": null
+    "img": "assets/images/photocards/japanese_pob/hollow/hollow-pob-bangchan-01.webp"
   },
   {
     "id": "giant-pob-leeknow-01",
@@ -13,7 +13,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_pob",
-    "img": null
+    "img": "assets/images/photocards/japanese_pob/giant/giant-pob-leeknow-01.webp"
   },
   {
     "id": "thesound-pob-changbin-01",
@@ -21,7 +21,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_pob",
-    "img": null
+    "img": "assets/images/photocards/japanese_pob/thesound/thesound-pob-changbin-01.webp"
   },
   {
     "id": "circus-pob-hyunjin-001",
@@ -29,6 +29,6 @@
     "member": "Hyunjin",
     "album": "Circus",
     "category": "japanese_pob",
-    "img": null
+    "img": "assets/images/photocards/japanese_pob/circus/circus-pob-hyunjin-001.webp"
   }
 ]

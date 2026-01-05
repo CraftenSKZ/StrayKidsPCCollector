@@ -5,7 +5,7 @@
     "member": "Han",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": null
+    "img": "assets/images/photocards/japanese_albums/allin/allin-han-01.webp"
   },
   {
     "id": "hollow-hyunjin-01",
@@ -13,7 +13,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": null
+    "img": "assets/images/photocards/japanese_albums/hollow/hollow-hyunjin-01.webp"
   },
   {
     "id": "giant-in-01",
@@ -21,7 +21,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": null
+    "img": "assets/images/photocards/japanese_albums/giant/giant-in-01.webp"
   },
   {
     "id": "thesound-bangchan-01",
@@ -29,6 +29,6 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": null
+    "img": "assets/images/photocards/japanese_albums/thesound/thesound-bangchan-01.webp"
   }
 ]

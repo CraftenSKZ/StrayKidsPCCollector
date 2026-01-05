@@ -5,7 +5,7 @@
     "member": "Han",
     "album": "ATE",
     "category": "korean_pob",
-    "img": null
+    "img": "assets/images/photocards/korean_pob/ate/ate-pob-han-01.webp"
   },
   {
     "id": "doit-pob-leeknow-001",
@@ -13,7 +13,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_pob",
-    "img": null
+    "img": "assets/images/photocards/korean_pob/doit/doit-pob-leeknow-001.webp"
   },
   {
     "id": "karma-pob-bangchan-01",
@@ -21,7 +21,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_pob",
-    "img": null
+    "img": "assets/images/photocards/korean_pob/karma/karma-pob-bangchan-01.webp"
   },
   {
     "id": "hop-pob-changbin-01",
@@ -29,6 +29,6 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_pob",
-    "img": null
+    "img": "assets/images/photocards/korean_pob/hop/hop-pob-changbin-01.webp"
   }
 ]
