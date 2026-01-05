@@ -3,6 +3,11 @@
  * Works on GitHub Pages
  ***************************************************/
 
+
+let undoImportTimer = null;
+let preImportOwnedSnapshot = null;
+
+
 /********************
  * Backup & Versioning
  ********************/
@@ -54,6 +59,26 @@ function showStatusMessage(text, color = '#aaa', autoFade = false) {
   }
 }
 
+//Import undo functionality
+window.undoImport = undoImport;
+
+function undoImport() {
+  if (!preImportOwnedSnapshot) return;
+
+  owned = preImportOwnedSnapshot;
+  save();
+  render();
+
+  preImportOwnedSnapshot = null;
+  clearTimeout(undoImportTimer);
+
+  showStatusMessage(
+    '↩ Import undone',
+    '#7CFF9B',
+    true
+  );
+}
+
 // 🔑 IMPORTANT: expose for GitHub Pages + external binding
 window.exportData = exportData;
 
@@ -74,15 +99,34 @@ function importData(event) {
         throw new Error('Invalid backup file');
       }
 
-      owned = json.owned;
-      save();
-      render();
+      // Save snapshot BEFORE import (for undo)
+preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
 
-      showStatusMessage(
-        '✔ Import successful',
-        '#7CFF9B',
-        true
-      );
+  owned = json.owned;
+  save();
+  render();
+
+  // Clear any previous undo timers
+  if (undoImportTimer) clearTimeout(undoImportTimer);
+
+  // Show undo message
+  showStatusMessage(
+    '✔ Import successful — Undo?',
+    '#7CFF9B',
+    false
+  );
+
+  // Make “Undo?” clickable
+  const el = document.getElementById('backupStatus');
+  el.style.cursor = 'pointer';
+  el.onclick = undoImport;
+
+  // Auto-expire undo after 10 seconds
+  undoImportTimer = setTimeout(() => {
+    preImportOwnedSnapshot = null;
+    el.onclick = null;
+    el.style.cursor = 'default';
+  }, 10000);
 
     } catch (err) {
       showStatusMessage(
