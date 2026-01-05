@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "id": "iamnot-hyunjin-01",
+    "name": "Childhood Version",
+    "member": "Hyunjin",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-hyunjin-02",
+    "name": "Selfie Version",
+    "member": "Hyunjin",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "rockstar-han-01",
+    "name": "Postcard",
+    "member": "HAN",
+    "album": " ROCK-STAR",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "oddinary-felix-01",
+    "name": "Jewel case",
+    "member": "Felix",
+    "album": "Oddinary",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "doit-leeknow-01",
+    "name": "Lenticular black",
+    "member": "Lee Know",
+    "album": "DO IT",
+    "category": "korean_albums",
+    "img": null
+  }
+]

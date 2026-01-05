@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "hollow-pob-bangchan-01",
+    "name": "Tower records ",
+    "member": "Bang Chan",
+    "album": "Hollow",
+    "category": "japanese_pob",
+    "img": null
+  },
+  {
+    "id": "giant-pob-leeknow-01",
+    "name": "JeMoeder",
+    "member": "Lee Know",
+    "album": "Giant",
+    "category": "japanese_pob",
+    "img": null
+  },
+  {
+    "id": "thesound-pob-changbin-01",
+    "name": "JouwVader",
+    "member": "Changbin",
+    "album": "The Sound",
+    "category": "japanese_pob",
+    "img": null
+  },
+  {
+    "id": "circus-pob-hyunjin-001",
+    "name": "SchietEensOpZeg",
+    "member": "Hyunjin",
+    "album": "Circus",
+    "category": "japanese_pob",
+    "img": null
+  }
+]
