@@ -195,7 +195,7 @@ function importData(event) {
 
       const el = document.getElementById('backupStatus');
       el.style.cursor = 'pointer';
-      el.onclick = undoImport;
+     
 
       undoCountdownTimer = setInterval(() => {
         undoSecondsLeft--;
