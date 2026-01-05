@@ -110,7 +110,7 @@ function cleanupUndoState() {
   cleanupUndoState();
 
   showStatusMessage('↩ Import undone', '#7CFF9B', true);
-}
+
 
 
 /********************
