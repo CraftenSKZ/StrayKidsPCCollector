@@ -6,10 +6,6 @@
 /********************
  * Globals
  ********************/
-let undoImportTimer = null;
-let undoCountdownTimer = null;
-let preImportOwnedSnapshot = null;
-let undoSecondsLeft = 0;
 
 /****************************
  * Constants Album Collapse
@@ -82,28 +78,6 @@ function showStatusMessage(text, color = '#aaa', autoFade = false) {
  * Undo helpers
  ********************/
 
-function clearUndoTimers() {
-  if (undoImportTimer) {
-    clearTimeout(undoImportTimer);
-    undoImportTimer = null;
-  }
-  if (undoCountdownTimer) {
-    clearInterval(undoCountdownTimer);
-    undoCountdownTimer = null;
-  }
-}
-
-function cleanupUndoState() {
-  clearUndoTimers();
-  preImportOwnedSnapshot = null;
-  undoSecondsLeft = 0;
-
-  const el = document.getElementById('backupStatus');
-  if (el) {
-    el.onclick = null;
-    el.style.cursor = 'default';
-  }
-}
 
 /* cleanupUndoState
 function cleanupUndoState() {
@@ -127,11 +101,7 @@ function cleanupUndoState() {
 }
   */
 
-function undoImport() {
-  if (!preImportOwnedSnapshot) {
-    showStatusMessage('Nothing to undo', '#FFB347', true);
-    return;
-  }
+
 
   owned = preImportOwnedSnapshot;
   save();
@@ -142,25 +112,6 @@ function undoImport() {
   showStatusMessage('↩ Import undone', '#7CFF9B', true);
 }
 
-window.undoImport = undoImport;
-
-function renderUndoStatus() {
-  const el = document.getElementById('backupStatus');
-  if (!el) return;
-
-  el.innerHTML = `
-    ✔ Import successful
-    <button class="undo-btn" type="button">
-      Undo (${undoSecondsLeft}s)
-    </button>
-  `;
-
-  const btn = el.querySelector('button');
-  if (btn) btn.onclick = undoImport;
-
-  el.style.color = '#7CFF9B';
-  el.style.opacity = '1';
-}
 
 /********************
  * Import
@@ -182,35 +133,15 @@ function importData(event) {
         throw new Error('Invalid backup file');
       }
 
-      preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
-
       owned = json.owned;
       save();
       render();
 
-      cleanupUndoState();
-
-      undoSecondsLeft = 30;
-      renderUndoStatus();
-
-      const el = document.getElementById('backupStatus');
-      el.style.cursor = 'pointer';
-     
-
-      undoCountdownTimer = setInterval(() => {
-        undoSecondsLeft--;
-        if (undoSecondsLeft <= 0) {
-          clearUndoTimers(); // IMPORTANT: do NOT wipe snapshot
-          updateBackupStatus();
-        } else {
-          renderUndoStatus();
-        }
-      }, 1000);
-
-      undoImportTimer = setTimeout(() => {
-        clearUndoTimers(); // IMPORTANT: do NOT wipe snapshot
-        updateBackupStatus();
-      }, 30000);
+      showStatusMessage(
+        '✔ Import successful',
+        '#7CFF9B',
+        true
+      );
 
     } catch {
       showStatusMessage(
@@ -226,6 +157,7 @@ function importData(event) {
 }
 
 window.importData = importData;
+
 
 /********************
  * Backup status

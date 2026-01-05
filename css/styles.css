@@ -33,26 +33,6 @@ tr.owned img{opacity:.4}
   .card-list{display:block}
 }
 
-/* Undo Button Styles */
-.undo-btn {
-  margin-left: 8px;
-  padding: 4px 10px;
-  border-radius: 6px;
-  border: none;
-  background: #333;
-  color: #7CFF9B;
-  cursor: pointer;
-  font-size: 0.9em;
-}
-
-.undo-btn:hover {
-  background: #444;
-}
-
-.undo-btn:active {
-  transform: scale(0.97);
-}
-
 /* Album Header Styles */
 .album-header {
   background:#1f1f1f;
