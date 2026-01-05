@@ -17,8 +17,8 @@ table{width:100%;border-collapse:collapse}
 th,td{border:1px solid #444;padding:8px;text-align:left}
 th{background:#333}
 tr.owned{background:#2f2f2f;color:var(--muted)}
-img{width:48px;opacity:.9}
-tr.owned img{opacity:.4}
+img{width:50px;opacity:.9}
+tr.owned img{opacity:.3}
 
 .card-list{display:none}
 .card{background:#222;border-radius:12px;padding:12px;margin-bottom:10px;display:grid;grid-template-columns:auto 1fr;gap:10px}
@@ -31,6 +31,94 @@ tr.owned img{opacity:.4}
   body{padding:12px}
   table{display:none}
   .card-list{display:block}
+
+  /* --- MOBILE CARD LAYOUT FIX --- */
+  .card {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* checkbox | text | image */
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Force image to the right */
+  .card img {
+    grid-column: 3;
+    justify-self: end;
+    width: 50px;
+    height: 80px;
+    object-fit: contain;
+    margin-left: 6px;
+  }
+
+  /* Keep text in the middle */
+  .card > div {
+    grid-column: 2;
+  }
+}
+
+
+/*Custom Checkboxes*/
+/* Custom checkbox */
+.checkbox {
+  position: relative; /* IMPORTANT */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #666;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.checkbox.checked {
+  background: #7CFF9B;
+  border-color: #7CFF9B;
+}
+
+.checkbox.checked::after {
+  content: '✓';
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Bigger tap target without layout shift */
+.checkbox::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  pointer-events: none; /* CRITICAL */
+}
+
+
+
+/* Normalize checkbox size (fix Android Chrome giant checkbox bug) */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  flex-shrink: 0;
+}
+
+/*Remove inline layout coupling issues*/
+td:first-child,
+.card input[type="checkbox"] {
+  align-self: flex-start;
+}
+
+
+/* Fix for extremely small screens */
+@media (max-width: 30px) {
+  input[type="checkbox"] {
+    transform: scale(1);
+  }
 }
 
 /* Album Header Styles */
@@ -46,4 +134,12 @@ tr.owned img{opacity:.4}
   margin:12px 0 6px;
   font-weight:bold;
   cursor:pointer;
+}
+
+.album-toggle-icon {
+  display: inline-block;
+  width: 1em;
+  margin-right: 6px;
+  color: #c9a24d;
+  font-weight: bold;
 }
