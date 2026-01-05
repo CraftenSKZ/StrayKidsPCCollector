@@ -11,6 +11,15 @@ let undoCountdownTimer = null;
 let preImportOwnedSnapshot = null;
 let undoSecondsLeft = 0;
 
+/****************************
+ * Constants Album Collapse
+ ****************************/
+const ALBUM_COLLAPSE_KEY = 'albumTracker_albumCollapse';
+let albumCollapseState = JSON.parse(
+  localStorage.getItem(ALBUM_COLLAPSE_KEY) || '{}'
+);
+
+
 /********************
  * Backup & Versioning
  ********************/
@@ -358,10 +367,69 @@ function render() {
       persistedMemberFilters[category].includes(i.member)
   );
 
-  const ownedCount = items.filter(i => owned[i.id]).length;
-  progress.textContent = `Completion: ${ownedCount}/${items.length}`;
+// --- STATS ---
+const ownedCount = items.filter(i => owned[i.id]).length;
+progress.textContent = `Completion: ${ownedCount}/${items.length}`;
 
-  items.forEach(i => {
+// --- GROUP BY ALBUM ---
+const albums = {};
+items.forEach(i => {
+  const album = i.album || 'Unknown';
+  if (!albums[album]) albums[album] = [];
+  albums[album].push(i);
+});
+
+// Initialize collapse state per category
+if (!albumCollapseState[category]) {
+  albumCollapseState[category] = {};
+}
+
+// --- RENDER PER ALBUM ---
+Object.entries(albums).forEach(([albumName, albumItems]) => {
+  const albumOwned = albumItems.filter(i => owned[i.id]).length;
+  const percent = albumItems.length
+    ? Math.round((albumOwned / albumItems.length) * 100)
+    : 0;
+
+  const collapsed =
+    albumCollapseState[category][albumName] ?? false;
+
+  /* ===== TABLE HEADER ===== */
+  const headerRow = document.createElement('tr');
+  headerRow.className = 'album-header';
+  headerRow.innerHTML = `
+    <td colspan="5" style="cursor:pointer">
+      ${collapsed ? '▶' : '▼'} <b>${albumName}</b>
+      — ${albumOwned} / ${albumItems.length} (${percent}%)
+    </td>
+  `;
+
+  headerRow.onclick = () => {
+    albumCollapseState[category][albumName] = !collapsed;
+    localStorage.setItem(
+      ALBUM_COLLAPSE_KEY,
+      JSON.stringify(albumCollapseState)
+    );
+    render();
+  };
+
+  list.appendChild(headerRow);
+
+  /* ===== MOBILE HEADER ===== */
+  const mobileHeader = document.createElement('div');
+  mobileHeader.className = 'album-header-card';
+  mobileHeader.innerHTML = `
+    ${collapsed ? '▶' : '▼'} <b>${albumName}</b>
+    — ${albumOwned}/${albumItems.length} (${percent}%)
+  `;
+  mobileHeader.onclick = headerRow.onclick;
+  cardList.appendChild(mobileHeader);
+
+  if (collapsed) return;
+
+  /* ===== ITEMS ===== */
+  albumItems.forEach(i => {
+    // ---- TABLE ROW ----
     const tr = document.createElement('tr');
     if (owned[i.id]) tr.classList.add('owned');
 
@@ -375,6 +443,7 @@ function render() {
     tr.querySelector('input').onchange = () => toggle(i.id);
     list.appendChild(tr);
 
+    // ---- MOBILE CARD ----
     const card = document.createElement('div');
     card.className = 'card' + (owned[i.id] ? ' owned' : '');
     card.innerHTML = `
@@ -388,6 +457,8 @@ function render() {
     card.querySelector('input').onchange = () => toggle(i.id);
     cardList.appendChild(card);
   });
+});
+
 }
 
 /********************
