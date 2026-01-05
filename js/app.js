@@ -406,7 +406,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
 const tdImg = document.createElement('td');
 
 const tableImg = document.createElement('img');
-tableImg.src = i.img || 'StrayKidsPCCollector/assets/images/ui/placeholder.webp';
+tableImg.src = i.img || '/StrayKidsPCCollector/assets/images/ui/placeholder.webp';
 tableImg.loading = 'lazy';
 tableImg.decoding = 'async';
 
@@ -416,7 +416,7 @@ tableImg.height = 80;
 
 tableImg.onerror = () => {
   tableImg.onerror = null;
-  tableImg.src = 'StrayKidsPCCollector/assets/images/ui/placeholder.webp';
+  tableImg.src = '/StrayKidsPCCollector/assets/images/ui/placeholder.webp';
 };
 
 tdImg.appendChild(tableImg);
@@ -433,13 +433,13 @@ list.appendChild(tr);
 
     if (i.img) {
 const cardImg = document.createElement('img');
-cardImg.src = i.img || 'StrayKidsPCCollector/assets/images/ui/placeholder.webp';
+cardImg.src = i.img || '/StrayKidsPCCollector/assets/images/ui/placeholder.webp';
 cardImg.loading = 'lazy';
 cardImg.decoding = 'async';
 
 cardImg.onerror = () => {
   cardImg.onerror = null;
-  cardImg.src = 'StrayKidsPCCollector/assets/images/ui/placeholder.webp';
+  cardImg.src = '/StrayKidsPCCollector/assets/images/ui/placeholder.webp';
 };
 
 card.appendChild(cardImg);
