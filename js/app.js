@@ -406,7 +406,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
 const tdImg = document.createElement('td');
 
 const tableImg = document.createElement('img');
-tableImg.src = i.img || '/assets/images/ui/placeholder.webp';
+tableImg.src = i.img || 'StrayKidsPCCollector/assets/images/ui/placeholder.webp';
 tableImg.loading = 'lazy';
 tableImg.decoding = 'async';
 
