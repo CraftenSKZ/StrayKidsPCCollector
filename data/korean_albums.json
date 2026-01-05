@@ -1,5 +1,53 @@
 [
   {
+    "id": "iamnot-bangchan-01",
+    "name": "Childhood Version",
+    "member": "Bang Chan",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-bangchan-02",
+    "name": "Selfie Version",
+    "member": "Bang Chan",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-leeknow-01",
+    "name": "Childhood Version",
+    "member": "Lee Know",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-leeknow-02",
+    "name": "Selfie Version",
+    "member": "Lee Know",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-changbin-01",
+    "name": "Childhood Version",
+    "member": "Changbin",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-changbin-02",
+    "name": "Selfie Version",
+    "member": "Changbin",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
     "id": "iamnot-hyunjin-01",
     "name": "Childhood Version",
     "member": "Hyunjin",
@@ -12,6 +60,502 @@
     "name": "Selfie Version",
     "member": "Hyunjin",
     "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-han-01",
+    "name": "Childhood Version",
+    "member": "HAN",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-han-02",
+    "name": "Selfie Version",
+    "member": "HAN",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-felix-01",
+    "name": "Childhood Version",
+    "member": "Felix",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-felix-02",
+    "name": "Selfie Version",
+    "member": "Felix",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-seungmin-01",
+    "name": "Childhood Version",
+    "member": "Seungmin",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-seungmin-02",
+    "name": "Selfie Version",
+    "member": "Seungmin",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-in-01",
+    "name": "Childhood Version",
+    "member": "I.N.",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-in-02",
+    "name": "Selfie Version",
+    "member": "I.N.",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-01",
+    "name": "Chan-Lix-Hyun",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-02",
+    "name": "Chan-Lix-I.N.",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-03",
+    "name": "Chan-Bin-HAN",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-04",
+    "name": "Chan-Seung-I.N.",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-05",
+    "name": "Chan-HAN-Lix",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-06",
+    "name": "Chan-Hyun-Seung",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-07",
+    "name": "Lino-Bin-HAN",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-08",
+    "name": "Lino-Hyun-Lix",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-09",
+    "name": "Lino-Hyun-HAN",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-10",
+    "name": "Lino-Bin-Lix",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-11",
+    "name": "Bin-Hyun-Seung",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-12",
+    "name": "Hyun-Seung-I.N.",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-13",
+    "name": "Bin-Lix-Seung",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamnot-unit-14",
+    "name": "Lix-Seung-I.N.",
+    "member": "UNIT",
+    "album": "I am NOT",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-bangchan-01",
+    "name": "Self Portrait",
+    "member": "Bang Chan",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-bangchan-02",
+    "name": "Selfie Black Border",
+    "member": "Bang Chan",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-bangchan-03",
+    "name": "Selfie Yellow Border",
+    "member": "Bang Chan",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-bangchan-04",
+    "name": "Selfie White Border",
+    "member": "Bang Chan",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-bangchan-05",
+    "name": "Behind",
+    "member": "Bang Chan",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-leeknow-01",
+    "name": "Self Portrait",
+    "member": "Lee Know",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-leeknow-02",
+    "name": "Selfie Black Border",
+    "member": "Lee Know",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-leeknow-03",
+    "name": "Selfie Yellow Border",
+    "member": "Lee Know",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-leeknow-04",
+    "name": "Selfie White Border",
+    "member": "Lee Know",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-leeknow-05",
+    "name": "Behind",
+    "member": "Lee Know",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-changbin-01",
+    "name": "Self Portrait",
+    "member": "Changbin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-changbin-02",
+    "name": "Selfie Black Border",
+    "member": "Changbin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-changbin-03",
+    "name": "Selfie Yellow Border",
+    "member": "Changbin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-changbin-04",
+    "name": "Selfie White Border",
+    "member": "Changbin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-changbin-05",
+    "name": "Behind",
+    "member": "Changbin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-hyunjin-01",
+    "name": "Self Portrait",
+    "member": "Hyunjin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-hyunjin-02",
+    "name": "Selfie Black Border",
+    "member": "Hyunjin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-hyunjin-03",
+    "name": "Selfie Yellow Border",
+    "member": "Hyunjin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-hyunjin-04",
+    "name": "Selfie White Border",
+    "member": "Hyunjin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-hyunjin-05",
+    "name": "Behind",
+    "member": "Hyunjin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-han-01",
+    "name": "Self Portrait",
+    "member": "HAN",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-han-02",
+    "name": "Selfie Black Border",
+    "member": "HAN",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-han-03",
+    "name": "Selfie Yellow Border",
+    "member": "HAN",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-han-04",
+    "name": "Selfie White Border",
+    "member": "HAN",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-han-05",
+    "name": "Behind",
+    "member": "HAN",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-felix-01",
+    "name": "Self Portrait",
+    "member": "Felix",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-felix-02",
+    "name": "Selfie Black Border",
+    "member": "Felix",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-felix-03",
+    "name": "Selfie Yellow Border",
+    "member": "Felix",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-felix-04",
+    "name": "Selfie White Border",
+    "member": "Felix",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-felix-05",
+    "name": "Behind",
+    "member": "Felix",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-seungmin-01",
+    "name": "Self Portrait",
+    "member": "Seungmin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-seungmin-02",
+    "name": "Selfie Black Border",
+    "member": "Seungmin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-seungmin-03",
+    "name": "Selfie Yellow Border",
+    "member": "Seungmin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-seungmin-04",
+    "name": "Selfie White Border",
+    "member": "Seungmin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-seungmin-05",
+    "name": "Behind",
+    "member": "Seungmin",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-in-01",
+    "name": "Self Portrait",
+    "member": "I.N.",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-in-02",
+    "name": "Selfie Black Border",
+    "member": "I.N.",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-in-03",
+    "name": "Selfie Yellow Border",
+    "member": "I.N.",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-in-04",
+    "name": "Selfie White Border",
+    "member": "I.N.",
+    "album": "I am WHO",
+    "category": "korean_albums",
+    "img": null
+  },
+  {
+    "id": "iamwho-in-05",
+    "name": "Behind",
+    "member": "I.N.",
+    "album": "I am WHO",
     "category": "korean_albums",
     "img": null
   },
