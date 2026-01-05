@@ -37,10 +37,69 @@ function exportData() {
   updateBackupStatus(true);
 }
 
+//Shows if a backup import was successful or not with green/red colors
+function showStatusMessage(text, color = '#aaa', autoFade = false) {
+  const el = document.getElementById('backupStatus');
+  if (!el) return;
+
+  el.textContent = text;
+  el.style.color = color;
+  el.style.opacity = '1';
+  el.style.transition = 'opacity 0.5s';
+
+  if (autoFade) {
+    setTimeout(() => {
+      el.style.opacity = '0';
+    }, 4000);
+  }
+}
+
 // 🔑 IMPORTANT: expose for GitHub Pages + external binding
 window.exportData = exportData;
 
 function importData(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = e => {
+    try {
+      const json = JSON.parse(e.target.result);
+
+      if (
+        json.version !== BACKUP_VERSION ||
+        typeof json.owned !== 'object'
+      ) {
+        throw new Error('Invalid backup file');
+      }
+
+      owned = json.owned;
+      save();
+      render();
+
+      showStatusMessage(
+        '✔ Import successful',
+        '#7CFF9B',
+        true
+      );
+
+    } catch (err) {
+      showStatusMessage(
+        '✖ Import failed: invalid backup file',
+        '#FFB347',
+        false
+      );
+    }
+  };
+
+  reader.readAsText(file);
+
+  // Allow re-importing the same file
+  event.target.value = '';
+}
+
+/*function importData(event) {
   const file = event.target.files[0];
   if (!file) return;
 
@@ -60,7 +119,7 @@ function importData(event) {
     }
   };
   reader.readAsText(file);
-}
+}  */
 
 //This updates the BackUp completed text to show when you last backed up your files.
 function formatDateTime(ts) {
