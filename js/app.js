@@ -85,6 +85,24 @@ window.undoImport = undoImport;
 // 🔑 IMPORTANT: expose for GitHub Pages + external binding
 window.exportData = exportData;
 
+function renderUndoStatus() {
+  const el = document.getElementById('backupStatus');
+  if (!el) return;
+
+  el.innerHTML = `
+    ✔ Import successful
+    <button class="undo-btn">
+      Undo (${undoSecondsLeft}s)
+    </button>
+  `;
+
+  const btn = el.querySelector('button');
+  if (btn) btn.onclick = undoImport;
+
+  el.style.color = '#7CFF9B';
+  el.style.opacity = '1';
+}
+
 function importData(event) {
   const file = event.target.files[0];
   if (!file) return;
@@ -95,6 +113,7 @@ function importData(event) {
     try {
       const json = JSON.parse(e.target.result);
 
+      // Validate backup
       if (
         json.version !== BACKUP_VERSION ||
         typeof json.owned !== 'object'
@@ -102,43 +121,45 @@ function importData(event) {
         throw new Error('Invalid backup file');
       }
 
-    // Save snapshot BEFORE import (for undo)
-    preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
+      // Save snapshot BEFORE import (for undo)
+      preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
 
-    owned = json.owned;
-    save();
-    render();
+      // Apply import
+      owned = json.owned;
+      save();
+      render();
 
-    // Reset any existing undo state
-    cleanupUndoState();
+      // Clear existing timers ONLY (do not wipe snapshot)
+      if (undoImportTimer) clearTimeout(undoImportTimer);
+      if (undoCountdownTimer) clearInterval(undoCountdownTimer);
 
-    // Set undo countdown
-    undoSecondsLeft = 30;
+      // Set undo countdown
+      undoSecondsLeft = 30;
 
-    // Initial render
-    renderUndoStatus();
+      // Initial render
+      renderUndoStatus();
 
-    // Make clickable
-    const el = document.getElementById('backupStatus');
-    el.style.cursor = 'pointer';
-    el.onclick = undoImport;
+      // Enable undo click
+      const el = document.getElementById('backupStatus');
+      el.style.cursor = 'pointer';
+      el.onclick = undoImport;
 
-    // Countdown ticker
-    undoCountdownTimer = setInterval(() => {
-      undoSecondsLeft--;
-      if (undoSecondsLeft <= 0) {
+      // Countdown ticker
+      undoCountdownTimer = setInterval(() => {
+        undoSecondsLeft--;
+        if (undoSecondsLeft <= 0) {
+          cleanupUndoState();
+          updateBackupStatus();
+        } else {
+          renderUndoStatus();
+        }
+      }, 1000);
+
+      // Hard timeout (30 seconds)
+      undoImportTimer = setTimeout(() => {
         cleanupUndoState();
-        updateBackupStatus(); // revert to normal backup message
-      } else {
-        renderUndoStatus();
-      }
-    }, 1000);
-
-    // Hard timeout (30 seconds)
-    undoImportTimer = setTimeout(() => {
-      cleanupUndoState();
-      updateBackupStatus();
-    }, 30000);
+        updateBackupStatus();
+      }, 30000);
 
     } catch (err) {
       showStatusMessage(
@@ -149,33 +170,14 @@ function importData(event) {
     }
   };
 
-  //Adds pretty button 
-  function renderUndoStatus() {
-  const el = document.getElementById('backupStatus');
-  if (!el) return;
-
-el.innerHTML = `
-  ✔ Import successful
-  <button class="undo-btn">
-    Undo (${undoSecondsLeft}s)
-  </button>
-  `;
-
-  // Ensure button click triggers undo
-  const btn = el.querySelector('button');
-  if (btn) btn.onclick = undoImport;
-
-  el.style.color = '#7CFF9B';
-  el.style.opacity = '1';
-}
-
   reader.readAsText(file);
 
-
-
-  // Allow re-importing the same file
+  // ✅ Allow re-importing the same file
   event.target.value = '';
 }
+
+window.importData = importData;
+
 
 /*function importData(event) {
   const file = event.target.files[0];
