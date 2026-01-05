@@ -381,6 +381,63 @@ Object.entries(albums).forEach(([albumName, albumItems]) => {
 
 }
 
+function toggleAllAlbums() {
+  const items = CATALOG[category] || [];
+  if (!items.length) return;
+
+  // Build a complete album list
+  const albums = [...new Set(items.map(i => i.album || 'Unknown'))];
+
+  // Ensure state exists for this category
+  if (!albumCollapseState[category]) {
+    albumCollapseState[category] = {};
+  }
+
+  // Ensure every album has a state
+  albums.forEach(album => {
+    if (albumCollapseState[category][album] === undefined) {
+      albumCollapseState[category][album] = false;
+    }
+  });
+
+  const states = albums.map(a => albumCollapseState[category][a]);
+
+  // If ALL expanded → collapse all, else expand all
+  const allExpanded = states.every(v => v === false);
+
+  albums.forEach(album => {
+    albumCollapseState[category][album] = allExpanded;
+  });
+
+  localStorage.setItem(
+    ALBUM_COLLAPSE_KEY,
+    JSON.stringify(albumCollapseState)
+  );
+
+  render();
+  // --- Update Expand / Collapse All button label ---
+const toggleBtn = document.getElementById('toggleAlbumsBtn');
+if (toggleBtn) {
+  const items = CATALOG[category] || [];
+  const albums = [...new Set(items.map(i => i.album || 'Unknown'))];
+
+  if (!albums.length) {
+    toggleBtn.textContent = 'Expand All';
+  } else {
+    const allExpanded = albums.every(
+      album => albumCollapseState[category]?.[album] === false
+    );
+
+    toggleBtn.textContent = allExpanded
+      ? 'Collapse All'
+      : 'Expand All';
+  }
+}
+}
+
+window.toggleAllAlbums = toggleAllAlbums;
+
+
 /********************
  * Boot
  ********************/
