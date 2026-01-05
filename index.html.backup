@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Album & POB Tracker</title>
+<style>
+:root {
+  --bg:#1b1b1b;--panel:#262626;--text:#eaeaea;--muted:#999;--accent:#c9a24d;
+}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:20px}
+h1{margin:0 0 10px 0}
+.panel{background:var(--panel);padding:12px;border-radius:8px;margin-bottom:10px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input,select,button{padding:6px;border-radius:4px;border:1px solid #444;background:#111;color:var(--text)}
+button{cursor:pointer}
+.tabs button{background:#333}
+.tabs button.active{background:var(--accent);color:#000}
+.progress{margin:10px 0;font-weight:bold}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #444;padding:6px}
+th{background:#333}
+tr.owned{background:#2f2f2f;color:var(--muted)}
+img{width:48px;opacity:.9;loading:lazy}
+tr.owned img{opacity:.4}
+.members label{margin-right:8px;white-space:nowrap}
+</style>
+</head>
+<body>
+<h1>Korean + Japanese Album and POB Tracker</h1>
+
+<div class="panel" style="font-size:0.9em;color:#ccc">
+  Your collection is saved locally in your browser. Switching devices, browsers, or clearing site data will reset your checklist.
+  Use <b>Export</b> to back up your collection.
+</div>
+
+<div class="panel controls">
+  <button onclick="exportData()">Export</button>
+  <label style="cursor:pointer">Import
+    <input type="file" accept=".json" hidden onchange="importData(event)">
+  </label>
+  <span id="backupStatus" style="margin-left:8px;color:#aaa"></span>
+</div>
+
+<div class="panel tabs">
+  <button onclick="setCategory('korean_albums')" class="active">Korean Albums</button>
+  <button onclick="setCategory('japanese_albums')">Japanese Albums</button>
+  <button onclick="setCategory('korean_pob')">Korean POB</button>
+  <button onclick="setCategory('japanese_pob')">Japanese POB</button>
+</div>
+
+<div class="panel controls">
+  <input id="search" placeholder="Search" oninput="render()">
+  <select id="ownedFilter" onchange="render()">
+    <option value="all">All</option>
+    <option value="owned">Owned</option>
+    <option value="unowned">Unowned</option>
+  </select>
+</div>
+
+<div class="panel members" id="memberFilters"></div>
+<div class="progress" id="progress"></div>
+<div class="panel" id="stats"></div>
+
+<table>
+<thead>
+<tr><th>Have</th><th>Name</th><th>Member</th><th>Album</th><th>Img</th></tr>
+</thead>
+<tbody id="list"></tbody>
+</table>
+
+<script>
+/***************************************************
+ * STEP 4 – BULK CATALOG PIPELINE (PRODUCTION)
+ *
+ * - Catalog loaded from JSON files (GitHub Pages)
+ * - Spreadsheet → CSV → JSON workflow
+ * - ID validation + duplicate detection
+ * - User state remains localStorage only
+ ***************************************************/
+
+/********************
+ * Backup & Versioning
+ ********************/
+const BACKUP_VERSION = 1;
+const META_KEY = 'albumTracker_meta';
+
+function exportData(){
+  const payload = {
+    version: BACKUP_VERSION,
+    exportedAt: new Date().toISOString(),
+    owned
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `album-tracker-backup-v${BACKUP_VERSION}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  localStorage.setItem(META_KEY, JSON.stringify({ lastBackup: Date.now() }));
+  updateBackupStatus();
+}
+
+function importData(event){
+  const file = event.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try{
+      const json = JSON.parse(e.target.result);
+      if(json.version !== BACKUP_VERSION || typeof json.owned !== 'object'){
+        alert('Invalid backup file'); return;
+      }
+      owned = json.owned;
+      save(); render();
+    }catch{ alert('Failed to import backup'); }
+  };
+  reader.readAsText(file);
+}
+
+function updateBackupStatus(){
+  const meta = JSON.parse(localStorage.getItem(META_KEY) || '{}');
+  const el = document.getElementById('backupStatus');
+  if(!el) return;
+  if(!meta.lastBackup){ el.textContent = 'No backup yet'; return; }
+  const days = Math.floor((Date.now() - meta.lastBackup) / (1000*60*60*24));
+  el.textContent = days > 7 ? '⚠ Backup recommended' : 'Backup up to date';
+}
+
+/********************
+ * DOM references
+ ********************/
+const searchInput = document.getElementById('search');
+const ownedFilterSelect = document.getElementById('ownedFilter');
+const list = document.getElementById('list');
+const memberFilters = document.getElementById('memberFilters');
+const progress = document.getElementById('progress');
+
+/********************
+ * Catalog loading (JSON)
+ ********************/
+const CATEGORIES = [
+  'korean_albums',
+  'japanese_albums',
+  'korean_pob',
+  'japanese_pob'
+];
+
+const CATALOG = {};
+let category = 'korean_albums';
+
+async function loadCatalog(){
+  const seenIds = new Set();
+
+  for(const cat of CATEGORIES){
+    const res = await fetch(`data/${cat}.json`);
+    if(!res.ok) throw new Error(`Failed to load ${cat}.json`);
+    const items = await res.json();
+
+    // Validate structure + IDs
+    items.forEach(item => {
+      if(!item.id || !item.name){
+        throw new Error(`Invalid item in ${cat}.json`);
+      }
+      // Normalize: allow legacy `source`, prefer `album`
+      if(!item.album && item.source){ item.album = item.source; }
+      if(seenIds.has(item.id)){
+        throw new Error(`Duplicate ID detected: ${item.id}`);
+      }
+      seenIds.add(item.id);
+    });(item.id);
+    });
+
+    CATALOG[cat] = items;
+  }
+}
+
+/********************
+ * User-owned state
+ ********************/
+let owned = JSON.parse(localStorage.getItem('albumTracker_owned') || '{}');
+
+function save(){
+  localStorage.setItem('albumTracker_owned', JSON.stringify(owned));
+}
+
+/********************
+ * App Logic
+ ********************/
+function setCategory(c){
+  category = c;
+  document.querySelectorAll('.tabs button').forEach(b =>
+    b.classList.toggle('active', b.textContent.toLowerCase().includes(c.split('_')[0]))
+  );
+  render();
+}
+
+function toggle(id){
+  owned[id] = !owned[id];
+  save(); render();
+}
+
+function render(){
+  list.innerHTML = '';
+  let items = CATALOG[category] || [];
+
+  const q = searchInput.value.toLowerCase();
+  if(q){ items = items.filter(i => i.name.toLowerCase().includes(q) || (i.album||'').toLowerCase().includes(q)); }
+
+  const f = ownedFilterSelect.value;
+  if(f==='owned') items = items.filter(i=>owned[i.id]);
+  if(f==='unowned') items = items.filter(i=>!owned[i.id]);
+
+  const members = [...new Set(items.map(i=>i.member).filter(Boolean))];
+  memberFilters.innerHTML = '';
+  members.forEach(m => memberFilters.innerHTML += `<label><input type="checkbox" checked onchange="render()"> ${m}</label>`);
+
+  const checks=[...memberFilters.querySelectorAll('input')];
+  items = items.filter(i=>!i.member || checks.find(c=>c.parentNode.textContent.trim()===i.member)?.checked);
+
+  const ownedCount = items.filter(i=>owned[i.id]).length;
+  progress.textContent = `Completion: ${ownedCount}/${items.length}`;
+
+  // Stats per member
+  const statsEl = document.getElementById('stats');
+  const perMember = {};
+  items.forEach(i=>{
+    if(!i.member) return;
+    if(!perMember[i.member]) perMember[i.member]={total:0,owned:0};
+    perMember[i.member].total++;
+    if(owned[i.id]) perMember[i.member].owned++;
+  });
+  statsEl.innerHTML = '<b>Per-member progress</b><br>' +
+    Object.entries(perMember).map(([m,v])=>`${m}: ${v.owned}/${v.total}`).join('<br>');
+
+  items.forEach(i=>{
+    const tr=document.createElement('tr');
+    if(owned[i.id]) tr.classList.add('owned');
+    tr.innerHTML=`
+      <td><input type="checkbox" ${owned[i.id]?'checked':''}></td>
+      <td>${i.name}</td>
+      <td>${i.member||''}</td>
+      <td>${i.album||''}</td>
+      <td>${i.img?`<img src="${i.img}">`:''}</td>
+    `;
+    tr.querySelector('input').onchange=()=>toggle(i.id);
+    list.appendChild(tr);
+  });
+}
+
+/********************
+ * Tests
+ ********************/
+(function runTests(){
+  console.assert(Array.isArray(CATEGORIES), 'CATEGORIES should be an array');
+})();
+
+// Boot
+loadCatalog()
+  .then(()=>{ render(); updateBackupStatus(); })
+  .catch(err=>{
+    document.body.innerHTML = `<pre style="color:red">${err.message}</pre>`;
+  });
+</script>
+</body>
+</html>

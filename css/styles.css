@@ -1,0 +1,34 @@
+:root {
+  --bg:#1b1b1b;--panel:#262626;--text:#eaeaea;--muted:#999;--accent:#c9a24d;
+}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:16px}
+h1{margin:0 0 12px 0;font-size:1.4rem}
+.panel{background:var(--panel);padding:12px;border-radius:10px;margin-bottom:12px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input,select,button{padding:10px;border-radius:8px;border:1px solid #444;background:#111;color:var(--text);font-size:1rem}
+button{cursor:pointer}
+.tabs{display:flex;gap:6px;overflow-x:auto}
+.tabs button{background:#333;white-space:nowrap;flex:0 0 auto}
+.tabs button.active{background:var(--accent);color:#000}
+.progress{margin:10px 0;font-weight:bold}
+.members label{margin-right:8px;white-space:nowrap}
+
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #444;padding:8px;text-align:left}
+th{background:#333}
+tr.owned{background:#2f2f2f;color:var(--muted)}
+img{width:48px;opacity:.9}
+tr.owned img{opacity:.4}
+
+.card-list{display:none}
+.card{background:#222;border-radius:12px;padding:12px;margin-bottom:10px;display:grid;grid-template-columns:auto 1fr;gap:10px}
+.card.owned{opacity:.6}
+.card img{width:56px;border-radius:6px}
+.card .title{font-weight:bold}
+.card .meta{font-size:.9em;color:#ccc}
+
+@media (max-width: 720px){
+  body{padding:12px}
+  table{display:none}
+  .card-list{display:block}
+}
