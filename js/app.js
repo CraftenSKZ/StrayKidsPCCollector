@@ -154,20 +154,11 @@ function importData(event) {
   const el = document.getElementById('backupStatus');
   if (!el) return;
 
-  el.innerHTML = `
-    ✔ Import successful
-    <button style="
-      margin-left:8px;
-      padding:4px 10px;
-      border-radius:6px;
-      border:none;
-      background:#333;
-      color:#7CFF9B;
-      cursor:pointer;
-      font-size:0.9em;
-    ">
-      Undo (${undoSecondsLeft}s)
-    </button>
+el.innerHTML = `
+  ✔ Import successful
+  <button class="undo-btn">
+    Undo (${undoSecondsLeft}s)
+  </button>
   `;
 
   // Ensure button click triggers undo
