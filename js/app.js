@@ -3,19 +3,24 @@
  * Works on GitHub Pages
  ***************************************************/
 
-
+/********************
+ * Globals
+ ********************/
 let undoImportTimer = null;
 let undoCountdownTimer = null;
 let preImportOwnedSnapshot = null;
 let undoSecondsLeft = 0;
-
 
 /********************
  * Backup & Versioning
  ********************/
 const BACKUP_VERSION = 1;
 const META_KEY = 'albumTracker_meta';
+const MEMBER_FILTER_KEY = 'albumTracker_memberFilters';
 
+/********************
+ * Export
+ ********************/
 function exportData() {
   const payload = {
     version: BACKUP_VERSION,
@@ -33,18 +38,21 @@ function exportData() {
   a.href = url;
   a.download = `album-tracker-backup-v${BACKUP_VERSION}.json`;
 
-  // Required for Safari / GitHub Pages
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 
-    const now = Date.now();
+  const now = Date.now();
   localStorage.setItem(META_KEY, JSON.stringify({ lastBackup: now }));
   updateBackupStatus(true);
 }
 
-//Shows if a backup import was successful or not with green/red colors
+window.exportData = exportData;
+
+/********************
+ * Status helper
+ ********************/
 function showStatusMessage(text, color = '#aaa', autoFade = false) {
   const el = document.getElementById('backupStatus');
   if (!el) return;
@@ -61,16 +69,32 @@ function showStatusMessage(text, color = '#aaa', autoFade = false) {
   }
 }
 
-//Import undo functionality
-window.undoImport = undoImport;
+/********************
+ * Undo helpers
+ ********************/
+function cleanupUndoState() {
+  preImportOwnedSnapshot = null;
+  undoSecondsLeft = 0;
+
+  if (undoImportTimer) {
+    clearTimeout(undoImportTimer);
+    undoImportTimer = null;
+  }
+  if (undoCountdownTimer) {
+    clearInterval(undoCountdownTimer);
+    undoCountdownTimer = null;
+  }
+
+  const el = document.getElementById('backupStatus');
+  if (el) {
+    el.onclick = null;
+    el.style.cursor = 'default';
+  }
+}
 
 function undoImport() {
   if (!preImportOwnedSnapshot) {
-    showStatusMessage(
-      'Nothing to undo',
-      '#FFB347',
-      true
-    );
+    showStatusMessage('Nothing to undo', '#FFB347', true);
     return;
   }
 
@@ -80,18 +104,10 @@ function undoImport() {
 
   cleanupUndoState();
 
-  showStatusMessage(
-    '↩ Import undone',
-    '#7CFF9B',
-    true
-  );
+  showStatusMessage('↩ Import undone', '#7CFF9B', true);
 }
 
-
 window.undoImport = undoImport;
-
-// 🔑 IMPORTANT: expose for GitHub Pages + external binding
-window.exportData = exportData;
 
 function renderUndoStatus() {
   const el = document.getElementById('backupStatus');
@@ -111,6 +127,9 @@ function renderUndoStatus() {
   el.style.opacity = '1';
 }
 
+/********************
+ * Import
+ ********************/
 function importData(event) {
   const file = event.target.files[0];
   if (!file) return;
@@ -121,7 +140,6 @@ function importData(event) {
     try {
       const json = JSON.parse(e.target.result);
 
-      // Validate backup
       if (
         json.version !== BACKUP_VERSION ||
         typeof json.owned !== 'object'
@@ -129,30 +147,21 @@ function importData(event) {
         throw new Error('Invalid backup file');
       }
 
-      // Save snapshot BEFORE import (for undo)
       preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
 
-      // Apply import
       owned = json.owned;
       save();
       render();
 
-      // Clear existing timers ONLY (do not wipe snapshot)
-      if (undoImportTimer) clearTimeout(undoImportTimer);
-      if (undoCountdownTimer) clearInterval(undoCountdownTimer);
+      cleanupUndoState();
 
-      // Set undo countdown
       undoSecondsLeft = 30;
-
-      // Initial render
       renderUndoStatus();
 
-      // Enable undo click
       const el = document.getElementById('backupStatus');
       el.style.cursor = 'pointer';
       el.onclick = undoImport;
 
-      // Countdown ticker
       undoCountdownTimer = setInterval(() => {
         undoSecondsLeft--;
         if (undoSecondsLeft <= 0) {
@@ -163,13 +172,12 @@ function importData(event) {
         }
       }, 1000);
 
-      // Hard timeout (30 seconds)
       undoImportTimer = setTimeout(() => {
         cleanupUndoState();
         updateBackupStatus();
       }, 30000);
 
-    } catch (err) {
+    } catch {
       showStatusMessage(
         '✖ Import failed: invalid backup file',
         '#FFB347',
@@ -179,94 +187,25 @@ function importData(event) {
   };
 
   reader.readAsText(file);
-
-  // ✅ Allow re-importing the same file
   event.target.value = '';
 }
 
 window.importData = importData;
 
-
-/*function importData(event) {
-  const file = event.target.files[0];
-  if (!file) return;
-
-  const reader = new FileReader();
-  reader.onload = e => {
-    try {
-      const json = JSON.parse(e.target.result);
-      if (json.version !== BACKUP_VERSION || typeof json.owned !== 'object') {
-        alert('Invalid backup file');
-        return;
-      }
-      owned = json.owned;
-      save();
-      render();
-    } catch {
-      alert('Failed to import backup');
-    }
-  };
-  reader.readAsText(file);
-}  */
-
-//This updates the BackUp completed text to show when you last backed up your files.
+/********************
+ * Backup status
+ ********************/
 function formatDateTime(ts) {
   const d = new Date(ts);
   const pad = n => String(n).padStart(2, '0');
-
-  return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${d.getFullYear()} ` +
-         `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${d.getFullYear()} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
-
-window.importData = importData;
-
-/*function updateBackupStatus() {
-  const meta = JSON.parse(localStorage.getItem(META_KEY) || '{}');
-  const el = document.getElementById('backupStatus');
-  if (!el) return;
-
-  if (!meta.lastBackup) {
-    el.textContent = 'No backup yet';
-    return;
-  }
-
-  const days = Math.floor(
-    (Date.now() - meta.lastBackup) / (1000 * 60 * 60 * 24)
-  );
-
-  el.textContent = days > 7
-    ? '⚠ Backup recommended'
-    : 'Backup up to date';
-}*/
-
-function cleanupUndoState() {
-  preImportOwnedSnapshot = null;
-  undoSecondsLeft = 0;
-
-  if (undoImportTimer) {
-    clearTimeout(undoImportTimer);
-    undoImportTimer = null;
-  }
-
-  if (undoCountdownTimer) {
-    clearInterval(undoCountdownTimer);
-    undoCountdownTimer = null;
-  }
-
-  const el = document.getElementById('backupStatus');
-  if (el) {
-    el.onclick = null;
-    el.style.cursor = 'default';
-  }
-}
-
 
 function updateBackupStatus(justBackedUp = false) {
   const meta = JSON.parse(localStorage.getItem(META_KEY) || '{}');
   const el = document.getElementById('backupStatus');
   if (!el) return;
 
-  el.style.transition = 'opacity 0.5s';
   el.style.opacity = '1';
 
   if (!meta.lastBackup) {
@@ -275,24 +214,16 @@ function updateBackupStatus(justBackedUp = false) {
     return;
   }
 
-  const now = Date.now();
-  const ageMs = now - meta.lastBackup;
-  const ageDays = ageMs / (1000 * 60 * 60 * 24);
+  const ageDays = (Date.now() - meta.lastBackup) / (1000 * 60 * 60 * 24);
   const formatted = formatDateTime(meta.lastBackup);
 
   if (justBackedUp) {
     el.textContent = `✔ Backup complete: ${formatted}`;
     el.style.color = '#7CFF9B';
-
-    // Fade out after 4 seconds
-    setTimeout(() => {
-      el.style.opacity = '0';
-    }, 4000);
-
+    setTimeout(() => (el.style.opacity = '0'), 4000);
     return;
   }
 
-  // Auto-remind after 2 days
   if (ageDays >= 2) {
     el.textContent = `⚠ Backup recommended (last: ${formatted})`;
     el.style.color = '#FFB347';
@@ -331,25 +262,12 @@ async function loadCatalog() {
 
   for (const cat of CATEGORIES) {
     const res = await fetch(`data/${cat}.json`);
-    if (!res.ok) {
-      throw new Error(`Failed to load data/${cat}.json`);
-    }
-
     const items = await res.json();
 
     items.forEach(item => {
-      if (!item.id || !item.name) {
-        throw new Error(`Invalid item in ${cat}.json`);
-      }
-
-      // Backward compatibility
-      if (!item.album && item.source) {
-        item.album = item.source;
-      }
-
-      if (seenIds.has(item.id)) {
-        throw new Error(`Duplicate ID detected: ${item.id}`);
-      }
+      if (!item.id || !item.name) throw new Error(`Invalid item in ${cat}`);
+      if (!item.album && item.source) item.album = item.source;
+      if (seenIds.has(item.id)) throw new Error(`Duplicate ID ${item.id}`);
       seenIds.add(item.id);
     });
 
@@ -360,15 +278,13 @@ async function loadCatalog() {
 /********************
  * User-owned state
  ********************/
-let owned = JSON.parse(
-  localStorage.getItem('albumTracker_owned') || '{}'
+let owned = JSON.parse(localStorage.getItem('albumTracker_owned') || '{}');
+let persistedMemberFilters = JSON.parse(
+  localStorage.getItem(MEMBER_FILTER_KEY) || '{}'
 );
 
 function save() {
-  localStorage.setItem(
-    'albumTracker_owned',
-    JSON.stringify(owned)
-  );
+  localStorage.setItem('albumTracker_owned', JSON.stringify(owned));
 }
 
 /********************
@@ -376,16 +292,9 @@ function save() {
  ********************/
 function setCategory(c) {
   category = c;
-
-  document
-    .querySelectorAll('.tabs button')
-    .forEach(b =>
-      b.classList.toggle(
-        'active',
-        b.onclick.toString().includes(c)
-      )
-    );
-
+  document.querySelectorAll('.tabs button').forEach(b =>
+    b.classList.toggle('active', b.onclick.toString().includes(c))
+  );
   render();
 }
 
@@ -416,44 +325,42 @@ function render() {
   if (f === 'owned') items = items.filter(i => owned[i.id]);
   if (f === 'unowned') items = items.filter(i => !owned[i.id]);
 
-  // Member filters
   const members = [...new Set(items.map(i => i.member).filter(Boolean))];
   memberFilters.innerHTML = '';
+
+  if (!persistedMemberFilters[category]) {
+    persistedMemberFilters[category] = [...members];
+  }
+
   members.forEach(m => {
-    memberFilters.innerHTML +=
-      `<label><input type="checkbox" checked onchange="render()"> ${m}</label>`;
+    const checked = persistedMemberFilters[category].includes(m);
+    const label = document.createElement('label');
+    label.innerHTML = `<input type="checkbox" ${checked ? 'checked' : ''}> ${m}`;
+
+    const cb = label.querySelector('input');
+    cb.onchange = () => {
+      const set = new Set(persistedMemberFilters[category]);
+      cb.checked ? set.add(m) : set.delete(m);
+      persistedMemberFilters[category] = [...set];
+      localStorage.setItem(
+        MEMBER_FILTER_KEY,
+        JSON.stringify(persistedMemberFilters)
+      );
+      render();
+    };
+
+    memberFilters.appendChild(label);
   });
 
-  const checks = [...memberFilters.querySelectorAll('input')];
   items = items.filter(
     i =>
       !i.member ||
-      checks.find(
-        c => c.parentNode.textContent.trim() === i.member
-      )?.checked
+      persistedMemberFilters[category].includes(i.member)
   );
 
   const ownedCount = items.filter(i => owned[i.id]).length;
   progress.textContent = `Completion: ${ownedCount}/${items.length}`;
 
-  // Per-member stats
-  const perMember = {};
-  items.forEach(i => {
-    if (!i.member) return;
-    if (!perMember[i.member]) {
-      perMember[i.member] = { owned: 0, total: 0 };
-    }
-    perMember[i.member].total++;
-    if (owned[i.id]) perMember[i.member].owned++;
-  });
-
-  statsEl.innerHTML =
-    '<b>Per-member progress</b><br>' +
-    Object.entries(perMember)
-      .map(([m, v]) => `${m}: ${v.owned}/${v.total}`)
-      .join('<br>');
-
-  // Render table + cards
   items.forEach(i => {
     const tr = document.createElement('tr');
     if (owned[i.id]) tr.classList.add('owned');
@@ -465,7 +372,6 @@ function render() {
       <td>${i.album || ''}</td>
       <td>${i.img ? `<img src="${i.img}">` : ''}</td>
     `;
-
     tr.querySelector('input').onchange = () => toggle(i.id);
     list.appendChild(tr);
 
@@ -493,6 +399,5 @@ loadCatalog()
     updateBackupStatus();
   })
   .catch(err => {
-    document.body.innerHTML =
-      `<pre style="color:red">${err.message}</pre>`;
+    document.body.innerHTML = `<pre style="color:red">${err.message}</pre>`;
   });
