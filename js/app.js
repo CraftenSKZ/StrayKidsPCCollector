@@ -81,6 +81,31 @@ function showStatusMessage(text, color = '#aaa', autoFade = false) {
 /********************
  * Undo helpers
  ********************/
+
+function clearUndoTimers() {
+  if (undoImportTimer) {
+    clearTimeout(undoImportTimer);
+    undoImportTimer = null;
+  }
+  if (undoCountdownTimer) {
+    clearInterval(undoCountdownTimer);
+    undoCountdownTimer = null;
+  }
+}
+
+function cleanupUndoState() {
+  clearUndoTimers();
+  preImportOwnedSnapshot = null;
+  undoSecondsLeft = 0;
+
+  const el = document.getElementById('backupStatus');
+  if (el) {
+    el.onclick = null;
+    el.style.cursor = 'default';
+  }
+}
+
+/* cleanupUndoState
 function cleanupUndoState() {
   preImportOwnedSnapshot = null;
   undoSecondsLeft = 0;
@@ -100,6 +125,7 @@ function cleanupUndoState() {
     el.style.cursor = 'default';
   }
 }
+  */
 
 function undoImport() {
   if (!preImportOwnedSnapshot) {
@@ -174,7 +200,7 @@ function importData(event) {
       undoCountdownTimer = setInterval(() => {
         undoSecondsLeft--;
         if (undoSecondsLeft <= 0) {
-          cleanupUndoState();
+          clearUndoTimers(); // IMPORTANT: do NOT wipe snapshot
           updateBackupStatus();
         } else {
           renderUndoStatus();
@@ -182,7 +208,7 @@ function importData(event) {
       }, 1000);
 
       undoImportTimer = setTimeout(() => {
-        cleanupUndoState();
+        clearUndoTimers(); // IMPORTANT: do NOT wipe snapshot
         updateBackupStatus();
       }, 30000);
 
