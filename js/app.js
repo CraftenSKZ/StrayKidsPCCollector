@@ -74,44 +74,6 @@ function showStatusMessage(text, color = '#aaa', autoFade = false) {
   }
 }
 
-/********************
- * Undo helpers
- ********************/
-
-
-/* cleanupUndoState
-function cleanupUndoState() {
-  preImportOwnedSnapshot = null;
-  undoSecondsLeft = 0;
-
-  if (undoImportTimer) {
-    clearTimeout(undoImportTimer);
-    undoImportTimer = null;
-  }
-  if (undoCountdownTimer) {
-    clearInterval(undoCountdownTimer);
-    undoCountdownTimer = null;
-  }
-
-  const el = document.getElementById('backupStatus');
-  if (el) {
-    el.onclick = null;
-    el.style.cursor = 'default';
-  }
-}
-  */
-
-
-
-  owned = preImportOwnedSnapshot;
-  save();
-  render();
-
-  cleanupUndoState();
-
-  showStatusMessage('↩ Import undone', '#7CFF9B', true);
-
-
 
 /********************
  * Import
