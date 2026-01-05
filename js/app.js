@@ -5,7 +5,9 @@
 
 
 let undoImportTimer = null;
+let undoCountdownTimer = null;
 let preImportOwnedSnapshot = null;
+let undoSecondsLeft = 0;
 
 
 /********************
@@ -69,8 +71,7 @@ function undoImport() {
   save();
   render();
 
-  preImportOwnedSnapshot = null;
-  clearTimeout(undoImportTimer);
+  cleanupUndoState();
 
   showStatusMessage(
     '↩ Import undone',
@@ -78,6 +79,8 @@ function undoImport() {
     true
   );
 }
+
+window.undoImport = undoImport;
 
 // 🔑 IMPORTANT: expose for GitHub Pages + external binding
 window.exportData = exportData;
@@ -99,34 +102,43 @@ function importData(event) {
         throw new Error('Invalid backup file');
       }
 
-      // Save snapshot BEFORE import (for undo)
-preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
+    // Save snapshot BEFORE import (for undo)
+    preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
 
-  owned = json.owned;
-  save();
-  render();
+    owned = json.owned;
+    save();
+    render();
 
-  // Clear any previous undo timers
-  if (undoImportTimer) clearTimeout(undoImportTimer);
+    // Reset any existing undo state
+    cleanupUndoState();
 
-  // Show undo message
-  showStatusMessage(
-    '✔ Import successful — Undo?',
-    '#7CFF9B',
-    false
-  );
+    // Set undo countdown
+    undoSecondsLeft = 30;
 
-  // Make “Undo?” clickable
-  const el = document.getElementById('backupStatus');
-  el.style.cursor = 'pointer';
-  el.onclick = undoImport;
+    // Initial render
+    renderUndoStatus();
 
-  // Auto-expire undo after 10 seconds
-  undoImportTimer = setTimeout(() => {
-    preImportOwnedSnapshot = null;
-    el.onclick = null;
-    el.style.cursor = 'default';
-  }, 10000);
+    // Make clickable
+    const el = document.getElementById('backupStatus');
+    el.style.cursor = 'pointer';
+    el.onclick = undoImport;
+
+    // Countdown ticker
+    undoCountdownTimer = setInterval(() => {
+      undoSecondsLeft--;
+      if (undoSecondsLeft <= 0) {
+        cleanupUndoState();
+        updateBackupStatus(); // revert to normal backup message
+      } else {
+        renderUndoStatus();
+      }
+    }, 1000);
+
+    // Hard timeout (30 seconds)
+    undoImportTimer = setTimeout(() => {
+      cleanupUndoState();
+      updateBackupStatus();
+    }, 30000);
 
     } catch (err) {
       showStatusMessage(
@@ -137,7 +149,38 @@ preImportOwnedSnapshot = JSON.parse(JSON.stringify(owned));
     }
   };
 
+  //Adds pretty button 
+  function renderUndoStatus() {
+  const el = document.getElementById('backupStatus');
+  if (!el) return;
+
+  el.innerHTML = `
+    ✔ Import successful
+    <button style="
+      margin-left:8px;
+      padding:4px 10px;
+      border-radius:6px;
+      border:none;
+      background:#333;
+      color:#7CFF9B;
+      cursor:pointer;
+      font-size:0.9em;
+    ">
+      Undo (${undoSecondsLeft}s)
+    </button>
+  `;
+
+  // Ensure button click triggers undo
+  const btn = el.querySelector('button');
+  if (btn) btn.onclick = undoImport;
+
+  el.style.color = '#7CFF9B';
+  el.style.opacity = '1';
+}
+
   reader.readAsText(file);
+
+
 
   // Allow re-importing the same file
   event.target.value = '';
