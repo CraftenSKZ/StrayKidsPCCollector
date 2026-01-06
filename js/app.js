@@ -641,6 +641,7 @@ cardImg.onerror = () => {
 };
 
 card.appendChild(cardImg);
+
       const textWrap = document.createElement('div');
       const title = document.createElement('div');
       title.className = 'title';
@@ -707,13 +708,19 @@ if (collapsed) return;
       card.className = 'grid-card' + (owned[i.id] ? ' owned' : '');
 
       // Image
-      const img = document.createElement('img');
-      img.src = resolveImageSrc(i);
-      img.loading = 'lazy';
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-      };
+const img = document.createElement('img');
+img.src = i.img || '/assets/images/ui/placeholder.webp';
+img.loading = 'lazy';
+img.decoding = 'async';
+img.crossOrigin = 'anonymous'; // 🔴 REQUIRED
+img.width = 50;
+img.height = 80;
+
+img.onerror = () => {
+  img.onerror = null;
+  img.src = '/assets/images/ui/placeholder.webp';
+};
+
 
       // Name
       const name = document.createElement('div');
@@ -751,50 +758,120 @@ if (viewMode === 'grid') {
 // Export grid as image
 //********************/
 async function exportGridAsImage() {
-  const grid = document.getElementById('cardList');
-  if (!grid) {
-    alert('Grid not found');
+  if (!window.htmlToImage) {
+    alert('Export library not loaded.');
     return;
   }
 
-  // Save current styles
-  const prevDisplay = grid.style.display;
-  const prevPosition = grid.style.position;
-  const prevLeft = grid.style.left;
+  // --- Build export root ---
+  const exportRoot = document.createElement('div');
+  exportRoot.style.position = 'fixed';
+  exportRoot.style.left = '-99999px';
+  exportRoot.style.top = '0';
+  exportRoot.style.width = '900px'; // 🔑 FIXED WIDTH
+  exportRoot.style.background = '#1b1b1b';
+  exportRoot.style.color = '#eaeaea';
+  exportRoot.style.padding = '24px';
+  exportRoot.style.fontFamily = 'Segoe UI, Arial, sans-serif';
 
-  // 🔴 FORCE GRID VISIBLE (CRITICAL)
-  grid.style.display = 'block';
-  grid.style.position = 'absolute';
-  grid.style.left = '-99999px';
+  document.body.appendChild(exportRoot);
 
-  try {
-    const dataUrl = await htmlToImage.toPng(grid, {
-      backgroundColor: '#1b1b1b',
-      pixelRatio: 2,
-      cacheBust: true,
-      skipFonts: true,
-      imagePlaceholder:
-        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6X9e1cAAAAASUVORK5CYII=',
+  const items = CATALOG[category] || [];
+
+  // Apply SAME filters as UI
+  const visibleItems = items.filter(i => {
+    if (ownedFilterSelect.value === 'owned' && !owned[i.id]) return false;
+    if (ownedFilterSelect.value === 'unowned' && owned[i.id]) return false;
+    return true;
+  });
+
+  // Group by album
+  const albums = {};
+  visibleItems.forEach(i => {
+    const album = i.album || 'Unknown';
+    if (!albums[album]) albums[album] = [];
+    albums[album].push(i);
+  });
+
+  // --- Render albums ---
+  Object.entries(albums).forEach(([album, albumItems]) => {
+    // Album header
+    const header = document.createElement('h2');
+    header.textContent = album;
+    header.style.margin = '24px 0 12px';
+    header.style.borderBottom = '2px solid #444';
+    header.style.paddingBottom = '6px';
+    exportRoot.appendChild(header);
+
+    // Grid
+    const grid = document.createElement('div');
+    grid.style.display = 'grid';
+    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(90px, 1fr))';
+    grid.style.gap = '12px';
+
+    albumItems.forEach(i => {
+      const card = document.createElement('div');
+      card.style.background = owned[i.id] ? '#2f2f2f' : '#222';
+      card.style.borderRadius = '8px';
+      card.style.padding = '6px';
+      card.style.textAlign = 'center';
+
+      const img = document.createElement('img');
+      img.src = i.img || '/assets/images/ui/placeholder.webp';
+      img.width = 50;
+      img.height = 80;
+      img.style.objectFit = 'cover';
+      img.style.borderRadius = '4px';
+      img.loading = 'eager';
+
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = '/assets/images/ui/placeholder.webp';
+      };
+
+      const label = document.createElement('div');
+      label.textContent = i.name;
+      label.style.fontSize = '11px';
+      label.style.marginTop = '4px';
+      label.style.opacity = owned[i.id] ? '1' : '0.5';
+
+      card.appendChild(img);
+      card.appendChild(label);
+      grid.appendChild(card);
     });
 
-    const link = document.createElement('a');
-    link.download = `skz-${category}-grid.png`;
-    link.href = dataUrl;
-    link.click();
+    exportRoot.appendChild(grid);
+  });
 
+  // --- Export ---
+  try {
+    const blob = await htmlToImage.toBlob(exportRoot, {
+      backgroundColor: '#1b1b1b',
+      pixelRatio: 2
+    });
+
+    if (!blob) throw new Error('Empty image');
+
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `skz-${category}-collection.png`;
+    a.click();
+    URL.revokeObjectURL(url);
   } catch (err) {
-    console.error('Export failed:', err);
-    alert('Export failed. Check console.');
+    console.error(err);
+    alert('Export failed.');
   } finally {
-    // 🔁 RESTORE STYLES
-    grid.style.display = prevDisplay;
-    grid.style.position = prevPosition;
-    grid.style.left = prevLeft;
+    exportRoot.remove();
   }
 }
 
-
 window.exportGridAsImage = exportGridAsImage;
+
+
+
+
+
 
 /********************
  * Boot
