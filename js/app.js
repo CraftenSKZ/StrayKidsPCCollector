@@ -22,6 +22,43 @@ function resolveImageSrc(src) {
     : `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 }
 
+// Member filters
+function buildMemberFilters(items) {
+  memberFilters.innerHTML = '';
+
+  // Collect unique members from the catalog
+  const members = [...new Set(
+    items
+      .map(i => i.member)
+      .filter(Boolean)
+  )].sort();
+
+  members.forEach(member => {
+    const isChecked = persistedMemberFilters[member] !== false;
+
+    const label = document.createElement('label');
+    label.className = 'member-filter';
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = isChecked;
+
+    checkbox.onchange = () => {
+      persistedMemberFilters[member] = checkbox.checked;
+      localStorage.setItem(
+        MEMBER_FILTER_KEY,
+        JSON.stringify(persistedMemberFilters)
+      );
+      render();
+    };
+
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(member));
+
+    memberFilters.appendChild(label);
+  });
+}
+
 
 /****************************
  * Constants Album Collapse
@@ -323,6 +360,14 @@ function render() {
   const f = ownedFilterSelect.value;
   if (f === 'owned') items = items.filter(i => owned[i.id]);
   if (f === 'unowned') items = items.filter(i => !owned[i.id]);
+
+// Member filter
+items = items.filter(i => {
+  if (!i.member) return true;
+  return persistedMemberFilters[i.member] !== false;
+});
+
+  buildMemberFilters(CATALOG[category] || []);
 
   const ownedCount = items.filter(i => owned[i.id]).length;
   const totalPercent = items.length
