@@ -15,6 +15,14 @@ function restoreScrollPos(pos) {
   window.scrollTo(pos.x, pos.y);
 }
 
+// Image source resolver with placeholder
+function resolveImageSrc(src) {
+  return typeof src === 'string' && src.trim()
+    ? src
+    : `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+}
+
+
 /****************************
  * Constants Album Collapse
  ****************************/
@@ -406,17 +414,15 @@ Object.entries(albums).forEach(([album, albumItems]) => {
 const tdImg = document.createElement('td');
 
 const tableImg = document.createElement('img');
-tableImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+tableImg.src = resolveImageSrc(i.img);
 tableImg.loading = 'lazy';
 tableImg.decoding = 'async';
-
-// ⬇️ CLS prevention (you wanted this)
 tableImg.width = 50;
 tableImg.height = 80;
 
 tableImg.onerror = () => {
   tableImg.onerror = null;
-  tableImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  tableImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 };
 
 tdImg.appendChild(tableImg);
@@ -433,13 +439,13 @@ list.appendChild(tr);
 
 
 const cardImg = document.createElement('img');
-cardImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+cardImg.src = resolveImageSrc(i.img);
 cardImg.loading = 'lazy';
 cardImg.decoding = 'async';
 
 cardImg.onerror = () => {
   cardImg.onerror = null;
-  cardImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  cardImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 };
 
 card.appendChild(cardImg);
