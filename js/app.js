@@ -314,20 +314,29 @@ function createCheckbox(isChecked, onToggle) {
   cb.setAttribute('aria-checked', String(isChecked));
   cb.tabIndex = 0;
 
+  // 🔴 CRITICAL: prevent focus before it happens
+  cb.onpointerdown = e => {
+    e.preventDefault();
+  };
+
   cb.onclick = e => {
+    e.preventDefault();
     e.stopPropagation();
+    cb.blur();              // 🔴 remove focus immediately
     onToggle();
   };
 
   cb.onkeydown = e => {
     if (e.key === ' ' || e.key === 'Enter') {
       e.preventDefault();
+      cb.blur();
       onToggle();
     }
   };
 
   return cb;
 }
+
 
 //********************
 // Sorting helper
@@ -379,9 +388,16 @@ window.setViewMode = setViewMode;
  ********************/
 function setCategory(c) {
   category = c;
+
+  document.querySelectorAll('.tabs button').forEach(btn => {
+    btn.classList.toggle(
+      'active',
+      btn.dataset.category === c
+    );
+  });
+
   render();
 }
-
 window.setCategory = setCategory;
 
 function toggle(id) {

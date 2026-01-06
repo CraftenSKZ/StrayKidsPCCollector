@@ -23,10 +23,18 @@
 </div>
 
 <div class="panel tabs">
-  <button onclick="setCategory('korean_albums')" class="active">Korean Albums</button>
-  <button onclick="setCategory('japanese_albums')">Japanese Albums</button>
-  <button onclick="setCategory('korean_pob')">Korean POB</button>
-  <button onclick="setCategory('japanese_pob')">Japanese POB</button>
+  <button data-category="korean_albums" onclick="setCategory('korean_albums')" class="active">
+    Korean Albums
+  </button>
+  <button data-category="japanese_albums" onclick="setCategory('japanese_albums')">
+    Japanese Albums
+  </button>
+  <button data-category="korean_pob" onclick="setCategory('korean_pob')">
+    Korean POB
+  </button>
+  <button data-category="japanese_pob" onclick="setCategory('japanese_pob')">
+    Japanese POB
+  </button>
 </div>
 
 <div class="panel controls">
@@ -41,12 +49,8 @@
 <div class="panel members" id="memberFilters"></div>
 <div class="progress" id="progress"></div>
 
-<!--Expand/Collapse Albums Toggle-->
-<div class="panel controls">
-<button id="toggleAlbumsBtn" onclick="toggleAllAlbums()">
-  Collapse All
-</button>
-</div>
+<!--Expand/Collapse Albums Toggle, and List View/Grid View buttons-->
+<button id="toggleAlbumsBtn" onclick="toggleAllAlbums()"> Collapse All </button>
 <button onclick="setViewMode('list')">List View</button>
 <button onclick="setViewMode('grid')">Grid View</button>
 
