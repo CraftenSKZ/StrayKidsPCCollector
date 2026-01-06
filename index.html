@@ -53,6 +53,7 @@
 <button id="toggleAlbumsBtn" onclick="toggleAllAlbums()"> Collapse All </button>
 <button onclick="setViewMode('list')">List View</button>
 <button onclick="setViewMode('grid')">Grid View</button>
+<button id="exportGridBtn">Export Grid as Image</button>
 
 <table>
 <thead>
@@ -75,8 +76,13 @@
 <div id="gridView" class="grid-view"></div>
 <div class="card-list" id="cardList"></div>
 
-<!-- STEP 1: JS MOVED TO /js/app.js -->
+
+<!-- Export library -->
+<script src="js/vendor/html-to-image.min.js"></script>
+
+<!-- Your app -->
 <script src="js/app.js" defer></script>
+
 <script>
 // Failsafe binding for Export button on GitHub Pages
 document.addEventListener('DOMContentLoaded', () => {

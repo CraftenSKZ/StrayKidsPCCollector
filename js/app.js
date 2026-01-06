@@ -266,6 +266,16 @@ const cardList = document.getElementById('cardList');
 const memberFilters = document.getElementById('memberFilters');
 const progress = document.getElementById('progress');
 
+//********************
+// Export button binding
+//********************/
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('exportGridBtn');
+  if (btn) {
+    btn.addEventListener('click', exportGridAsImage);
+  }
+});
+
 /********************
  * Catalog loading
  ********************/
@@ -736,6 +746,46 @@ if (viewMode === 'grid') {
 
   updateToggleAlbumsButton();
 }
+
+//********************
+// Export grid as image
+//********************/
+function exportGridAsImage() {
+  if (!window.htmlToImage) {
+    alert('Export failed: image library not loaded.');
+    return;
+  }
+
+  const grid = document.getElementById('cardList');
+  if (!grid || !grid.children.length) {
+    alert('Nothing to export.');
+    return;
+  }
+
+htmlToImage.toPng(grid, {
+  backgroundColor: '#1b1b1b',
+  pixelRatio: 2,
+  cacheBust: true,
+
+  // 🔴 CRITICAL FIXES
+  skipFonts: true,
+  imagePlaceholder:
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6X9e1cAAAAASUVORK5CYII=',
+})
+
+  .then(dataUrl => {
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = `skz-${category}-grid.png`;
+    a.click();
+  })
+  .catch(err => {
+    console.error('Export failed:', err);
+    alert('Export failed. Check console.');
+  });
+}
+
+window.exportGridAsImage = exportGridAsImage;
 
 /********************
  * Boot
