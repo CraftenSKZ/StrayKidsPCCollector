@@ -61,21 +61,17 @@ window.setSort = setSort;
 
 // Image source resolver with placeholder
 function resolveImageSrc(item) {
-  // No filename → placeholder
-  if (!item?.img || !item.img.trim()) {
-    return `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-  }
-
-  // No id → placeholder (safety)
+  // Safety check
   if (!item?.id || typeof item.id !== 'string') {
     return `${BASE_PATH}/assets/images/ui/placeholder.webp`;
   }
 
-  // Album folder = first segment of ID
   const albumFolder = item.id.split('-')[0];
+  const filename = `${item.id}.webp`;
 
-  return `${BASE_PATH}/assets/images/photocards/${category}/${albumFolder}/${item.img}`;
+  return `${BASE_PATH}/assets/images/photocards/${category}/${albumFolder}/${filename}`;
 }
+
 
 
 // Sorting state
