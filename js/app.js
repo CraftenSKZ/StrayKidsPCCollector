@@ -63,13 +63,13 @@ window.setSort = setSort;
 function resolveImageSrc(item) {
   // Safety check
   if (!item?.id || typeof item.id !== 'string') {
-    return `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+    return `${BASE_PATH}assets/images/ui/placeholder.webp`;
   }
 
   const albumFolder = item.id.split('-')[0];
   const filename = `${item.id}.webp`;
 
-  return `${BASE_PATH}/assets/images/photocards/${category}/${albumFolder}/${filename}`;
+  return `${BASE_PATH}assets/images/photocards/${category}/${albumFolder}/${filename}`;
 }
 
 
@@ -614,7 +614,7 @@ tableImg.height = 80;
 
 tableImg.onerror = () => {
   tableImg.onerror = null;
-  tableImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  tableImg.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
 };
 
 tdImg.appendChild(tableImg);
@@ -637,7 +637,7 @@ cardImg.decoding = 'async';
 
 cardImg.onerror = () => {
   cardImg.onerror = null;
-  cardImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  cardImg.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
 };
 
 card.appendChild(cardImg);
@@ -709,7 +709,7 @@ if (collapsed) return;
 
       // Image
 const img = document.createElement('img');
-img.src = i.img || '/assets/images/ui/placeholder.webp';
+img.src = i.img || 'assets/images/ui/placeholder.webp';
 img.loading = 'lazy';
 img.decoding = 'async';
 img.crossOrigin = 'anonymous'; // 🔴 REQUIRED
@@ -718,7 +718,7 @@ img.height = 80;
 
 img.onerror = () => {
   img.onerror = null;
-  img.src = '/assets/images/ui/placeholder.webp';
+  img.src = 'assets/images/ui/placeholder.webp';
 };
 
 
@@ -817,7 +817,7 @@ async function exportGridAsImage() {
       card.style.textAlign = 'center';
 
       const img = document.createElement('img');
-      img.src = i.img || '/assets/images/ui/placeholder.webp';
+      img.src = i.img || 'assets/images/ui/placeholder.webp';
       img.width = 50;
       img.height = 80;
       img.style.objectFit = 'cover';
@@ -826,7 +826,7 @@ async function exportGridAsImage() {
 
       img.onerror = () => {
         img.onerror = null;
-        img.src = '/assets/images/ui/placeholder.webp';
+        img.src = 'assets/images/ui/placeholder.webp';
       };
 
       const label = document.createElement('div');
