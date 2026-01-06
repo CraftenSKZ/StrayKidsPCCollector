@@ -15,12 +15,63 @@ function restoreScrollPos(pos) {
   window.scrollTo(pos.x, pos.y);
 }
 
+//********************
+// Sorting handler
+//********************/
+function setSort(key) {
+  if (sortState.key === key) {
+    sortState.dir *= -1; // toggle direction
+  } else {
+    sortState.key = key;
+    sortState.dir = 1;
+  }
+  render();
+}
+
+//*****************************************
+// Update sort indicators in table headers
+//****************************************/
+function updateSortIndicators() {
+  const map = {
+    collected: 'th-collected',
+    name: 'th-name',
+    member: 'th-member'
+  };
+
+  // Reset all headers
+  Object.values(map).forEach(id => {
+    const th = document.getElementById(id);
+    if (!th) return;
+    th.textContent = th.textContent.replace(/[▲▼]/g, '').trim();
+  });
+
+  // Add arrow to active column
+  if (!sortState.key) return;
+
+  const th = document.getElementById(map[sortState.key]);
+  if (!th) return;
+
+  const arrow = sortState.dir === 1 ? ' ▲' : ' ▼';
+  th.textContent += arrow;
+}
+
+window.setSort = setSort;
+
+
+
 // Image source resolver with placeholder
 function resolveImageSrc(src) {
   return typeof src === 'string' && src.trim()
     ? src
     : `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 }
+
+// Sorting state
+let sortState = {
+  key: null,      // 'collected' | 'name' | 'member'
+  dir: 1          // 1 = asc, -1 = desc
+};
+
 
 // Member filters
 function buildMemberFilters(items) {
@@ -270,6 +321,51 @@ function createCheckbox(isChecked, onToggle) {
   return cb;
 }
 
+//********************
+// Sorting helper
+//********************/ 
+function sortItems(items) {
+  if (!sortState.key) return items;
+
+  return [...items].sort((a, b) => {
+    let va, vb;
+
+    switch (sortState.key) {
+      case 'collected':
+        va = owned[a.id] ? 1 : 0;
+        vb = owned[b.id] ? 1 : 0;
+        break;
+      case 'name':
+        va = a.name || '';
+        vb = b.name || '';
+        break;
+      case 'member':
+        va = a.member || '';
+        vb = b.member || '';
+        break;
+      default:
+        return 0;
+    }
+
+    if (va < vb) return -1 * sortState.dir;
+    if (va > vb) return 1 * sortState.dir;
+    return 0;
+  });
+}
+
+//********************
+// View mode handler
+//********************/
+let viewMode = localStorage.getItem('viewMode') || 'list'; // 'list' | 'grid'
+
+function setViewMode(mode) {
+  viewMode = mode;
+  localStorage.setItem('viewMode', mode);
+  render();
+}
+
+window.setViewMode = setViewMode;
+
 /********************
  * App Logic
  ********************/
@@ -346,7 +442,21 @@ function render() {
   list.innerHTML = '';
   cardList.innerHTML = '';
 
-  let items = CATALOG[category] || [];
+ let items = CATALOG[category] || [];
+
+// Handle view mode 
+const gridView = document.getElementById('gridView');
+
+// ✅ APPLY CLASS FIRST
+document.body.classList.toggle('grid-active', viewMode === 'grid');
+
+list.style.display = viewMode === 'list' ? '' : 'none';
+cardList.style.display = viewMode === 'list' ? '' : 'none';
+gridView.style.display = viewMode === 'grid' ? '' : 'none';
+
+
+
+document.body.classList.toggle('grid-active', viewMode === 'grid');
 
   const q = searchInput.value.toLowerCase();
   if (q) {
@@ -356,7 +466,7 @@ function render() {
         (i.album || '').toLowerCase().includes(q)
     );
   }
-
+updateSortIndicators();
   const f = ownedFilterSelect.value;
   if (f === 'owned') items = items.filter(i => owned[i.id]);
   if (f === 'unowned') items = items.filter(i => !owned[i.id]);
@@ -366,6 +476,9 @@ items = items.filter(i => {
   if (!i.member) return true;
   return persistedMemberFilters[i.member] !== false;
 });
+
+// Sort items
+  items = sortItems(items);
 
   buildMemberFilters(CATALOG[category] || []);
 
@@ -510,6 +623,87 @@ meta.textContent = i.member || '';
       cardList.appendChild(card);
   });
 });
+
+//********************
+// Grid view renderer
+//********************/ 
+function renderGridView(items) {
+  const gridView = document.getElementById('gridView');
+  gridView.innerHTML = '';
+
+  const albums = {};
+  items.forEach(i => {
+    const album = i.album || 'Unknown';
+    if (!albums[album]) albums[album] = [];
+    albums[album].push(i);
+  });
+
+Object.entries(albums).forEach(([album, albumItems]) => {
+  if (!albumCollapseState[category]) {
+    albumCollapseState[category] = {};
+  }
+  const collapsed = albumCollapseState[category][album] ?? false;
+
+    // Album title
+const title = document.createElement('h3');
+title.className = 'grid-album-title';
+title.innerHTML = `
+  <span class="album-toggle-icon">${collapsed ? '▶' : '▼'}</span>
+  ${album}
+`;
+
+title.onclick = () => {
+  albumCollapseState[category][album] = !collapsed;
+  localStorage.setItem(
+    ALBUM_COLLAPSE_KEY,
+    JSON.stringify(albumCollapseState)
+  );
+  render();
+};
+
+gridView.appendChild(title);
+
+if (collapsed) return;
+    // Album grid
+    const grid = document.createElement('div');
+    grid.className = 'album-grid';
+
+    albumItems.forEach(i => {
+      const card = document.createElement('div');
+      card.className = 'grid-card' + (owned[i.id] ? ' owned' : '');
+
+      // Image
+      const img = document.createElement('img');
+      img.src = resolveImageSrc(i.img);
+      img.loading = 'lazy';
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+      };
+
+      // Name
+      const name = document.createElement('div');
+      name.className = 'grid-name';
+      name.textContent = i.name;
+
+      // Checkmark
+      const check = createCheckbox(!!owned[i.id], () => toggle(i.id));
+
+      card.appendChild(img);
+      card.appendChild(name);
+      card.appendChild(check);
+
+      grid.appendChild(card);
+    });
+
+    gridView.appendChild(grid);
+  });
+}
+
+if (viewMode === 'grid') {
+  renderGridView(items);
+  return;
+}
 
   updateToggleAlbumsButton();
 }

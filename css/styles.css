@@ -56,8 +56,86 @@ tr.owned img{opacity:.3}
   }
 }
 
+.grid-active table,
+.grid-active .card-list {
+  display: none !important;
+}
 
-/*Custom Checkboxes*/
+.grid-active .grid-view {
+  display: block;
+}
+
+
+/*Sortable Table Headers*/
+th {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+th:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+
+/* Grid View Styles */
+.grid-view {
+  padding: 0.5rem;
+}
+
+.grid-album-title {
+  text-align: center;
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 0.75rem;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  background: var(--card-bg, #f5f5f5);
+}
+
+.grid-card img {
+  width: 70px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.grid-name {
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.grid-card .checkbox {
+  margin-top: 2px;
+}
+
+.grid-card.owned {
+  opacity: 0.9;
+}
+
+.grid-album-title {
+  cursor: pointer;
+  user-select: none;
+}
+
+.grid-album-title:hover {
+  opacity: 0.25;
+}
+
+
 /* Custom checkbox */
 .checkbox {
   position: relative; /* IMPORTANT */

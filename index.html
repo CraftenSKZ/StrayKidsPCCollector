@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<h1>Korean + Japanese Album and POB Tracker</h1>
+<h1>Stray Kids Album & POB Tracker</h1>
 
 <div class="panel" style="font-size:0.9em;color:#ccc">
   Your collection is saved locally in your browser. Switching devices, browsers, or clearing site data will reset your checklist.
@@ -47,14 +47,28 @@
   Collapse All
 </button>
 </div>
+<button onclick="setViewMode('list')">List View</button>
+<button onclick="setViewMode('grid')">Grid View</button>
 
 <table>
 <thead>
-<tr><th>Have</th><th>Name</th><th>Member</th><th>Img</th></tr>
+  <tr>
+<th id="th-collected" tabindex="0" role="button" onclick="setSort('collected')">
+  Collected
+</th>
+<th id="th-name" tabindex="0" role="button" onclick="setSort('name')">
+  Name
+</th>
+<th id="th-member" tabindex="0" role="button" onclick="setSort('member')">
+  Member
+</th>
+<th>Photocard</th>
+  </tr>
 </thead>
+
 <tbody id="list"></tbody>
 </table>
-
+<div id="gridView" class="grid-view"></div>
 <div class="card-list" id="cardList"></div>
 
 <!-- STEP 1: JS MOVED TO /js/app.js -->
