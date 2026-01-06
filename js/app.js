@@ -2,7 +2,7 @@
  * Skz Photocard Tracker – app.js
  * Works on GitHub Pages
  ***************************************************/
-const BASE_PATH = '/StrayKidsPCCollector';
+const BASE_PATH = '/StrayKidsPCCollector/';
 /************** 
  * scroll position saving
  ***************/
