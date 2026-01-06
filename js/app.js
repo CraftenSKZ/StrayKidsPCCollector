@@ -431,7 +431,7 @@ list.appendChild(tr);
         createCheckbox(!!owned[i.id], () => toggle(i.id))
       );
 
-    if (i.img) {
+
 const cardImg = document.createElement('img');
 cardImg.src = i.img || '/assets/images/ui/placeholder.webp';
 cardImg.loading = 'lazy';
@@ -443,10 +443,6 @@ cardImg.onerror = () => {
 };
 
 card.appendChild(cardImg);
-
-    }
-
-
       const textWrap = document.createElement('div');
       const title = document.createElement('div');
       title.className = 'title';
