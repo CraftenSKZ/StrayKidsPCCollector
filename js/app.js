@@ -750,40 +750,49 @@ if (viewMode === 'grid') {
 //********************
 // Export grid as image
 //********************/
-function exportGridAsImage() {
-  if (!window.htmlToImage) {
-    alert('Export failed: image library not loaded.');
-    return;
-  }
-
+async function exportGridAsImage() {
   const grid = document.getElementById('cardList');
-  if (!grid || !grid.children.length) {
-    alert('Nothing to export.');
+  if (!grid) {
+    alert('Grid not found');
     return;
   }
 
-htmlToImage.toPng(grid, {
-  backgroundColor: '#1b1b1b',
-  pixelRatio: 2,
-  cacheBust: true,
+  // Save current styles
+  const prevDisplay = grid.style.display;
+  const prevPosition = grid.style.position;
+  const prevLeft = grid.style.left;
 
-  // 🔴 CRITICAL FIXES
-  skipFonts: true,
-  imagePlaceholder:
-    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6X9e1cAAAAASUVORK5CYII=',
-})
+  // 🔴 FORCE GRID VISIBLE (CRITICAL)
+  grid.style.display = 'block';
+  grid.style.position = 'absolute';
+  grid.style.left = '-99999px';
 
-  .then(dataUrl => {
-    const a = document.createElement('a');
-    a.href = dataUrl;
-    a.download = `skz-${category}-grid.png`;
-    a.click();
-  })
-  .catch(err => {
+  try {
+    const dataUrl = await htmlToImage.toPng(grid, {
+      backgroundColor: '#1b1b1b',
+      pixelRatio: 2,
+      cacheBust: true,
+      skipFonts: true,
+      imagePlaceholder:
+        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6X9e1cAAAAASUVORK5CYII=',
+    });
+
+    const link = document.createElement('a');
+    link.download = `skz-${category}-grid.png`;
+    link.href = dataUrl;
+    link.click();
+
+  } catch (err) {
     console.error('Export failed:', err);
     alert('Export failed. Check console.');
-  });
+  } finally {
+    // 🔁 RESTORE STYLES
+    grid.style.display = prevDisplay;
+    grid.style.position = prevPosition;
+    grid.style.left = prevLeft;
+  }
 }
+
 
 window.exportGridAsImage = exportGridAsImage;
 
