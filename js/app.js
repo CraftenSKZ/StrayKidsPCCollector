@@ -63,13 +63,13 @@ window.setSort = setSort;
 function resolveImageSrc(item) {
   // Safety check
   if (!item?.id || typeof item.id !== 'string') {
-    return `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+    return `${BASE_PATH}assets/images/ui/placeholder.webp`;
   }
 
   const albumFolder = item.id.split('-')[0];
   const filename = `${item.id}.webp`;
 
-  return `${BASE_PATH}/assets/images/photocards/${category}/${albumFolder}/${filename}`;
+  return `${BASE_PATH}assets/images/photocards/${category}/${albumFolder}/${filename}`;
 }
 
 
@@ -266,6 +266,16 @@ const cardList = document.getElementById('cardList');
 const memberFilters = document.getElementById('memberFilters');
 const progress = document.getElementById('progress');
 
+//********************
+// Export button binding
+//********************/
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('exportGridBtn');
+  if (btn) {
+    btn.addEventListener('click', exportGridAsImage);
+  }
+});
+
 /********************
  * Catalog loading
  ********************/
@@ -314,20 +324,29 @@ function createCheckbox(isChecked, onToggle) {
   cb.setAttribute('aria-checked', String(isChecked));
   cb.tabIndex = 0;
 
+  // 🔴 CRITICAL: prevent focus before it happens
+  cb.onpointerdown = e => {
+    e.preventDefault();
+  };
+
   cb.onclick = e => {
+    e.preventDefault();
     e.stopPropagation();
+    cb.blur();              // 🔴 remove focus immediately
     onToggle();
   };
 
   cb.onkeydown = e => {
     if (e.key === ' ' || e.key === 'Enter') {
       e.preventDefault();
+      cb.blur();
       onToggle();
     }
   };
 
   return cb;
 }
+
 
 //********************
 // Sorting helper
@@ -379,9 +398,16 @@ window.setViewMode = setViewMode;
  ********************/
 function setCategory(c) {
   category = c;
+
+  document.querySelectorAll('.tabs button').forEach(btn => {
+    btn.classList.toggle(
+      'active',
+      btn.dataset.category === c
+    );
+  });
+
   render();
 }
-
 window.setCategory = setCategory;
 
 function toggle(id) {
@@ -588,7 +614,7 @@ tableImg.height = 80;
 
 tableImg.onerror = () => {
   tableImg.onerror = null;
-  tableImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  tableImg.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
 };
 
 tdImg.appendChild(tableImg);
@@ -611,10 +637,11 @@ cardImg.decoding = 'async';
 
 cardImg.onerror = () => {
   cardImg.onerror = null;
-  cardImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  cardImg.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
 };
 
 card.appendChild(cardImg);
+
       const textWrap = document.createElement('div');
       const title = document.createElement('div');
       title.className = 'title';
@@ -681,13 +708,19 @@ if (collapsed) return;
       card.className = 'grid-card' + (owned[i.id] ? ' owned' : '');
 
       // Image
-      const img = document.createElement('img');
-      img.src = resolveImageSrc(i);
-      img.loading = 'lazy';
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-      };
+const img = document.createElement('img');
+img.src = i.img || 'assets/images/ui/placeholder.webp';
+img.loading = 'lazy';
+img.decoding = 'async';
+img.crossOrigin = 'anonymous'; // 🔴 REQUIRED
+img.width = 50;
+img.height = 80;
+
+img.onerror = () => {
+  img.onerror = null;
+  img.src = 'assets/images/ui/placeholder.webp';
+};
+
 
       // Name
       const name = document.createElement('div');
@@ -720,6 +753,125 @@ if (viewMode === 'grid') {
 
   updateToggleAlbumsButton();
 }
+
+//********************
+// Export grid as image
+//********************/
+async function exportGridAsImage() {
+  if (!window.htmlToImage) {
+    alert('Export library not loaded.');
+    return;
+  }
+
+  // --- Build export root ---
+  const exportRoot = document.createElement('div');
+  exportRoot.style.position = 'fixed';
+  exportRoot.style.left = '-99999px';
+  exportRoot.style.top = '0';
+  exportRoot.style.width = '900px'; // 🔑 FIXED WIDTH
+  exportRoot.style.background = '#1b1b1b';
+  exportRoot.style.color = '#eaeaea';
+  exportRoot.style.padding = '24px';
+  exportRoot.style.fontFamily = 'Segoe UI, Arial, sans-serif';
+
+  document.body.appendChild(exportRoot);
+
+  const items = CATALOG[category] || [];
+
+  // Apply SAME filters as UI
+  const visibleItems = items.filter(i => {
+    if (ownedFilterSelect.value === 'owned' && !owned[i.id]) return false;
+    if (ownedFilterSelect.value === 'unowned' && owned[i.id]) return false;
+    return true;
+  });
+
+  // Group by album
+  const albums = {};
+  visibleItems.forEach(i => {
+    const album = i.album || 'Unknown';
+    if (!albums[album]) albums[album] = [];
+    albums[album].push(i);
+  });
+
+  // --- Render albums ---
+  Object.entries(albums).forEach(([album, albumItems]) => {
+    // Album header
+    const header = document.createElement('h2');
+    header.textContent = album;
+    header.style.margin = '24px 0 12px';
+    header.style.borderBottom = '2px solid #444';
+    header.style.paddingBottom = '6px';
+    exportRoot.appendChild(header);
+
+    // Grid
+    const grid = document.createElement('div');
+    grid.style.display = 'grid';
+    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(90px, 1fr))';
+    grid.style.gap = '12px';
+
+    albumItems.forEach(i => {
+      const card = document.createElement('div');
+      card.style.background = owned[i.id] ? '#2f2f2f' : '#222';
+      card.style.borderRadius = '8px';
+      card.style.padding = '6px';
+      card.style.textAlign = 'center';
+
+      const img = document.createElement('img');
+      img.src = i.img || 'assets/images/ui/placeholder.webp';
+      img.width = 50;
+      img.height = 80;
+      img.style.objectFit = 'cover';
+      img.style.borderRadius = '4px';
+      img.loading = 'eager';
+
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = 'assets/images/ui/placeholder.webp';
+      };
+
+      const label = document.createElement('div');
+      label.textContent = i.name;
+      label.style.fontSize = '11px';
+      label.style.marginTop = '4px';
+      label.style.opacity = owned[i.id] ? '1' : '0.5';
+
+      card.appendChild(img);
+      card.appendChild(label);
+      grid.appendChild(card);
+    });
+
+    exportRoot.appendChild(grid);
+  });
+
+  // --- Export ---
+  try {
+    const blob = await htmlToImage.toBlob(exportRoot, {
+      backgroundColor: '#1b1b1b',
+      pixelRatio: 2
+    });
+
+    if (!blob) throw new Error('Empty image');
+
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `skz-${category}-collection.png`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (err) {
+    console.error(err);
+    alert('Export failed.');
+  } finally {
+    exportRoot.remove();
+  }
+}
+
+window.exportGridAsImage = exportGridAsImage;
+
+
+
+
+
 
 /********************
  * Boot

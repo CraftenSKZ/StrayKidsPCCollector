@@ -1,34 +1,10 @@
 [
   {
-    "id": "ate-pob-han-01",
-    "name": "ATE HMV JAPAN POB ",
-    "member": "Han",
-    "album": "ATE",
+    "id": "underconstruction",
+    "name": "allin",
+    "member": "Stray Kids",
+    "album": "",
     "category": "korean_pob",
-    "img": "assets/images/photocards/korean_pob/ate/ate-pob-han-01.webp"
-  },
-  {
-    "id": "doit-pob-leeknow-001",
-    "name": "FANS POB",
-    "member": "Lee Know",
-    "album": "DO IT",
-    "category": "korean_pob",
-    "img": "assets/images/photocards/korean_pob/doit/doit-pob-leeknow-001.webp"
-  },
-  {
-    "id": "karma-pob-bangchan-01",
-    "name": "FANS POB",
-    "member": "Bang Chan",
-    "album": "Karma",
-    "category": "korean_pob",
-    "img": "assets/images/photocards/korean_pob/karma/karma-pob-bangchan-01.webp"
-  },
-  {
-    "id": "hop-pob-changbin-01",
-    "name": "Makestar POB",
-    "member": "Changbin",
-    "album": "HOP",
-    "category": "korean_pob",
-    "img": "assets/images/photocards/korean_pob/hop/hop-pob-changbin-01.webp"
+    "img": "assets/images/photocards/korean_pob/underconstruction/underconstruction.webp"
   }
-]
+  ]

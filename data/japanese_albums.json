@@ -1,34 +1,10 @@
 [
   {
-    "id": "allin-han-01",
+    "id": "underconstruction",
     "name": "allin",
-    "member": "Han",
-    "album": "ALL IN",
+    "member": "Stray Kids",
+    "album": "",
     "category": "japanese_albums",
-    "img": "assets/images/photocards/japanese_albums/allin/allin-han-01.webp"
-  },
-  {
-    "id": "hollow-hyunjin-01",
-    "name": "hollow",
-    "member": "Hyunjin",
-    "album": "Hollow",
-    "category": "japanese_albums",
-    "img": "assets/images/photocards/japanese_albums/hollow/hollow-hyunjin-01.webp"
-  },
-  {
-    "id": "giant-in-01",
-    "name": "giant",
-    "member": "I.N.",
-    "album": "Giant",
-    "category": "japanese_albums",
-    "img": "assets/images/photocards/japanese_albums/giant/giant-in-01.webp"
-  },
-  {
-    "id": "thesound-bangchan-01",
-    "name": "the sound",
-    "member": "Bang Chan",
-    "album": "The Sound",
-    "category": "japanese_albums",
-    "img": "assets/images/photocards/japanese_albums/thesound/thesound-bangchan-01.webp"
+    "img": "assets/images/albums/japanese_albums/underconstruction/underconstruction.webp"
   }
-]
+  ]

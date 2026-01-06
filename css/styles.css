@@ -5,7 +5,7 @@ body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text
 h1{margin:0 0 12px 0;font-size:1.4rem}
 .panel{background:var(--panel);padding:12px;border-radius:10px;margin-bottom:12px}
 .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-input,select,button{padding:10px;border-radius:8px;border:1px solid #444;background:#111;color:var(--text);font-size:1rem}
+input,select,button{margin:10px;padding:10px;border-radius:8px;border:1px solid #444;background:#111;color:var(--text);font-size:1rem}
 button{cursor:pointer}
 .tabs{display:flex;gap:6px;overflow-x:auto}
 .tabs button{background:#333;white-space:nowrap;flex:0 0 auto}
@@ -36,19 +36,20 @@ tr.owned img{opacity:.3}
   .card {
     display: grid;
     grid-template-columns: auto 1fr auto; /* checkbox | text | image */
+      min-height: 96px; /* locks height */
     align-items: center;
     gap: 10px;
   }
 
   /* Force image to the right */
-  .card img {
-    grid-column: 3;
-    justify-self: end;
-    width: 50px;
-    height: 80px;
-    object-fit: contain;
-    margin-left: 6px;
-  }
+
+/* Ensure image never affects layout */
+.card img {
+  width: 50px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 
   /* Keep text in the middle */
   .card > div {
@@ -236,4 +237,49 @@ td:first-child,
   margin-right: 6px;
   color: #c9a24d;
   font-weight: bold;
+}
+
+/* Export Grid Styles */
+.export-album {
+  margin-bottom: 24px;
+}
+
+.export-album-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #444;
+}
+
+.export-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+.export-card {
+  background: #262626;
+  border-radius: 8px;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.export-card img {
+  width: 50px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 4px;
+  background: #111;
+}
+
+.export-card.unowned {
+  opacity: 0.35;
 }
