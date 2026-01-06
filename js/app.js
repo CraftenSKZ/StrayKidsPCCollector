@@ -3,6 +3,16 @@
  * Works on GitHub Pages
  ***************************************************/
 const BASE_PATH = '/StrayKidsPCCollector';
+
+/********************
+ * Image helper (BULLETPROOF)
+ ********************/
+function resolveImageSrc(src) {
+  return typeof src === 'string' && src.trim()
+    ? src
+    : `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+}
+
 /************** 
  * scroll position saving
  ***************/
@@ -177,7 +187,7 @@ let category = 'korean_albums';
 
 async function loadCatalog() {
   for (const cat of CATEGORIES) {
-    const res = await fetch(`data/${cat}.json`);
+    const res = await fetch(`${BASE_PATH}/data/${cat}.json`);
     CATALOG[cat] = await res.json();
   }
 }
@@ -187,9 +197,6 @@ async function loadCatalog() {
  ********************/
 let owned = JSON.parse(
   localStorage.getItem('albumTracker_owned') || '{}'
-);
-let persistedMemberFilters = JSON.parse(
-  localStorage.getItem(MEMBER_FILTER_KEY) || '{}'
 );
 
 function save() {
@@ -243,60 +250,6 @@ function toggle(id) {
   restoreScrollPos(scrollPos);
 }
 
-function updateToggleAlbumsButton() {
-  const btn = document.getElementById('toggleAlbumsBtn');
-  if (!btn) return;
-
-  const items = CATALOG[category] || [];
-  const albums = [...new Set(items.map(i => i.album || 'Unknown'))];
-
-  if (!albums.length) {
-    btn.textContent = 'Expand All';
-    return;
-  }
-
-  const allExpanded = albums.every(
-    album => albumCollapseState[category]?.[album] === false
-  );
-
-  btn.textContent = allExpanded ? 'Collapse All' : 'Expand All';
-}
-
-function toggleAllAlbums() {
-  const items = CATALOG[category] || [];
-  if (!items.length) return;
-
-  const albums = [...new Set(items.map(i => i.album || 'Unknown'))];
-
-  if (!albumCollapseState[category]) {
-    albumCollapseState[category] = {};
-  }
-
-  albums.forEach(album => {
-    if (albumCollapseState[category][album] === undefined) {
-      albumCollapseState[category][album] = false;
-    }
-  });
-
-  const allExpanded = albums.every(
-    album => albumCollapseState[category][album] === false
-  );
-
-  albums.forEach(album => {
-    albumCollapseState[category][album] = allExpanded;
-  });
-
-  localStorage.setItem(
-    ALBUM_COLLAPSE_KEY,
-    JSON.stringify(albumCollapseState)
-  );
-
-  render();
-  updateToggleAlbumsButton();
-}
-
-window.toggleAllAlbums = toggleAllAlbums;
-
 function render() {
   list.innerHTML = '';
   cardList.innerHTML = '';
@@ -316,14 +269,6 @@ function render() {
   if (f === 'owned') items = items.filter(i => owned[i.id]);
   if (f === 'unowned') items = items.filter(i => !owned[i.id]);
 
-  const ownedCount = items.filter(i => owned[i.id]).length;
-  const totalPercent = items.length
-  ? Math.round((ownedCount / items.length) * 100)
-  : 0;
-
-  progress.textContent =
-  `Completion: ${ownedCount}/${items.length} (${totalPercent}%)`;
-
   const albums = {};
   items.forEach(i => {
     const album = i.album || 'Unknown';
@@ -331,146 +276,48 @@ function render() {
     albums[album].push(i);
   });
 
-  if (!albumCollapseState[category]) {
-    albumCollapseState[category] = {};
-  }
-
-Object.entries(albums).forEach(([album, albumItems]) => {
-  const albumOwned = albumItems.filter(i => owned[i.id]).length;
-  const percent = albumItems.length
-    ? Math.round((albumOwned / albumItems.length) * 100)
-    : 0;
-
-  const collapsed =
-    albumCollapseState[category]?.[album] ?? false;
-
-  const triangle = collapsed ? '▶' : '▼';
-
-  /* ===== TABLE HEADER ===== */
-  const header = document.createElement('tr');
-  header.className = 'album-header';
-  header.innerHTML = `
-    <td colspan="4" style="cursor:pointer">
-      <span class="album-toggle-icon">${triangle}</span>
-      <b>${album}</b>
-      — ${albumOwned}/${albumItems.length} (${percent}%)
-    </td>
-  `;
-
-  header.onclick = () => {
-    albumCollapseState[category][album] = !collapsed;
-    localStorage.setItem(
-      ALBUM_COLLAPSE_KEY,
-      JSON.stringify(albumCollapseState)
-    );
-    render();
-  };
-
-  list.appendChild(header);
-
-  /* ===== MOBILE HEADER ===== */
-  const mobileHeader = document.createElement('div');
-  mobileHeader.className = 'album-header-card';
-  mobileHeader.innerHTML = `
-    <span class="album-toggle-icon">${triangle}</span>
-    <b>${album}</b>
-    — ${albumOwned}/${albumItems.length} (${percent}%)
-  `;
-  mobileHeader.onclick = header.onclick;
-  cardList.appendChild(mobileHeader);
-
-  if (collapsed) return;
-
-  /* ===== ITEMS ===== */
+  Object.entries(albums).forEach(([album, albumItems]) => {
     albumItems.forEach(i => {
+      /* ===== TABLE ROW ===== */
       const tr = document.createElement('tr');
-      if (owned[i.id]) tr.classList.add('owned');
 
-      const tdCb = document.createElement('td');
-      tdCb.appendChild(
-        createCheckbox(!!owned[i.id], () => toggle(i.id))
-      );
-      tr.appendChild(tdCb);
+      const tdImg = document.createElement('td');
+      const tableImg = document.createElement('img');
+      tableImg.src = resolveImageSrc(i.img);
+      tableImg.width = 50;
+      tableImg.height = 80;
+      tableImg.loading = 'lazy';
+      tableImg.onerror = () => {
+        tableImg.onerror = null;
+        tableImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+      };
+      tdImg.appendChild(tableImg);
+      tr.appendChild(tdImg);
+      list.appendChild(tr);
 
-      const tdName = document.createElement('td');
-      tdName.textContent = i.name;
-      tr.appendChild(tdName);
-
-      const tdMember = document.createElement('td');
-      tdMember.textContent = i.member || '';
-      tr.appendChild(tdMember);
-
-
-
-// ✅ CREATE IMAGE TD
-const tdImg = document.createElement('td');
-
-const tableImg = document.createElement('img');
-tableImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-tableImg.loading = 'lazy';
-tableImg.decoding = 'async';
-
-// ⬇️ CLS prevention (you wanted this)
-tableImg.width = 50;
-tableImg.height = 80;
-
-tableImg.onerror = () => {
-  tableImg.onerror = null;
-  tableImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-};
-
-tdImg.appendChild(tableImg);
-tr.appendChild(tdImg);
-
-list.appendChild(tr);
-
-
+      /* ===== CARD ===== */
       const card = document.createElement('div');
-      card.className = 'card' + (owned[i.id] ? ' owned' : '');
-      card.appendChild(
-        createCheckbox(!!owned[i.id], () => toggle(i.id))
-      );
+      card.className = 'card';
 
-
-const cardImg = document.createElement('img');
-cardImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-cardImg.loading = 'lazy';
-cardImg.decoding = 'async';
-
-cardImg.onerror = () => {
-  cardImg.onerror = null;
-  cardImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-};
-
-card.appendChild(cardImg);
-      const textWrap = document.createElement('div');
-      const title = document.createElement('div');
-      title.className = 'title';
-      title.textContent = i.name;
-
-const meta = document.createElement('div');
-meta.className = 'meta';
-meta.textContent = i.member || '';
-
-      textWrap.appendChild(title);
-      textWrap.appendChild(meta);
-      card.appendChild(textWrap);
+      const cardImg = document.createElement('img');
+      cardImg.src = resolveImageSrc(i.img);
+      cardImg.loading = 'lazy';
+      cardImg.onerror = () => {
+        cardImg.onerror = null;
+        cardImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+      };
+      card.appendChild(cardImg);
 
       cardList.appendChild(card);
+    });
   });
-});
-
-  updateToggleAlbumsButton();
 }
 
 /********************
  * Boot
  ********************/
 loadCatalog()
-  .then(() => {
-    render();
-    updateBackupStatus();
-  })
+  .then(render)
   .catch(err => {
     document.body.innerHTML = `<pre>${err.message}</pre>`;
   });
