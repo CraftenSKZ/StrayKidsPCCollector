@@ -2,7 +2,7 @@
  * Skz Photocard Tracker – app.js
  * Works on GitHub Pages
  ***************************************************/
-
+const BASE_PATH = '/StrayKidsPCCollector';
 /************** 
  * scroll position saving
  ***************/
@@ -406,7 +406,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
 const tdImg = document.createElement('td');
 
 const tableImg = document.createElement('img');
-tableImg.src = i.img || 'StrayKidsPCCollector/assets/images/ui/placeholder.webp';
+tableImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 tableImg.loading = 'lazy';
 tableImg.decoding = 'async';
 
@@ -416,7 +416,7 @@ tableImg.height = 80;
 
 tableImg.onerror = () => {
   tableImg.onerror = null;
-  tableImg.src = '/assets/images/ui/placeholder.webp';
+  tableImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 };
 
 tdImg.appendChild(tableImg);
@@ -433,13 +433,13 @@ list.appendChild(tr);
 
 
 const cardImg = document.createElement('img');
-cardImg.src = i.img || '/assets/images/ui/placeholder.webp';
+cardImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 cardImg.loading = 'lazy';
 cardImg.decoding = 'async';
 
 cardImg.onerror = () => {
   cardImg.onerror = null;
-  cardImg.src = '/assets/images/ui/placeholder.webp';
+  cardImg.src = i.img || `${BASE_PATH}/assets/images/ui/placeholder.webp`;
 };
 
 card.appendChild(cardImg);
