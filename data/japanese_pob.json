@@ -1,34 +1,10 @@
 [
   {
-    "id": "hollow-pob-bangchan-01",
-    "name": "Tower records ",
-    "member": "Bang Chan",
-    "album": "Hollow",
+    "id": "underconstruction",
+    "name": "allin",
+    "member": "Stray Kids",
+    "album": "",
     "category": "japanese_pob",
-    "img": "assets/images/photocards/japanese_pob/hollow/hollow-pob-bangchan-01.webp"
-  },
-  {
-    "id": "giant-pob-leeknow-01",
-    "name": "Test",
-    "member": "Lee Know",
-    "album": "Giant",
-    "category": "japanese_pob",
-    "img": "assets/images/photocards/japanese_pob/giant/giant-pob-leeknow-01.webp"
-  },
-  {
-    "id": "thesound-pob-changbin-01",
-    "name": "Test",
-    "member": "Changbin",
-    "album": "The Sound",
-    "category": "japanese_pob",
-    "img": "assets/images/photocards/japanese_pob/thesound/thesound-pob-changbin-01.webp"
-  },
-  {
-    "id": "circus-pob-hyunjin-001",
-    "name": "Test",
-    "member": "Hyunjin",
-    "album": "Circus",
-    "category": "japanese_pob",
-    "img": "assets/images/photocards/japanese_pob/circus/circus-pob-hyunjin-001.webp"
+    "img": "assets/images/photocards/japanese_pob/underconstruction/underconstruction.webp"
   }
-]
+  ]

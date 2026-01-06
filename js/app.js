@@ -388,9 +388,16 @@ window.setViewMode = setViewMode;
  ********************/
 function setCategory(c) {
   category = c;
+
+  document.querySelectorAll('.tabs button').forEach(btn => {
+    btn.classList.toggle(
+      'active',
+      btn.dataset.category === c
+    );
+  });
+
   render();
 }
-
 window.setCategory = setCategory;
 
 function toggle(id) {
