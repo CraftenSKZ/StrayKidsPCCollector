@@ -697,6 +697,11 @@ if (collapsed) return;
     });
 
     gridView.appendChild(grid);
+
+    //Spacer
+    const separator = document.createElement('div');
+    separator.className = 'grid-album-separator';
+    gridView.appendChild(separator);
   });
 }
 
