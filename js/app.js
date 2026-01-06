@@ -60,11 +60,23 @@ window.setSort = setSort;
 
 
 // Image source resolver with placeholder
-function resolveImageSrc(src) {
-  return typeof src === 'string' && src.trim()
-    ? src
-    : `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+function resolveImageSrc(item) {
+  // No filename → placeholder
+  if (!item?.img || !item.img.trim()) {
+    return `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  }
+
+  // No id → placeholder (safety)
+  if (!item?.id || typeof item.id !== 'string') {
+    return `${BASE_PATH}/assets/images/ui/placeholder.webp`;
+  }
+
+  // Album folder = first segment of ID
+  const albumFolder = item.id.split('-')[0];
+
+  return `${BASE_PATH}/assets/images/photocards/${category}/${albumFolder}/${item.img}`;
 }
+
 
 // Sorting state
 let sortState = {
@@ -572,7 +584,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
 const tdImg = document.createElement('td');
 
 const tableImg = document.createElement('img');
-tableImg.src = resolveImageSrc(i.img);
+tableImg.src = resolveImageSrc(i);
 tableImg.loading = 'lazy';
 tableImg.decoding = 'async';
 tableImg.width = 50;
@@ -597,7 +609,7 @@ list.appendChild(tr);
 
 
 const cardImg = document.createElement('img');
-cardImg.src = resolveImageSrc(i.img);
+cardImg.src = resolveImageSrc(i);
 cardImg.loading = 'lazy';
 cardImg.decoding = 'async';
 
@@ -674,7 +686,7 @@ if (collapsed) return;
 
       // Image
       const img = document.createElement('img');
-      img.src = resolveImageSrc(i.img);
+      img.src = resolveImageSrc(i);
       img.loading = 'lazy';
       img.onerror = () => {
         img.onerror = null;
