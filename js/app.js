@@ -203,6 +203,46 @@ function exportData() {
 
 window.exportData = exportData;
 
+// ==============================
+// Bulk "Check All Cards" helper
+// ==============================
+const bulkConfirmTimers = {}; // albumId -> timeoutId
+
+function handleCheckAll(albumId, albumItems) {
+  const now = Date.now();
+
+  // First click → show warning
+  if (!bulkConfirmTimers[albumId]) {
+    const warning = document.createElement('div');
+    warning.className = 'bulk-warning';
+    warning.textContent =
+      "If you press this button, all cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away.";
+
+    const container = document.querySelector(`[data-album="${albumId}"]`);
+    if (container) container.prepend(warning);
+
+    bulkConfirmTimers[albumId] = setTimeout(() => {
+      warning.remove();
+      delete bulkConfirmTimers[albumId];
+    }, 10000);
+
+    return;
+  }
+
+  // Second click (within 10 seconds) → confirm
+  albumItems.forEach(item => {
+    owned[item.id] = true;
+  });
+
+  saveOwned();
+  render();
+
+  clearTimeout(bulkConfirmTimers[albumId]);
+  delete bulkConfirmTimers[albumId];
+}
+
+
+
 /********************
  * Status helper
  ********************/
@@ -337,6 +377,16 @@ async function loadCatalog() {
 let owned = JSON.parse(
   localStorage.getItem('albumTracker_owned') || '{}'
 );
+
+function markAlbumCollected(albumItems) {
+  albumItems.forEach(item => {
+    owned[item.id] = true;
+  });
+
+  localStorage.setItem('albumTracker_owned', JSON.stringify(owned));
+  render();
+}
+
 let persistedMemberFilters = JSON.parse(
   localStorage.getItem(MEMBER_FILTER_KEY) || '{}'
 );
@@ -766,11 +816,25 @@ const percent = Math.round((albumOwned / albumItems.length) * 100) || 0;
 // Album title
 const title = document.createElement('h3');
 title.className = 'album-header-card';
+
+const albumKey = `${category}::${album}`;
+let confirmTimeout = null;
+let awaitingConfirm = false;
+
 title.innerHTML = `
   <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
   <b>${album}</b>
   — ${albumOwned}/${albumItems.length} (${percent}%)
+  <button
+    class="check-all-btn"
+    type="button"
+    data-tooltip="If you press this button, all cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away."
+  >
+    Check all cards
+  </button>
 `;
+
+
 
 title.onclick = () => {
   albumCollapseState[category][album] = !collapsed;
@@ -780,6 +844,51 @@ title.onclick = () => {
   );
   render();
 };
+
+const checkAllBtn = title.querySelector('.check-all-btn');
+
+let countdownInterval = null;
+let remainingSeconds = 10;
+const originalText = checkAllBtn.textContent;
+
+function resetConfirmButton() {
+  awaitingConfirm = false;
+  remainingSeconds = 10;
+  checkAllBtn.textContent = originalText;
+  checkAllBtn.classList.remove('show-tooltip');
+  clearInterval(countdownInterval);
+}
+
+checkAllBtn.addEventListener('click', e => {
+  e.stopPropagation();
+
+  // First click → arm confirmation
+  if (!awaitingConfirm) {
+    awaitingConfirm = true;
+    remainingSeconds = 10;
+
+    checkAllBtn.classList.add('show-tooltip');
+    checkAllBtn.textContent = `Confirm (${remainingSeconds}s)`;
+
+    countdownInterval = setInterval(() => {
+      remainingSeconds--;
+      checkAllBtn.textContent = `Confirm (${remainingSeconds}s)`;
+
+      if (remainingSeconds <= 0) {
+        resetConfirmButton();
+      }
+    }, 1000);
+
+    confirmTimeout = setTimeout(resetConfirmButton, 10000);
+    return;
+  }
+
+  // Second click → confirm
+  clearTimeout(confirmTimeout);
+  resetConfirmButton();
+  markAlbumCollected(albumItems);
+});
+
 
 gridView.appendChild(title);
 

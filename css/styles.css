@@ -17,6 +17,8 @@
   --border: #2a2a2f;
 }
 
+
+
 /* Bottom watermark */
 body::before {
   content: "";
@@ -668,6 +670,7 @@ td img {
   font-weight:bold;
   cursor:pointer;
   text-align:center;
+  flex-wrap: wrap;
 }
 
 
@@ -687,4 +690,61 @@ td img {
 .album-toggle-icon.open {
   transform: rotate(90deg);
   
+}
+
+.check-all-btn {
+  margin-left: 12px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.check-all-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.check-all-btn {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Tooltip bubble */
+.check-all-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 10%;
+  transform: translate(-50%, 4px);
+
+  width: max-content;
+  max-width: min(90vw, 320px);
+
+  background: rgba(20, 20, 20, 0.95);
+  color: #ffd966;
+  padding: 8px 10px;
+  border-radius: 6px;
+
+  font-size: 0.7rem;
+  line-height: 1.35;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  z-index: 1000;
+}
+
+
+/* Show tooltip when armed */
+.check-all-btn.show-tooltip::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
