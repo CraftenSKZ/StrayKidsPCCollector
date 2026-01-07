@@ -2,7 +2,10 @@
  * Skz Photocard Tracker – app.js
  * Works on GitHub Pages
  ***************************************************/
-const BASE_PATH = '/StrayKidsPCCollector';
+
+// Import image utilities
+import { BASE_PATH, resolveImageSrc, applyImageProps } from './utils/images.js';
+
 /************** 
  * scroll position saving
  ***************/
@@ -59,7 +62,7 @@ window.setSort = setSort;
 
 
 
-// Image source resolver with placeholder
+/* Image source resolver with placeholder
 function resolveImageSrc(item) {
   // Safety check
   if (!item?.id || typeof item.id !== 'string') {
@@ -70,7 +73,7 @@ function resolveImageSrc(item) {
   const filename = `${item.id}.webp`;
 
   return `${BASE_PATH}/assets/images/photocards/${category}/${albumFolder}/${filename}`;
-}
+} */
 
 
 
@@ -595,7 +598,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
 // ✅ CREATE IMAGE TD
 const tdImg = document.createElement('td');
 
-const tableImg = document.createElement('img');
+/*const tableImg = document.createElement('img');
 tableImg.src = resolveImageSrc(i);
 tableImg.loading = 'lazy';
 tableImg.decoding = 'async';
@@ -605,14 +608,21 @@ tableImg.height = 80;
 tableImg.onerror = () => {
   tableImg.onerror = null;
   tableImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-};
+}; 
+*/
+//✅ CREATE IMAGE WITH applyImageProps
+const tableImg = document.createElement('img');
+applyImageProps(tableImg, i);
+tdImg.appendChild(tableImg);
 
 tdImg.appendChild(tableImg);
 tr.appendChild(tdImg);
 
 list.appendChild(tr);
 
-
+//********************
+// Mobile card view
+//********************/
       const card = document.createElement('div');
       card.className = 'card' + (owned[i.id] ? ' owned' : '');
       card.appendChild(
@@ -620,7 +630,7 @@ list.appendChild(tr);
       );
 
 
-const cardImg = document.createElement('img');
+/*const cardImg = document.createElement('img');
 cardImg.src = resolveImageSrc(i);
 cardImg.loading = 'lazy';
 cardImg.decoding = 'async';
@@ -631,6 +641,12 @@ cardImg.onerror = () => {
 };
 
 card.appendChild(cardImg);
+*/
+//✅ CREATE IMAGE WITH applyImageProps
+const cardImg = document.createElement('img');
+applyImageProps(cardImg, i);
+card.appendChild(cardImg);
+
       const textWrap = document.createElement('div');
       const title = document.createElement('div');
       title.className = 'title';
@@ -696,7 +712,7 @@ if (collapsed) return;
       const card = document.createElement('div');
       card.className = 'grid-card' + (owned[i.id] ? ' owned' : '');
 
-      // Image
+      /* Image
       const img = document.createElement('img');
       img.src = resolveImageSrc(i);
       img.loading = 'lazy';
@@ -704,6 +720,11 @@ if (collapsed) return;
         img.onerror = null;
         img.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
       };
+      */
+     
+      // Image with applyImageProps
+      const img = document.createElement('img');
+      applyImageProps(img, i);
 
       // Name
       const name = document.createElement('div');
