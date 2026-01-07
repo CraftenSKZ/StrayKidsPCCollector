@@ -536,7 +536,7 @@ items = items.filter(i => {
 });
 
 // Sort items
-  items = sortItems(items);
+  /*items = sortItems(items);*/
 
   buildMemberFilters(CATALOG[category] || []);
 
@@ -560,10 +560,11 @@ items = items.filter(i => {
   }
 
 Object.entries(albums).forEach(([album, albumItems]) => {
-  const albumOwned = albumItems.filter(i => owned[i.id]).length;
-  const percent = albumItems.length
-    ? Math.round((albumOwned / albumItems.length) * 100)
-    : 0;
+  const sortedAlbumItems = sortItems(albumItems);
+  const albumOwned = sortedAlbumItems.filter(i => owned[i.id]).length;
+const percent = sortedAlbumItems.length
+  ? Math.round((albumOwned / sortedAlbumItems.length) * 100)
+  : 0;
 
   const collapsed =
     albumCollapseState[category]?.[album] ?? true;
@@ -606,7 +607,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
   if (collapsed) return;
 
   /* ===== ITEMS ===== */
-    albumItems.forEach(i => {
+    sortedAlbumItems.forEach(i => {
       const tr = document.createElement('tr');
       if (owned[i.id]) tr.classList.add('owned');
 
