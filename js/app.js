@@ -758,12 +758,18 @@ Object.entries(albums).forEach(([album, albumItems]) => {
   }
   const collapsed = albumCollapseState[category][album] ?? true;
 
+
+  // Album completion (grid view)
+const albumOwned = albumItems.filter(i => owned[i.id]).length;
+const percent = Math.round((albumOwned / albumItems.length) * 100) || 0;
+
 // Album title
 const title = document.createElement('h3');
-title.className = 'grid-album-title';
+title.className = 'album-header-card';
 title.innerHTML = `
   <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
-  ${album}
+  <b>${album}</b>
+  — ${albumOwned}/${albumItems.length} (${percent}%)
 `;
 
 title.onclick = () => {

@@ -75,8 +75,7 @@ h1, h2, h3 {
 }
 
 .album-header b,
-.album-header-card b,
-.grid-album-title {
+.album-header-card {
   font-weight: 600;
 }
 
@@ -452,13 +451,6 @@ th:hover {
   padding: 0.5rem;
 }
 
-.grid-album-title {
-  text-align: center;
-  margin: 1.5rem 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
 .album-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr); /* MAX 10 per row */
@@ -549,29 +541,6 @@ th:hover {
 .grid-card.owned {
   opacity: 0.4;
 }
-
-.grid-album-separator {
-  height: 5px;
-  margin: 1.25rem 0;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #444,
-    transparent
-  );
-  opacity: 0.8;
-}
-
-
-.grid-album-title {
-  cursor: pointer;
-  user-select: none;
-}
-
-.grid-album-title:hover {
-  opacity: 0.25;
-}
-
 
 /* Custom checkbox */
 .checkbox {
@@ -694,10 +663,12 @@ td img {
   border: 1px solid var(--border);
   padding:10px;
   border-radius:10px;
-  margin:12px 0 6px;
+  margin:12px auto 6px;
   font-weight:bold;
   cursor:pointer;
+  text-align:center;
 }
+
 
 .album-toggle-icon {
   display: inline-block;
@@ -708,12 +679,11 @@ td img {
   line-height: 1;
   color: var(--accent);
   user-select: none;
-}
-
-.album-toggle-icon {
   transition: transform 0.2s ease;
+
 }
 
 .album-toggle-icon.open {
   transform: rotate(90deg);
+  
 }
