@@ -949,8 +949,8 @@ title.className = 'album-header-card';
 const isFullyCollected = albumOwned === albumItems.length;
 
 const buttonLabel = isFullyCollected
-  ? 'Uncheck all cards'
-  : 'Check all cards';
+  ? 'Uncheck visible cards'
+  : 'Check visible cards';
 
 const tooltipText = isFullyCollected
   ? "If you press this button, all cards in this album will be set to 'Uncollected'. If you do not want this, just wait 10 seconds and this warning will go away."
