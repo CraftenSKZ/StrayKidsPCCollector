@@ -32,20 +32,21 @@ body::before {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  opacity: 0.35;              /* 🔑 low opacity */
+  opacity: 0.4;              /* 🔑 low opacity */
   pointer-events: none;       /* 🔑 cannot block clicks */
-  z-index: -1;              /* 🔑 behind all content */
+  z-index: 0;              /* 🔑 behind all content */
 }
 
-/* Ensure content stays above watermark
+/* Ensure content stays above watermark */
 body > * {
   position: relative;
   z-index: 1;
-}*/
+}
 
 
 body {
   font-family: Segoe UI, Arial, sans-serif;
+  position: relative;
   background: var(--bg);
   color: var(--text);
   margin: 0;
