@@ -2,7 +2,6 @@
  * Skz Photocard Tracker – app.js
  * Works on GitHub Pages
  ***************************************************/
-
 // Import image utilities
 import { BASE_PATH, resolveImageSrc, applyImageProps } from './utils/images.js';
 
@@ -30,6 +29,21 @@ function setSort(key) {
   }
   render();
 }
+
+// Member order for sorting
+const MEMBER_ORDER = [
+  'Bang Chan',
+  'Lee Know',
+  'Changbin',
+  'Hyunjin',
+  'HAN',
+  'Felix',
+  'Seungmin',
+  'I.N.',
+  'UNIT'
+];
+
+
 
 //*****************************************
 // Update sort indicators in table headers
@@ -89,35 +103,52 @@ function buildMemberFilters(items) {
   memberFilters.innerHTML = '';
 
   // Collect unique members from the catalog
-  const members = [...new Set(
-    items
-      .map(i => i.member)
-      .filter(Boolean)
-  )].sort();
+const members = [...new Set(
+  items
+    .map(i => i.member)
+    .filter(Boolean)
+)].sort((a, b) => {
+  const ia = MEMBER_ORDER.indexOf(a);
+  const ib = MEMBER_ORDER.indexOf(b);
+
+  // Both known → follow fixed order
+  if (ia !== -1 && ib !== -1) return ia - ib;
+
+  // Known members first
+  if (ia !== -1) return -1;
+  if (ib !== -1) return 1;
+
+  // Fallback alphabetical for unknowns
+  return a.localeCompare(b);
+});
+
 
   members.forEach(member => {
     const isChecked = persistedMemberFilters[member] !== false;
 
-    const label = document.createElement('label');
-    label.className = 'member-filter';
+const label = document.createElement('label');
+label.className = 'member-chip';
 
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.checked = isChecked;
+const checkbox = document.createElement('input');
+checkbox.type = 'checkbox';
+checkbox.checked = isChecked;
 
-    checkbox.onchange = () => {
-      persistedMemberFilters[member] = checkbox.checked;
-      localStorage.setItem(
-        MEMBER_FILTER_KEY,
-        JSON.stringify(persistedMemberFilters)
-      );
-      render();
-    };
+checkbox.onchange = () => {
+  persistedMemberFilters[member] = checkbox.checked;
+  localStorage.setItem(
+    MEMBER_FILTER_KEY,
+    JSON.stringify(persistedMemberFilters)
+  );
+  render();
+};
 
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(member));
+const span = document.createElement('span');
+span.textContent = member;
 
-    memberFilters.appendChild(label);
+label.appendChild(checkbox);
+label.appendChild(span);
+memberFilters.appendChild(label);
+
   });
 }
 
@@ -535,7 +566,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
     : 0;
 
   const collapsed =
-    albumCollapseState[category]?.[album] ?? false;
+    albumCollapseState[category]?.[album] ?? true;
 
   const triangle = collapsed ? '▶' : '▼';
 
@@ -682,7 +713,7 @@ Object.entries(albums).forEach(([album, albumItems]) => {
   if (!albumCollapseState[category]) {
     albumCollapseState[category] = {};
   }
-  const collapsed = albumCollapseState[category][album] ?? false;
+  const collapsed = albumCollapseState[category][album] ?? true;
 
     // Album title
 const title = document.createElement('h3');
@@ -721,7 +752,7 @@ if (collapsed) return;
         img.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
       };
       */
-     
+
       // Image with applyImageProps
       const img = document.createElement('img');
       applyImageProps(img, i);

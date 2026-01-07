@@ -51,9 +51,11 @@
 
 <!--Expand/Collapse Albums Toggle, and List View/Grid View buttons-->
 <button id="toggleAlbumsBtn" onclick="toggleAllAlbums()"> Collapse All </button>
+
 <button onclick="setViewMode('list')">List View</button>
 <button onclick="setViewMode('grid')">Grid View</button>
 
+<div class="table-wrapper"></div>
 <table>
 <thead>
   <tr>
@@ -72,6 +74,7 @@
 
 <tbody id="list"></tbody>
 </table>
+</div>
 <div id="gridView" class="grid-view"></div>
 <div class="card-list" id="cardList"></div>
 

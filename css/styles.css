@@ -1,22 +1,248 @@
 :root {
-  --bg:#1b1b1b;--panel:#262626;--text:#eaeaea;--muted:#999;--accent:#c9a24d;
-}
-body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:16px}
-h1{margin:0 0 12px 0;font-size:1.4rem}
-.panel{background:var(--panel);padding:12px;border-radius:10px;margin-bottom:12px}
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-input,select,button{margin:10px;padding:10px;border-radius:8px;border:1px solid #444;background:#111;color:var(--text);font-size:1rem}
-button{cursor:pointer}
-.tabs{display:flex;gap:6px;overflow-x:auto}
-.tabs button{background:#333;white-space:nowrap;flex:0 0 auto}
-.tabs button.active{background:var(--accent);color:#000}
-.progress{margin:10px 0;font-weight:bold}
-.members label{margin-right:8px;white-space:nowrap}
+  /* Base */
+  --bg: #0f0f10;
+  --panel: #18181b;
+  --panel-alt: #1f1f23;
 
-table{width:100%;border-collapse:collapse}
-th,td{border:1px solid #444;padding:8px;text-align:left}
-th{background:#333}
-tr.owned{background:#2f2f2f;color:var(--muted)}
+  /* Text */
+  --text: #eaeaea;
+  --muted: #a1a1aa;
+
+  /* Stray Kids accent */
+  --accent: #e11d2e;        /* SKZ red */
+  --accent-soft: #7f1d1d;   /* dark red */
+  --accent-glow: #f43f5e;   /* highlight */
+
+  /* Borders */
+  --border: #2a2a2f;
+}
+
+/* Top watermark */
+body::before {
+  content: "";
+  position: fixed;
+  bottom: 8px;
+  left: 16%;
+  transform: translateX(-50%);
+
+  width: 1050px;
+  height: 300px;
+
+  background-image: url("/assets/images/ui/skz-watermark.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.35;              /* 🔑 low opacity */
+  pointer-events: none;       /* 🔑 cannot block clicks */
+  z-index: 0;
+}
+
+/* Ensure content stays above watermark */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+body {
+  font-family: Segoe UI, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+input,
+select,
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.tabs button {
+  background: #1a1a1d;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.tabs button.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(225,29,46,0.4);
+}
+
+.progress {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.members label {
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+/* ===== Member Filter Chips ===== */
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.member-chip {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.member-chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.member-chip span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: #1f1f1f;
+  border: 1px solid #444;
+  color: #ccc;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Checked state */
+.member-chip input:checked + span {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Hover / focus */
+.member-chip:hover span {
+  border-color: var(--accent);
+}
+
+/* Keyboard focus */
+.member-chip input:focus-visible + span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+
+
+/* TABLE STYLES */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Center and constrain list table */
+.table-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Row striping and hover effect */
+tbody tr:nth-child(even):not(.album-header) {
+  background: #242424;
+}
+
+tbody tr:hover:not(.album-header) {
+  background: #2b2b2b;
+}
+
+/* Column sizing */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 56px; /* checkbox */
+  text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 40%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 20%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 80px; /* image */
+  text-align: center;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th,
+td {
+  border: 1px solid;
+  border-color: var(--border);
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+th {
+  background: var(--panel-alt);
+  color: var(--text);
+  font-weight: 600;
+}
+
+tr.owned{
+  background: #141416;
+  color: var(--muted);
+}
+
+
 img{width:50px;opacity:.9}
 tr.owned img{opacity:.3}
 
@@ -26,6 +252,8 @@ tr.owned img{opacity:.3}
 .card img{width:56px;border-radius:6px}
 .card .title{font-weight:bold}
 .card .meta{font-size:.9em;color:#ccc}
+
+
 
 @media (max-width: 720px){
   body{padding:12px}
@@ -169,15 +397,15 @@ th:hover {
 }
 
 .checkbox.checked {
-  background: #7CFF9B;
-  border-color: #7CFF9B;
+  background: var(--accent);
+  border-color: #000000;
 }
 
 .checkbox.checked::after {
   content: '✓';
   font-size: 14px;
   font-weight: bold;
-  color: #000;
+  color: #000000;
 }
 
 /* Bigger tap target without layout shift */
@@ -208,6 +436,16 @@ td:first-child,
   align-self: flex-start;
 }
 
+/* Checkbox column alignment */
+td:first-child {
+  vertical-align: middle;
+}
+
+/* Image polish */
+td img {
+  border-radius: 6px;
+  background: #111;
+}
 
 /* Fix for extremely small screens */
 @media (max-width: 30px) {
@@ -218,12 +456,28 @@ td:first-child,
 
 /* Album Header Styles */
 .album-header {
-  background:#1f1f1f;
-  font-weight:bold;
+  background: linear-gradient(
+    90deg,
+    rgba(225,29,46,0.12),
+    transparent
+  );
+  font-weight: bold;
+  border-top: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+/* Make the entire row feel like a banner */
+.album-header td {
+  padding: 12px 10px;
 }
 
 .album-header-card {
-  background:#1f1f1f;
+  background: linear-gradient(
+    90deg,
+    rgba(225,29,46,0.12),
+    transparent
+  );
+  border: 1px solid var(--border);
   padding:10px;
   border-radius:10px;
   margin:12px 0 6px;
@@ -235,6 +489,6 @@ td:first-child,
   display: inline-block;
   width: 1em;
   margin-right: 6px;
-  color: #c9a24d;
+  color: var(--accent);
   font-weight: bold;
 }
