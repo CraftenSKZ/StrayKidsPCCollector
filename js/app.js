@@ -301,6 +301,17 @@ const memberFilters = document.getElementById('memberFilters');
 const progress = document.getElementById('progress');
 
 /********************
+ * Event listeners
+ ********************/
+searchInput.addEventListener('input', () => {
+  render();
+});
+ownedFilterSelect.addEventListener('change', () => {
+  render();
+});
+
+
+/********************
  * Catalog loading
  ********************/
 const CATEGORIES = [
@@ -500,7 +511,8 @@ function render() {
   list.innerHTML = '';
   cardList.innerHTML = '';
 
- let items = CATALOG[category] || [];
+  const allItems = CATALOG[category] || [];
+  let items = allItems;
 
 // Handle view mode 
 const gridView = document.getElementById('gridView');
@@ -548,12 +560,16 @@ items = items.filter(i => {
   progress.textContent =
   `Completion: ${ownedCount}/${items.length} (${totalPercent}%)`;
 
-  const albums = {};
-  items.forEach(i => {
-    const album = i.album || 'Unknown';
-    if (!albums[album]) albums[album] = [];
-    albums[album].push(i);
-  });
+const albums = {};
+allItems.forEach(i => {
+  const album = i.album || 'Unknown';
+  if (!albums[album]) albums[album] = [];
+});
+items.forEach(i => {
+  const album = i.album || 'Unknown';
+  albums[album].push(i);
+});
+
 
   if (!albumCollapseState[category]) {
     albumCollapseState[category] = {};
@@ -604,7 +620,28 @@ const percent = sortedAlbumItems.length
   mobileHeader.onclick = header.onclick;
   cardList.appendChild(mobileHeader);
 
-  if (collapsed) return;
+ if (collapsed) return;
+
+// 🌫️ Empty album hint
+if (sortedAlbumItems.length === 0) {
+  // --- Desktop (table row)
+  const emptyRow = document.createElement('tr');
+  emptyRow.className = 'album-empty-row';
+  emptyRow.innerHTML = `
+    <td colspan="4" class="album-empty-hint">
+      No matching cards
+    </td>
+  `;
+  list.appendChild(emptyRow);
+
+  // --- Mobile (card view)
+  const emptyCard = document.createElement('div');
+  emptyCard.className = 'album-empty-card';
+  emptyCard.textContent = 'No matching cards';
+  cardList.appendChild(emptyCard);
+
+  return;
+}
 
   /* ===== ITEMS ===== */
     sortedAlbumItems.forEach(i => {
@@ -625,8 +662,6 @@ const percent = sortedAlbumItems.length
       tdMember.textContent = i.member || '';
       tr.appendChild(tdMember);
 
-
-
 // ✅ CREATE IMAGE TD
 const tdImg = document.createElement('td');
 
@@ -645,8 +680,6 @@ tableImg.onerror = () => {
 //✅ CREATE IMAGE WITH applyImageProps
 const tableImg = document.createElement('img');
 applyImageProps(tableImg, i);
-tdImg.appendChild(tableImg);
-
 tdImg.appendChild(tableImg);
 tr.appendChild(tdImg);
 
@@ -699,16 +732,25 @@ meta.textContent = i.member || '';
 //********************
 // Grid view renderer
 //********************/ 
-function renderGridView(items) {
+function renderGridView(allItems, filteredItems) {
+
   const gridView = document.getElementById('gridView');
   gridView.innerHTML = '';
 
-  const albums = {};
-  items.forEach(i => {
-    const album = i.album || 'Unknown';
-    if (!albums[album]) albums[album] = [];
-    albums[album].push(i);
-  });
+const albums = {};
+
+// 1. Create all album keys from ALL items
+allItems.forEach(i => {
+  const album = i.album || 'Unknown';
+  if (!albums[album]) albums[album] = [];
+});
+
+// 2. Fill album contents using FILTERED items
+filteredItems.forEach(i => {
+  const album = i.album || 'Unknown';
+  albums[album].push(i);
+});
+
 
 Object.entries(albums).forEach(([album, albumItems]) => {
   if (!albumCollapseState[category]) {
@@ -736,6 +778,20 @@ title.onclick = () => {
 gridView.appendChild(title);
 
 if (collapsed) return;
+
+// 🌫️ Empty album hint
+if (albumItems.length === 0) {
+  const empty = document.createElement('div');
+  empty.className = 'grid-empty-hint';
+  empty.textContent = 'No matching cards';
+  gridView.appendChild(empty);
+
+  // Spacer still added
+  const separator = document.createElement('div');
+  separator.className = 'grid-album-separator';
+  gridView.appendChild(separator);
+  return;
+}
     // Album grid
     const grid = document.createElement('div');
     grid.className = 'album-grid';
@@ -783,9 +839,10 @@ if (collapsed) return;
 }
 
 if (viewMode === 'grid') {
-  renderGridView(items);
+  renderGridView(allItems, items);
   return;
 }
+
 
   updateToggleAlbumsButton();
 }

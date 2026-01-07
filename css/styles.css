@@ -285,6 +285,15 @@ tr.owned img{opacity:.3}
   }
 }
 
+.grid-empty-hint {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 14px 0;
+  opacity: 0.85;
+}
+
+
 .grid-active table,
 .grid-active .card-list {
   display: none !important;
@@ -320,9 +329,60 @@ th:hover {
 
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(10, 1fr); /* MAX 10 per row */
+  gap: 12px;
+
+  /* Center grid under album title */
+  justify-content: center;
+  max-width: 1500px; /* prevents full-page stretch */
+  margin: 0 auto 16px;
 }
+
+/* Desktop-only grid card size boost */
+@media (min-width: 1024px) {
+  .album-grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .grid-card img {
+    width: 60px;
+    height: 150px;
+  }
+
+  .grid-card {
+    padding: 8px;
+  }
+
+  .grid-name {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .album-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .album-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .album-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 
 .grid-card {
   display: grid;
@@ -452,6 +512,28 @@ td img {
   input[type="checkbox"] {
     transform: scale(1);
   }
+}
+/* Empty album hint – desktop */
+.album-empty-row td {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  background: linear-gradient(
+    to right,
+    rgba(201,162,77,0.05),
+    rgba(0,0,0,0),
+    rgba(201,162,77,0.05)
+  );
+}
+
+/* Empty album hint – mobile */
+.album-empty-card {
+  text-align: center;
+  padding: 10px;
+  margin: 6px 0 12px;
+  font-style: italic;
+  color: #777;
+  opacity: 0.85;
 }
 
 /* Album Header Styles */
