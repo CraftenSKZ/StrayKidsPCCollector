@@ -592,7 +592,7 @@ const percent = sortedAlbumItems.length
   header.className = 'album-header';
   header.innerHTML = `
     <td colspan="4" style="cursor:pointer">
-      <span class="album-toggle-icon">${triangle}</span>
+      <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
       <b>${album}</b>
       — ${albumOwned}/${albumItems.length} (${percent}%)
     </td>
@@ -613,7 +613,7 @@ const percent = sortedAlbumItems.length
   const mobileHeader = document.createElement('div');
   mobileHeader.className = 'album-header-card';
   mobileHeader.innerHTML = `
-    <span class="album-toggle-icon">${triangle}</span>
+    <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
     <b>${album}</b>
     — ${albumOwned}/${albumItems.length} (${percent}%)
   `;
@@ -758,11 +758,11 @@ Object.entries(albums).forEach(([album, albumItems]) => {
   }
   const collapsed = albumCollapseState[category][album] ?? true;
 
-    // Album title
+// Album title
 const title = document.createElement('h3');
 title.className = 'grid-album-title';
 title.innerHTML = `
-  <span class="album-toggle-icon">${collapsed ? '▶' : '▼'}</span>
+  <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
   ${album}
 `;
 
@@ -846,6 +846,29 @@ if (viewMode === 'grid') {
 
   updateToggleAlbumsButton();
 }
+
+// Mobile-friendly tooltip locking
+document.addEventListener('click', (e) => {
+  const hint = e.target.closest('.export-hint');
+  const allHints = document.querySelectorAll('.export-hint');
+
+  // Close all tooltips first
+  allHints.forEach(h => {
+    if (h !== hint) h.classList.remove('tooltip-open');
+  });
+
+  // If clicking the info icon, toggle its tooltip
+  if (hint && e.target.classList.contains('info-icon')) {
+    e.preventDefault();
+    hint.classList.toggle('tooltip-open');
+  }
+});
+
+// Prevent clicks inside tooltip from closing it
+document.querySelectorAll('.info-tooltip').forEach(tip => {
+  tip.addEventListener('click', e => e.stopPropagation());
+});
+
 
 /********************
  * Boot

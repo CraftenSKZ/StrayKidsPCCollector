@@ -21,27 +21,27 @@
 body::before {
   content: "";
   position: fixed;
-  bottom: 8px;
+  top: 8px;
   left: 16%;
-  transform: translateX(-50%);
+  transform: translateX(+50%);
 
   width: 1050px;
   height: 300px;
 
   background-image: url("/assets/images/ui/skz-watermark.webp");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: contain;
   opacity: 0.35;              /* 🔑 low opacity */
   pointer-events: none;       /* 🔑 cannot block clicks */
-  z-index: 0;
+  z-index: -1;              /* 🔑 behind all content */
 }
 
-/* Ensure content stays above watermark */
+/* Ensure content stays above watermark
 body > * {
   position: relative;
   z-index: 1;
-}
+}*/
 
 
 body {
@@ -57,13 +57,145 @@ h1 {
   font-size: 1.4rem;
 }
 
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+.panel.info {
+  max-width: 900px;
+  text-align: center;
+}
+
+.panel .search-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.album-header b,
+.album-header-card b,
+.grid-album-title {
+  font-weight: 600;
+}
+
+.panel .controls,
+.panel .tabs,
+.panel .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+/* Top bar layout */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Keep tabs tidy */
+.top-bar .tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Controls stay compact */
+.top-bar .controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Prevent inputs from stretching */
+.top-bar input,
+.top-bar select {
+  width: auto;
+  min-width: 120px;
+}
+
+
 .panel {
   background: var(--panel);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(194, 57, 57, 0.308);
+  backdrop-filter: blur(px);
   padding: 12px;
   border-radius: 10px;
   margin-bottom: 12px;
+  width: fit-content;
+  max-width: min(1100px, calc(100vw - 32px));
+  margin: 12px auto;  
+  overflow: visible; /* ✅ ADD THIS */
 }
+
+
+
+
+/* Info icon container */
+.export-hint {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ℹ icon */
+.info-icon {
+  font-size: 1rem;
+  color: var(--muted);
+  cursor: help;
+  user-select: none;
+}
+
+/* Tooltip */
+.info-tooltip {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  z-index: 100; /* ✅ higher than panels */
+
+
+  min-width: 260px;
+  max-width: 320px;
+
+  background: #111;
+  color: var(--text);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px 12px;
+
+  font-size: 0.85rem;
+  line-height: 1.4;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show on hover or focus (mobile friendly) */
+.info-icon:hover + .info-tooltip,
+.info-icon:focus + .info-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Optional: make Import look like a button */
+.import-btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: var(--text);
+  cursor: pointer;
+}
+
 
 .controls {
   display: flex;
@@ -91,7 +223,7 @@ button {
 .tabs {
   display: flex;
   gap: 6px;
-  overflow-x: auto;
+  
 }
 
 .tabs button {
@@ -571,6 +703,17 @@ td img {
   display: inline-block;
   width: 1em;
   margin-right: 6px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
   color: var(--accent);
-  font-weight: bold;
+  user-select: none;
+}
+
+.album-toggle-icon {
+  transition: transform 0.2s ease;
+}
+
+.album-toggle-icon.open {
+  transform: rotate(90deg);
 }

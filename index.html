@@ -9,49 +9,62 @@
 <body>
 <h1>Stray Kids Album & POB Tracker</h1>
 
-<div class="panel" style="font-size:0.9em;color:#ccc">
-  Your collection is saved locally in your browser. Switching devices, browsers, or clearing site data will reset your checklist.
-  Use <b>Export</b> to back up your collection.
+<div class="panel export-panel">
+  <div class="export-hint">
+    <span class="info-icon" tabindex="0" aria-label="Backup information">❓what is this</span>
+    <span class="info-tooltip">
+      Your collection is saved locally in your browser.
+      Switching devices, browsers, or clearing site data will reset your checklist.
+      Use <b>Export</b> to back up your collection.
+    </span>
+  </div>
+
+  <div class="controls">
+    <button id="exportBtn">Export</button>
+
+    <label class="import-btn">
+      Import
+      <input type="file" accept=".json" hidden onchange="importData(event)">
+    </label>
+
+    <span id="backupStatus"></span>
+  </div>
 </div>
 
-<div class="panel controls">
-  <button id="exportBtn">Export</button>
-  <label style="cursor:pointer">Import
-    <input type="file" accept=".json" hidden onchange="importData(event)">
-  </label>
-  <span id="backupStatus" style="margin-left:8px;color:#aaa"></span>
+
+
+<div class="panel top-bar">
+  <div class="tabs">
+    <button data-category="korean_albums" onclick="setCategory('korean_albums')" class="active">
+      Korean Albums
+    </button>
+    <button data-category="japanese_albums" onclick="setCategory('japanese_albums')">
+      Japanese Albums
+    </button>
+    <button data-category="korean_pob" onclick="setCategory('korean_pob')">
+      Korean POB
+    </button>
+    <button data-category="japanese_pob" onclick="setCategory('japanese_pob')">
+      Japanese POB
+    </button>
+  </div>
+
+  <div class="controls">
+    <input id="search" placeholder="Search" />
+    <select id="ownedFilter">
+      <option value="all">All</option>
+      <option value="owned">Owned</option>
+      <option value="unowned">Unowned</option>
+    </select>
+  </div>
 </div>
 
-<div class="panel tabs">
-  <button data-category="korean_albums" onclick="setCategory('korean_albums')" class="active">
-    Korean Albums
-  </button>
-  <button data-category="japanese_albums" onclick="setCategory('japanese_albums')">
-    Japanese Albums
-  </button>
-  <button data-category="korean_pob" onclick="setCategory('korean_pob')">
-    Korean POB
-  </button>
-  <button data-category="japanese_pob" onclick="setCategory('japanese_pob')">
-    Japanese POB
-  </button>
-</div>
-
-<div class="panel controls">
-  <input id="search" placeholder="Search" oninput="render()">
-  <select id="ownedFilter" onchange="render()">
-    <option value="all">All</option>
-    <option value="owned">Owned</option>
-    <option value="unowned">Unowned</option>
-  </select>
-</div>
 
 <div class="panel members" id="memberFilters"></div>
 <div class="progress" id="progress"></div>
 
 <!--Expand/Collapse Albums Toggle, and List View/Grid View buttons-->
 <button id="toggleAlbumsBtn" onclick="toggleAllAlbums()"> Collapse All </button>
-
 <button onclick="setViewMode('list')">List View</button>
 <button onclick="setViewMode('grid')">Grid View</button>
 
