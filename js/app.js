@@ -203,46 +203,6 @@ function exportData() {
 
 window.exportData = exportData;
 
-// ==============================
-// Bulk "Check All Cards" helper
-// ==============================
-const bulkConfirmTimers = {}; // albumId -> timeoutId
-
-function handleCheckAll(albumId, albumItems) {
-  const now = Date.now();
-
-  // First click → show warning
-  if (!bulkConfirmTimers[albumId]) {
-    const warning = document.createElement('div');
-    warning.className = 'bulk-warning';
-    warning.textContent =
-      "If you press this button, all cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away.";
-
-    const container = document.querySelector(`[data-album="${albumId}"]`);
-    if (container) container.prepend(warning);
-
-    bulkConfirmTimers[albumId] = setTimeout(() => {
-      warning.remove();
-      delete bulkConfirmTimers[albumId];
-    }, 10000);
-
-    return;
-  }
-
-  // Second click (within 10 seconds) → confirm
-  albumItems.forEach(item => {
-    owned[item.id] = true;
-  });
-
-  saveOwned();
-  render();
-
-  clearTimeout(bulkConfirmTimers[albumId]);
-  delete bulkConfirmTimers[albumId];
-}
-
-
-
 /********************
  * Status helper
  ********************/
@@ -378,6 +338,9 @@ let owned = JSON.parse(
   localStorage.getItem('albumTracker_owned') || '{}'
 );
 
+//********************
+// Mark / unmark entire album
+//********************/ 
 function markAlbumCollected(albumItems) {
   albumItems.forEach(item => {
     owned[item.id] = true;
@@ -386,7 +349,30 @@ function markAlbumCollected(albumItems) {
   localStorage.setItem('albumTracker_owned', JSON.stringify(owned));
   render();
 }
+function unmarkAlbumCollected(albumItems) {
+  albumItems.forEach(item => {
+    delete owned[item.id];
+  });
 
+  localStorage.setItem('albumTracker_owned', JSON.stringify(owned));
+  render();
+}
+
+//********************
+// Apply member filters to album items
+//********************/
+function applyMemberFiltersToAlbumItems(albumItems) {
+  return albumItems.filter(i => {
+    if (!i.member) return true;
+    return persistedMemberFilters[i.member] !== false;
+  });
+}
+
+
+
+//********************
+// Load persisted member filters
+//********************/
 let persistedMemberFilters = JSON.parse(
   localStorage.getItem(MEMBER_FILTER_KEY) || '{}'
 );
@@ -638,15 +624,88 @@ const percent = sortedAlbumItems.length
   const triangle = collapsed ? '▶' : '▼';
 
   /* ===== TABLE HEADER ===== */
-  const header = document.createElement('tr');
-  header.className = 'album-header';
-  header.innerHTML = `
-    <td colspan="4" style="cursor:pointer">
-      <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
-      <b>${album}</b>
-      — ${albumOwned}/${albumItems.length} (${percent}%)
-    </td>
-  `;
+const header = document.createElement('tr');
+header.className = 'album-header';
+
+const isFullyCollected = albumOwned === albumItems.length;
+
+const buttonLabel = isFullyCollected
+  ? 'Uncheck all cards'
+  : 'Check all cards';
+
+const tooltipText = isFullyCollected
+  ? "If you press this button, all visible cards in this album will be set to 'Uncollected'. If you do not want this, just wait 10 seconds and this warning will go away."
+  : "If you press this button, all visible cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away.";
+
+header.innerHTML = `
+  <td colspan="4" class="album-header-cell">
+    <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
+    <b>${album}</b>
+    — ${albumOwned}/${albumItems.length} (${percent}%)
+    <button
+      class="check-all-btn"
+      type="button"
+      data-tooltip="${tooltipText}"
+      data-action="${isFullyCollected ? 'uncheck' : 'check'}"
+    >
+      ${buttonLabel}
+    </button>
+  </td>
+`;
+
+const headerCell = header.querySelector('.album-header-cell');
+const checkAllBtn = header.querySelector('.check-all-btn');
+
+let countdownInterval = null;
+let remainingSeconds = 10;
+let awaitingConfirm = false;
+let confirmTimeout = null;
+
+const originalText = checkAllBtn.textContent;
+const action = checkAllBtn.dataset.action;
+
+function resetConfirmButton() {
+  awaitingConfirm = false;
+  remainingSeconds = 10;
+  checkAllBtn.textContent = originalText;
+  checkAllBtn.classList.remove('show-tooltip');
+  clearInterval(countdownInterval);
+}
+
+checkAllBtn.addEventListener('click', e => {
+  e.stopPropagation();
+
+  if (!awaitingConfirm) {
+    awaitingConfirm = true;
+    remainingSeconds = 10;
+
+    checkAllBtn.classList.add('show-tooltip');
+    checkAllBtn.textContent = `Confirm (${remainingSeconds}s)`;
+
+    countdownInterval = setInterval(() => {
+      remainingSeconds--;
+      checkAllBtn.textContent = `Confirm (${remainingSeconds}s)`;
+      if (remainingSeconds <= 0) resetConfirmButton();
+    }, 1000);
+
+    confirmTimeout = setTimeout(resetConfirmButton, 10000);
+    return;
+  }
+
+  clearTimeout(confirmTimeout);
+  resetConfirmButton();
+
+  const filteredAlbumItems =
+    applyMemberFiltersToAlbumItems(albumItems);
+
+  if (action === 'check') {
+    markAlbumCollected(filteredAlbumItems);
+  } else {
+    unmarkAlbumCollected(filteredAlbumItems);
+  }
+});
+
+
 
   header.onclick = () => {
     albumCollapseState[category][album] = !collapsed;
@@ -660,15 +719,85 @@ const percent = sortedAlbumItems.length
   list.appendChild(header);
 
   /* ===== MOBILE HEADER ===== */
-  const mobileHeader = document.createElement('div');
-  mobileHeader.className = 'album-header-card';
-  mobileHeader.innerHTML = `
-    <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
-    <b>${album}</b>
-    — ${albumOwned}/${albumItems.length} (${percent}%)
-  `;
-  mobileHeader.onclick = header.onclick;
+const mobileHeader = document.createElement('div');
+mobileHeader.className = 'album-header-card';
+
+mobileHeader.innerHTML = `
+  <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
+  <b>${album}</b>
+  — ${albumOwned}/${albumItems.length} (${percent}%)
+  <button
+    class="check-all-btn"
+    type="button"
+    data-tooltip="${tooltipText}"
+    data-action="${isFullyCollected ? 'uncheck' : 'check'}"
+  >
+    ${buttonLabel}
+  </button>
+`;
+
+mobileHeader.onclick = header.onclick;
+const mobileBtn = mobileHeader.querySelector('.check-all-btn');
+
   cardList.appendChild(mobileHeader);
+let mobileCountdownInterval = null;
+let mobileRemainingSeconds = 10;
+let mobileAwaitingConfirm = false;
+let mobileConfirmTimeout = null;
+
+const mobileOriginalText = mobileBtn.textContent;
+const mobileAction = mobileBtn.dataset.action;
+
+function resetMobileConfirmButton() {
+  mobileAwaitingConfirm = false;
+  mobileRemainingSeconds = 10;
+  mobileBtn.textContent = mobileOriginalText;
+  mobileBtn.classList.remove('show-tooltip');
+  clearInterval(mobileCountdownInterval);
+}
+
+mobileBtn.addEventListener('click', e => {
+  e.stopPropagation();
+
+  // First click → arm confirmation
+  if (!mobileAwaitingConfirm) {
+    mobileAwaitingConfirm = true;
+    mobileRemainingSeconds = 10;
+
+    mobileBtn.classList.add('show-tooltip');
+    mobileBtn.textContent = `Confirm (${mobileRemainingSeconds}s)`;
+
+    mobileCountdownInterval = setInterval(() => {
+      mobileRemainingSeconds--;
+      mobileBtn.textContent = `Confirm (${mobileRemainingSeconds}s)`;
+
+      if (mobileRemainingSeconds <= 0) {
+        resetMobileConfirmButton();
+      }
+    }, 1000);
+
+    mobileConfirmTimeout = setTimeout(
+      resetMobileConfirmButton,
+      10000
+    );
+    return;
+  }
+
+  // Second click → confirm
+  clearTimeout(mobileConfirmTimeout);
+  resetMobileConfirmButton();
+
+  const filteredAlbumItems =
+    applyMemberFiltersToAlbumItems(albumItems);
+
+  if (mobileAction === 'check') {
+    markAlbumCollected(filteredAlbumItems);
+  } else {
+    unmarkAlbumCollected(filteredAlbumItems);
+  }
+});
+
+
 
  if (collapsed) return;
 
@@ -817,9 +946,15 @@ const percent = Math.round((albumOwned / albumItems.length) * 100) || 0;
 const title = document.createElement('h3');
 title.className = 'album-header-card';
 
-const albumKey = `${category}::${album}`;
-let confirmTimeout = null;
-let awaitingConfirm = false;
+const isFullyCollected = albumOwned === albumItems.length;
+
+const buttonLabel = isFullyCollected
+  ? 'Uncheck all cards'
+  : 'Check all cards';
+
+const tooltipText = isFullyCollected
+  ? "If you press this button, all cards in this album will be set to 'Uncollected'. If you do not want this, just wait 10 seconds and this warning will go away."
+  : "If you press this button, all cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away.";
 
 title.innerHTML = `
   <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
@@ -828,11 +963,13 @@ title.innerHTML = `
   <button
     class="check-all-btn"
     type="button"
-    data-tooltip="If you press this button, all cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away."
+    data-tooltip="${tooltipText}"
+    data-action="${isFullyCollected ? 'uncheck' : 'check'}"
   >
-    Check all cards
+    ${buttonLabel}
   </button>
 `;
+
 
 
 
@@ -849,7 +986,11 @@ const checkAllBtn = title.querySelector('.check-all-btn');
 
 let countdownInterval = null;
 let remainingSeconds = 10;
+let awaitingConfirm = false;
+let confirmTimeout = null;
+
 const originalText = checkAllBtn.textContent;
+const action = checkAllBtn.dataset.action;
 
 function resetConfirmButton() {
   awaitingConfirm = false;
@@ -886,7 +1027,16 @@ checkAllBtn.addEventListener('click', e => {
   // Second click → confirm
   clearTimeout(confirmTimeout);
   resetConfirmButton();
-  markAlbumCollected(albumItems);
+
+const filteredAlbumItems =
+  applyMemberFiltersToAlbumItems(albumItems);
+
+if (action === 'check') {
+  markAlbumCollected(filteredAlbumItems);
+} else {
+  unmarkAlbumCollected(filteredAlbumItems);
+}
+
 });
 
 
