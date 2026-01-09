@@ -204,6 +204,93 @@ function exportData() {
 window.exportData = exportData;
 
 /********************
+ * Album statistics
+ * - total items
+ * - owned count
+ * - unowned count 
+ * - hearted count
+ * - completion percent
+ * ********************/
+function getAlbumStats(_, allAlbumItems) {
+  const total = allAlbumItems.length;
+
+  const ownedCount = allAlbumItems.filter(i => owned[i.id]).length;
+  const unownedCount = total - ownedCount;
+
+  const heartedCount = allAlbumItems.filter(i =>
+    localStorage.getItem(`heart_${i.id}`) === 'true'
+  ).length;
+
+  const percent = total
+    ? Math.round((ownedCount / total) * 100)
+    : 0;
+
+  return {
+    total,
+    ownedCount,
+    unownedCount,
+    heartedCount,
+    percent
+  };
+}
+
+
+/********************
+ * Album header stats text
+ * - depends on current filter
+ * ********************/
+function getAlbumHeaderText(filter, visibleCount, stats) {
+  switch (filter) {
+    case 'owned':
+      return `${stats.ownedCount}/${stats.total} (${stats.percent}%)`;
+    case 'unowned':
+      return `${stats.unownedCount}/${stats.total} (${100 - stats.percent}%)`;
+    case 'hearted':
+      return `${stats.heartedCount} on wishlist`;
+    default:
+      return `${stats.ownedCount}/${stats.total} (${stats.percent}%)`;
+
+  }
+}
+
+/********************
+ * Heart (wishlist) helper
+ ********************/
+function createHeartButton(itemId) {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+
+  const heartKey = `heart_${itemId}`;
+  const isHearted = localStorage.getItem(heartKey) === 'true';
+
+  btn.textContent = isHearted ? '❤️' : '🤍';
+
+  // Styling
+  btn.className = 'heart-btn';
+
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    const newState = btn.textContent === '🤍';
+    btn.textContent = newState ? '❤️' : '🤍';
+    localStorage.setItem(heartKey, newState);
+    render();
+  };
+
+  return btn;
+}
+
+
+
+
+/********************
+ * Mobile view checker
+ * ********************/
+function isMobileView() {
+  return window.matchMedia('(max-width: 720px)').matches;
+}
+
+
+/********************
  * Status helper
  ********************/
 function showStatusMessage(text, color = '#aaa', autoFade = false) {
@@ -543,6 +630,11 @@ function toggleAllAlbums() {
 
 window.toggleAllAlbums = toggleAllAlbums;
 
+
+
+
+
+
 function render() {
   list.innerHTML = '';
   cardList.innerHTML = '';
@@ -576,6 +668,10 @@ updateSortIndicators();
   const f = ownedFilterSelect.value;
   if (f === 'owned') items = items.filter(i => owned[i.id]);
   if (f === 'unowned') items = items.filter(i => !owned[i.id]);
+  if (f === 'hearted') {items = items.filter(i => {return localStorage.getItem(`heart_${i.id}`) === 'true';
+  });
+}
+
 
 // Member filter
 items = items.filter(i => {
@@ -596,28 +692,39 @@ items = items.filter(i => {
   progress.textContent =
   `Completion: ${ownedCount}/${items.length} (${totalPercent}%)`;
 
-const albums = {};
+const albumsAll = {};
+const albumsFiltered = {};
+
+// All cards per album (true totals)
 allItems.forEach(i => {
   const album = i.album || 'Unknown';
-  if (!albums[album]) albums[album] = [];
+  if (!albumsAll[album]) albumsAll[album] = [];
+  albumsAll[album].push(i);
 });
+
+// Visible cards per album
 items.forEach(i => {
   const album = i.album || 'Unknown';
-  albums[album].push(i);
+  if (!albumsFiltered[album]) albumsFiltered[album] = [];
+  albumsFiltered[album].push(i);
 });
+
 
 
   if (!albumCollapseState[category]) {
     albumCollapseState[category] = {};
   }
 
-Object.entries(albums).forEach(([album, albumItems]) => {
+Object.entries(albumsAll).forEach(([album, allAlbumItems]) => {
+  const albumItems = albumsFiltered[album] || [];
   const sortedAlbumItems = sortItems(albumItems);
-  const albumOwned = sortedAlbumItems.filter(i => owned[i.id]).length;
-const percent = sortedAlbumItems.length
-  ? Math.round((albumOwned / sortedAlbumItems.length) * 100)
-  : 0;
-
+  const stats = getAlbumStats(null, allAlbumItems);
+  const albumOwned = stats.ownedCount;
+  const headerText = getAlbumHeaderText(
+  ownedFilterSelect.value,
+  sortedAlbumItems.length,
+  stats
+);
   const collapsed =
     albumCollapseState[category]?.[album] ?? true;
 
@@ -627,7 +734,7 @@ const percent = sortedAlbumItems.length
 const header = document.createElement('tr');
 header.className = 'album-header';
 
-const isFullyCollected = albumOwned === albumItems.length;
+const isFullyCollected = albumOwned === stats.total;
 
 const buttonLabel = isFullyCollected
   ? 'Uncheck all cards'
@@ -641,7 +748,7 @@ header.innerHTML = `
   <td colspan="4" class="album-header-cell">
     <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
     <b>${album}</b>
-    — ${albumOwned}/${albumItems.length} (${percent}%)
+    — ${headerText}
     <button
       class="check-all-btn"
       type="button"
@@ -725,7 +832,7 @@ mobileHeader.className = 'album-header-card';
 mobileHeader.innerHTML = `
   <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
   <b>${album}</b>
-  — ${albumOwned}/${albumItems.length} (${percent}%)
+— ${headerText}
   <button
     class="check-all-btn"
     type="button"
@@ -844,65 +951,66 @@ if (sortedAlbumItems.length === 0) {
 // ✅ CREATE IMAGE TD
 const tdImg = document.createElement('td');
 
-/*const tableImg = document.createElement('img');
-tableImg.src = resolveImageSrc(i);
-tableImg.loading = 'lazy';
-tableImg.decoding = 'async';
-tableImg.width = 50;
-tableImg.height = 80;
+// Image wrapper (for heart overlay)
+const imgWrap = document.createElement('div');
+imgWrap.className = 'pc-img-wrap';
 
-tableImg.onerror = () => {
-  tableImg.onerror = null;
-  tableImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-}; 
-*/
-//✅ CREATE IMAGE WITH applyImageProps
 const tableImg = document.createElement('img');
 applyImageProps(tableImg, i);
-tdImg.appendChild(tableImg);
-tr.appendChild(tdImg);
 
+// ❤️ Heart (wishlist) button — list view
+const heart = createHeartButton(i.id);
+
+imgWrap.appendChild(tableImg);
+imgWrap.appendChild(heart);
+tdImg.appendChild(imgWrap);
+tr.appendChild(tdImg);
 list.appendChild(tr);
 
 //********************
 // Mobile card view
 //********************/
-      const card = document.createElement('div');
-      card.className = 'card' + (owned[i.id] ? ' owned' : '');
-      card.appendChild(
-        createCheckbox(!!owned[i.id], () => toggle(i.id))
-      );
+//********************
+// Mobile card view
+//********************/
+const card = document.createElement('div');
+card.className = 'card' + (owned[i.id] ? ' owned' : '');
+card.appendChild(
+  createCheckbox(!!owned[i.id], () => toggle(i.id))
+);
 
+// 🔒 isolate scope to avoid redeclaration
+{
+const imgWrap = document.createElement('div');
+imgWrap.className = 'pc-img-wrap';
 
-/*const cardImg = document.createElement('img');
-cardImg.src = resolveImageSrc(i);
-cardImg.loading = 'lazy';
-cardImg.decoding = 'async';
-
-cardImg.onerror = () => {
-  cardImg.onerror = null;
-  cardImg.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
-};
-
-card.appendChild(cardImg);
-*/
-//✅ CREATE IMAGE WITH applyImageProps
 const cardImg = document.createElement('img');
 applyImageProps(cardImg, i);
-card.appendChild(cardImg);
 
-      const textWrap = document.createElement('div');
-      const title = document.createElement('div');
-      title.className = 'title';
-      title.textContent = i.name;
+const heart = createHeartButton(i.id);
+
+imgWrap.appendChild(cardImg);
+imgWrap.appendChild(heart);
+card.appendChild(imgWrap);
+
+}
+
+// text
+const textWrap = document.createElement('div');
+const title = document.createElement('div');
+title.className = 'title';
+title.textContent = i.name;
 
 const meta = document.createElement('div');
 meta.className = 'meta';
 meta.textContent = i.member || '';
 
-      textWrap.appendChild(title);
-      textWrap.appendChild(meta);
-      card.appendChild(textWrap);
+textWrap.appendChild(title);
+textWrap.appendChild(meta);
+card.appendChild(textWrap);
+
+cardList.appendChild(card);
+
 
       cardList.appendChild(card);
   });
@@ -916,37 +1024,44 @@ function renderGridView(allItems, filteredItems) {
   const gridView = document.getElementById('gridView');
   gridView.innerHTML = '';
 
-const albums = {};
+const albumsAll = {};
+const albumsFiltered = {};
 
-// 1. Create all album keys from ALL items
+// All cards (true album totals)
 allItems.forEach(i => {
   const album = i.album || 'Unknown';
-  if (!albums[album]) albums[album] = [];
+  if (!albumsAll[album]) albumsAll[album] = [];
+  albumsAll[album].push(i);
 });
 
-// 2. Fill album contents using FILTERED items
+// Visible cards only
 filteredItems.forEach(i => {
   const album = i.album || 'Unknown';
-  albums[album].push(i);
+  if (!albumsFiltered[album]) albumsFiltered[album] = [];
+  albumsFiltered[album].push(i);
 });
 
 
-Object.entries(albums).forEach(([album, albumItems]) => {
-  if (!albumCollapseState[category]) {
-    albumCollapseState[category] = {};
-  }
+
+Object.entries(albumsAll).forEach(([album, allAlbumItems]) => {
+  const albumItems = albumsFiltered[album] || [];
   const collapsed = albumCollapseState[category][album] ?? true;
 
 
   // Album completion (grid view)
-const albumOwned = albumItems.filter(i => owned[i.id]).length;
-const percent = Math.round((albumOwned / albumItems.length) * 100) || 0;
+const stats = getAlbumStats(null, allAlbumItems);
+const isFullyCollected = stats.ownedCount === stats.total;
+
+// Header text
+const headerText = getAlbumHeaderText(
+  ownedFilterSelect.value,
+  albumItems.length,
+  stats
+);
 
 // Album title
 const title = document.createElement('h3');
 title.className = 'album-header-card';
-
-const isFullyCollected = albumOwned === albumItems.length;
 
 const buttonLabel = isFullyCollected
   ? 'Uncheck visible cards'
@@ -959,7 +1074,7 @@ const tooltipText = isFullyCollected
 title.innerHTML = `
   <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
   <b>${album}</b>
-  — ${albumOwned}/${albumItems.length} (${percent}%)
+— ${headerText}
   <button
     class="check-all-btn"
     type="button"
@@ -1079,6 +1194,9 @@ if (albumItems.length === 0) {
       const img = document.createElement('img');
       applyImageProps(img, i);
 
+      // Heart (favorite) button
+      const heart = createHeartButton(i.id);
+
       // Name
       const name = document.createElement('div');
       name.className = 'grid-name';
@@ -1088,6 +1206,7 @@ if (albumItems.length === 0) {
       const check = createCheckbox(!!owned[i.id], () => toggle(i.id));
 
       card.appendChild(img);
+      card.appendChild(heart);
       card.appendChild(name);
       card.appendChild(check);
 

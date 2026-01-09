@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stray Kids Album & POB Tracker</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/ui/favicon.ico">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -30,9 +31,6 @@
     <span id="backupStatus"></span>
   </div>
 </div>
-
-
-
 <div class="panel top-bar">
   <div class="tabs">
     <button data-category="korean_albums" onclick="setCategory('korean_albums')" class="active">
@@ -55,6 +53,7 @@
       <option value="all">All</option>
       <option value="owned">Owned</option>
       <option value="unowned">Unowned</option>
+      <option value="hearted">❤️ Wishlist</option>
     </select>
   </div>
 </div>
@@ -91,7 +90,10 @@
 <div id="gridView" class="grid-view"></div>
 <div class="card-list" id="cardList"></div>
 
-<!-- STEP 1: JS MOVED TO /js/app.js -->
+
+
+
+<!-- Scripts and failsafes-->
 <script type="module" src="js/app.js"></script>
 <script>
 // Failsafe binding for Export button on GitHub Pages

@@ -403,8 +403,6 @@ tr.owned img{opacity:.3}
     gap: 10px;
   }
 
-  /* Force image to the right */
-
 /* Ensure image never affects layout */
 .card img {
   width: 50px;
@@ -510,6 +508,69 @@ th:hover {
   }
 }
 
+/* =========================
+   Heart Button – Base
+   ========================= */
+.heart-btn {
+  position: absolute;
+  z-index: 10;
+  font-size: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+/* List view photocard wrapper (for heart overlay) */
+.pc-img-wrap {
+  position: relative;
+  display: inline-block;
+  bottom: 4px;
+  right: 4px;
+}
+
+/* Ensure list-view images size correctly */
+.pc-img-wrap img {
+  width: 50px;
+  border-radius: 6px;
+  display: block;
+}
+
+
+
+
+/* Mobile list view heart (below image) */
+@media (max-width: 720px) {
+   .card {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+      /* Force photocard to the right */
+    .card .pc-img-wrap {
+    grid-column: 3;
+    justify-self: end;
+    position: relative;
+  }
+
+}
+
+.grid-card .heart-btn {
+  bottom: 6px;
+  right: 6px;
+}
+.card-heart:focus {
+  outline: none;
+}
+
+@media (min-width: 721px) {
+  .pc-img-wrap .heart-btn {
+    bottom: -9px;
+    right: -14px;
+    transform: translate(0, 0);
+  }
+}
 
 .grid-card {
   display: grid;
@@ -520,6 +581,7 @@ th:hover {
   padding: 0.5rem;
   border-radius: 8px;
   background: #1f1f1f;
+  position: relative;
 }
 
 .grid-card img {
