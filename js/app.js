@@ -953,8 +953,8 @@ const buttonLabel = isFullyCollected
   : 'Check visible cards';
 
 const tooltipText = isFullyCollected
-  ? "If you press this button, all cards in this album will be set to 'Uncollected'. If you do not want this, just wait 10 seconds and this warning will go away."
-  : "If you press this button, all cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away.";
+  ? "If you press this button, all currently visible cards in this album will be set to 'Uncollected'. If you do not want this, just wait 10 seconds and this warning will go away."
+  : "If you press this button, all currently visible cards in this album will be set to 'Collected'. If you do not want this, just wait 10 seconds and this warning will go away.";
 
 title.innerHTML = `
   <span class="album-toggle-icon${collapsed ? '' : ' open'}">\u203A</span>
