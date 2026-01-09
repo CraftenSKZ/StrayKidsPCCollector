@@ -131,7 +131,7 @@ h1, h2, h3 {
   border-radius: 10px;
   margin-bottom: 12px;
   width: fit-content;
-  max-width: min(1100px, calc(100vw - 32px));
+  max-width: min(1100px, calc(100% - 32px));
   margin: 12px auto;  
   overflow: visible; /* ✅ ADD THIS */
 }
@@ -722,7 +722,7 @@ td img {
   transform: translate(-50%, 4px);
 
   width: max-content;
-  max-width: min(90vw, 320px);
+  max-width: min(90%, 320px);
 
   background: rgba(20, 20, 20, 0.95);
   color: #ffd966;
