@@ -1201,54 +1201,73 @@ if (q) {
     .split(/\s+/)
     .filter(Boolean);
 
+  // Try to detect a full member phrase at the start
+  const allMembers = Array.from(
+    new Set(
+      allItems
+        .map(i => i.member)
+        .filter(Boolean)
+    )
+  )
+    .map(m => m.toLowerCase());
+
+  // Find the longest matching member name (multi-word)
+  let matchedMember = null;
+  let memberTokenCount = 0;
+
+  for (const member of allMembers) {
+    const memberWords = member.split(/\s+/);
+
+    // Check if the beginning of terms matches this member
+    if (
+      terms.length >= memberWords.length &&
+      terms
+        .slice(0, memberWords.length)
+        .join(' ') === member
+    ) {
+      // Keep the longest match
+      if (!matchedMember || memberWords.length > memberTokenCount) {
+        matchedMember = member;
+        memberTokenCount = memberWords.length;
+      }
+    }
+  }
+
+  // If we found a member phrase, drop those tokens
+  let additionalTerms = terms;
+  if (matchedMember) {
+    additionalTerms = terms.slice(memberTokenCount);
+  }
+
   items = items.filter(i => {
-    const name = (i.name || '').toLowerCase();
-    const album = (i.album || '').toLowerCase();
+    const nameLC = (i.name || '').toLowerCase();
+    const albumLC = (i.album || '').toLowerCase();
+    const memberLC = (i.member || '').toLowerCase();
 
-    const members = (i.member || '')
-      .toLowerCase()
-      .split(/[,/&+]/)
-      .map(m => m.trim())
-      .filter(Boolean);
-
-    return terms.every(term => {
-      // MEMBER MATCH
-      if (members.length) {
-        // single-term member search → solo only
-        if (terms.length === 1) {
-          if (members.length === 1 && members[0] === term) {
-            return true;
-          }
-        }
-
-        // multi-term member search → allow units
-        if (members.includes(term)) {
-          return true;
-        }
+    // 1) If member phrase present, skip anything that doesn't match member
+    if (matchedMember) {
+      // match exact solo OR part of a unit
+      if (
+        !memberLC
+          .split(/[,/&+]/)
+          .map(m => m.trim())
+          .includes(matchedMember)
+      ) {
+        return false;
       }
+    }
 
-      // NAME MATCH (word-based for single terms)
-      if (terms.length === 1) {
-        const nameWords = name.split(/\s+/);
-        if (nameWords.includes(term)) {
-          return true;
-        }
-      } else {
-        if (name.includes(term)) {
-          return true;
-        }
-      }
-
-      // ALBUM MATCH
-      if (album.includes(term)) {
-        return true;
-      }
-
-      // term not satisfied
-      return false;
+    // 2) Now apply remaining terms (AND logic) to name/album
+    return additionalTerms.every(term => {
+      // match in name or album
+      return (
+        nameLC.includes(term) ||
+        albumLC.includes(term)
+      );
     });
   });
 }
+
 
 updateSortIndicators();
   const f = ownedFilterSelect.value;
