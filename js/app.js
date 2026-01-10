@@ -1168,6 +1168,37 @@ function toggleAllAlbums() {
 window.toggleAllAlbums = toggleAllAlbums;
 
 
+function cardMatchesMember(card, matchedMember) {
+  if (!matchedMember) return true;
+
+  const normalize = (str) =>
+    (str || '')
+      .toLowerCase()
+      .replace(/[,&+/.-]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const memberStr = normalize(card.member);
+  const nameStr   = normalize(card.name);
+
+  // Multi-word member (e.g. "bang chan")
+  if (matchedMember.includes(' ')) {
+    return (
+      memberStr === matchedMember ||
+      nameStr.includes(matchedMember)
+    );
+  }
+
+  // Single-word member (e.g. "han")
+  const memberWords = memberStr.split(' ');
+  const nameWords   = nameStr.split(' ');
+
+  return (
+    memberWords.includes(matchedMember) ||
+    nameWords.includes(matchedMember)
+  );
+}
+
 
 
 
@@ -1175,6 +1206,8 @@ window.toggleAllAlbums = toggleAllAlbums;
 function render() {
   list.innerHTML = '';
   cardList.innerHTML = '';
+
+let matchedMember = null; // ✅ DEFINE ONCE, TOP-LEVEL
 
   const allItems = CATALOG[category] || [];
   let items = allItems;
@@ -1202,29 +1235,19 @@ if (q) {
     .filter(Boolean);
 
   // Try to detect a full member phrase at the start
-  const allMembers = Array.from(
-    new Set(
-      allItems
-        .map(i => i.member)
-        .filter(Boolean)
-    )
-  )
-    .map(m => m.toLowerCase());
+const allMembers = MEMBER_ORDER
+  .map(m => m.toLowerCase());
+
 
   // Find the longest matching member name (multi-word)
-  let matchedMember = null;
   let memberTokenCount = 0;
 
   for (const member of allMembers) {
     const memberWords = member.split(/\s+/);
 
     // Check if the beginning of terms matches this member
-    if (
-      terms.length >= memberWords.length &&
-      terms
-        .slice(0, memberWords.length)
-        .join(' ') === member
-    ) {
+if (member.startsWith(terms.join(' '))) 
+  {
       // Keep the longest match
       if (!matchedMember || memberWords.length > memberTokenCount) {
         matchedMember = member;
@@ -1244,18 +1267,9 @@ if (q) {
     const albumLC = (i.album || '').toLowerCase();
     const memberLC = (i.member || '').toLowerCase();
 
-    // 1) If member phrase present, skip anything that doesn't match member
-    if (matchedMember) {
-      // match exact solo OR part of a unit
-      if (
-        !memberLC
-          .split(/[,/&+]/)
-          .map(m => m.trim())
-          .includes(matchedMember)
-      ) {
-        return false;
-      }
-    }
+if (!cardMatchesMember(i, matchedMember)) {
+  return false;
+}
 
     // 2) Now apply remaining terms (AND logic) to name/album
     return additionalTerms.every(term => {
@@ -1277,12 +1291,15 @@ updateSortIndicators();
   });
 }
 
-
 // Member filter
-items = items.filter(i => {
-  if (!i.member) return true;
-  return persistedMemberFilters[i.member] !== false;
-});
+// Member filter (ONLY when not searching for a member)
+if (!matchedMember) {
+  items = items.filter(i => {
+    if (!i.member) return true;
+    return persistedMemberFilters[i.member] !== false;
+  });
+}
+
 
 // Sort items
   /*items = sortItems(items);*/

@@ -25,21 +25,6 @@ export function resolveImageSrc(item) {
   return `${BASE_PATH}assets/images/photocards/${item.category || ''}/${albumFolder}/${filename}`;
 }
 
-/**
- * Apply common image behavior (lazy, size, fallback)
- */
-// export function applyImageProps(img, item) {
-//   img.src = resolveImageSrc(item);
-//   img.loading = 'lazy';
-//   img.decoding = 'async';
-//   img.width = 50;
-//   img.height = 80;
-
-//   img.onerror = () => {
-//     img.onerror = null;
-//     img.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
-//   };
-// }
 export function applyImageProps(img, item, { eager = false } = {}) {
   img.src = resolveImageSrc(item);
   img.alt = item.name || '';
