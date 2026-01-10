@@ -17,8 +17,6 @@
   --border: #2a2a2f;
 }
 
-
-
 /* Bottom watermark */
 body::before {
   content: "";
@@ -967,6 +965,25 @@ td img {
   letter-spacing: 0.2px;
 
   border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ===== Wishlist Export Footer ===== */
+#wishlist-export .wishlist-footer {
+  margin-top: 32px;
+  padding-top: 12px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#wishlist-export .wishlist-footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+#wishlist-export .wishlist-footer a:hover {
+  text-decoration: underline;
 }
 
 /* ===== Toast Notification ===== */

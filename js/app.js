@@ -131,6 +131,7 @@ label.className = 'member-chip';
 
 const checkbox = document.createElement('input');
 checkbox.type = 'checkbox';
+checkbox.value = member; // ✅ CRITICAL
 checkbox.checked = isChecked;
 
 checkbox.onchange = () => {
@@ -252,6 +253,22 @@ function getAlbumHeaderText(filter, visibleCount, stats) {
 
   }
 }
+/***********************************
+ * Get active member filters helper
+ * ********************************/
+function getActiveMemberFilters() {
+  return Array.from(
+    document.querySelectorAll('#memberFilters input[type="checkbox"]:checked')
+  ).map(cb => cb.value);
+}
+
+/*****************************
+ * Get expanded albums helper
+ * **************************/
+function isAlbumExpanded(album) {
+  return albumCollapseState?.[category]?.[album] === false;
+}
+
 
 /********************
  * Heart (wishlist) helper
@@ -539,13 +556,54 @@ document
   .addEventListener("click", exportWishlistImage);
 
 function exportWishlistImage() {
+
+
+  
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+const isFirefoxIOS = /FxiOS/.test(navigator.userAgent);
+
+// ✅ Show toast FIRST
+if (isIOS && isFirefoxIOS) {
+  showToast(
+    "Firefox iOS doesn’t allow auto-download. Long-press the image to save.",
+    { duration: 6000 }
+  );
+}
+
+
+// Firefox iOS: open tab immediately (must be sync with user gesture)
+let firefoxTab = null;
+if (isIOS && isFirefoxIOS) {
+  firefoxTab = window.open('', '_blank');
+}
+
+
   setExportWishlistDisabled(true);
   const allItems = CATALOG[category] || [];
 
   // Get wishlisted items from localStorage
-  const wishlistItems = allItems.filter(
-    item => localStorage.getItem(`heart_${item.id}`) === 'true'
-  );
+const activeMembers = getActiveMemberFilters();
+
+const wishlistItems = sortItemsLikeUI(
+  allItems.filter(item => {
+    // ❤️ must be hearted
+    if (localStorage.getItem(`heart_${item.id}`) !== 'true') {
+      return false;
+    }
+
+    // 👤 member filter
+    if (activeMembers.length > 0 && !activeMembers.includes(item.member)) {
+      return false;
+    }
+
+    // 📂 expanded albums only
+    if (!isAlbumExpanded(item.album)) {
+      return false;
+    }
+
+    return true;
+  })
+);
 
   // 🚫 Stop if empty
   if (wishlistItems.length === 0) {
@@ -568,12 +626,12 @@ function exportWishlistImage() {
   progressToast.textContent = "🖼️ Rendering wishlist image…";
 
   // Sort by album, then name
-  wishlistItems.sort((a, b) => {
-    const albumA = a.album || '';
-    const albumB = b.album || '';
-    if (albumA !== albumB) return albumA.localeCompare(albumB);
-    return (a.name || '').localeCompare(b.name || '');
-  });
+  // wishlistItems.sort((a, b) => {
+  //   const albumA = a.album || '';
+  //   const albumB = b.album || '';
+  //   if (albumA !== albumB) return albumA.localeCompare(albumB);
+  //   return (a.name || '').localeCompare(b.name || '');
+  // });
 
   // Group by album
   const itemsByAlbum = {};
@@ -645,7 +703,20 @@ Object.entries(itemsByAlbum).forEach(([album, items]) => {
 
   albumWrap.appendChild(grid);
   container.appendChild(albumWrap);
+
 });
+// ===== Watermark / footer (ONLY ONCE, AT END) =====
+const footer = document.createElement("div");
+footer.className = "wishlist-footer";
+footer.innerHTML = `
+  Wishlist generated for free on:
+  <br>
+  <a href="https://craftenskz.github.io/StrayKidsPCCollector/">
+    https://craftenskz.github.io/StrayKidsPCCollector/
+  </a>
+`;
+
+container.appendChild(footer);
 
 
   document.body.appendChild(container);
@@ -659,10 +730,150 @@ html2canvas(container, {
 
   showToast("✅ Wishlist exported!");
 
-  const link = document.createElement("a");
-  link.download = "skz-wishlist.png";
-  link.href = canvas.toDataURL("image/png");
-  link.click();
+canvas.toBlob(blob => {
+  const url = URL.createObjectURL(blob);
+
+  if (isIOS && isFirefoxIOS && firefoxTab) {
+  const doc = firefoxTab.document;
+
+  doc.open();
+  doc.write(`
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Save Wishlist Image</title>
+
+  <style>
+    :root {
+      --bg: #0f0f10;
+      --fg: #eaeaea;
+      --muted: #aaa;
+      --accent: #ff6fae;
+    }
+
+    body {
+      margin: 0;
+      padding-bottom: 64px; /* space for return bar */
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      text-align: center;
+    }
+
+    /* Instruction banner */
+    .hint {
+      position: sticky;
+      top: 0;
+      background: rgba(20,20,22,0.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 14px;
+      font-size: 14px;
+      border-bottom: 1px solid #222;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      animation: slideDown .25s ease;
+      z-index: 10;
+    }
+
+    .hint-text {
+      text-align: left;
+      flex: 1;
+    }
+
+    .hint button {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Image */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Persistent return bar */
+    .return-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(20,20,22,0.98);
+      border-top: 1px solid #222;
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .return-bar a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to   { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Instruction banner (auto-hides) -->
+  <div class="hint" id="hint">
+    <div class="hint-text">
+      📱 <b>Firefox iOS:</b> Long-press the image below and choose <b>Save Image</b>
+    </div>
+    <button onclick="dismissHint()">✕</button>
+  </div>
+
+  <!-- Image -->
+  <img src="${url}" alt="Wishlist Image">
+
+  <!-- Persistent return button -->
+  <div class="return-bar">
+    <a href="#" onclick="window.close(); return false;">
+      ← Return to app
+    </a>
+  </div>
+
+  <script>
+    function dismissHint() {
+      const h = document.getElementById('hint');
+      if (h) h.remove();
+    }
+
+    // Auto-hide instruction after 10s
+    setTimeout(dismissHint, 10000);
+  </script>
+
+</body>
+</html>
+`);
+
+  doc.close();
+}
+ else {
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "skz-wishlist.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  setTimeout(() => URL.revokeObjectURL(url), 3000);
+});
+
 
   container.remove();
 
@@ -831,6 +1042,41 @@ function sortItems(items) {
     return 0;
   });
 }
+//***********************
+// Sorting helper like UI
+//***********************/
+function sortItemsLikeUI(items) {
+  if (!sortState || !sortState.key) return [...items];
+
+  return [...items].sort((a, b) => {
+    let va, vb;
+
+    switch (sortState.key) {
+      case 'name':
+        va = a.name || '';
+        vb = b.name || '';
+        break;
+
+      case 'member':
+        va = a.member || '';
+        vb = b.member || '';
+        break;
+
+      case 'collected':
+        va = a.owned ? 1 : 0;
+        vb = b.owned ? 1 : 0;
+        break;
+
+      default:
+        return 0;
+    }
+
+    if (va < vb) return -1 * sortState.dir;
+    if (va > vb) return  1 * sortState.dir;
+    return 0;
+  });
+}
+
 
 //********************
 // View mode handler
