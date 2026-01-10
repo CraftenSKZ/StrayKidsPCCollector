@@ -1193,14 +1193,63 @@ gridView.style.display = viewMode === 'grid' ? '' : 'none';
 
 document.body.classList.toggle('grid-active', viewMode === 'grid');
 
-  const q = searchInput.value.toLowerCase();
-  if (q) {
-    items = items.filter(
-      i =>
-        i.name.toLowerCase().includes(q) ||
-        (i.album || '').toLowerCase().includes(q)
-    );
-  }
+const q = searchInput.value.toLowerCase();
+const isSingleWord = !q.includes(' ');
+if (q) {
+  const terms = q
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  items = items.filter(i => {
+    const name = (i.name || '').toLowerCase();
+    const album = (i.album || '').toLowerCase();
+
+    const members = (i.member || '')
+      .toLowerCase()
+      .split(/[,/&+]/)
+      .map(m => m.trim())
+      .filter(Boolean);
+
+    return terms.every(term => {
+      // MEMBER MATCH
+      if (members.length) {
+        // single-term member search → solo only
+        if (terms.length === 1) {
+          if (members.length === 1 && members[0] === term) {
+            return true;
+          }
+        }
+
+        // multi-term member search → allow units
+        if (members.includes(term)) {
+          return true;
+        }
+      }
+
+      // NAME MATCH (word-based for single terms)
+      if (terms.length === 1) {
+        const nameWords = name.split(/\s+/);
+        if (nameWords.includes(term)) {
+          return true;
+        }
+      } else {
+        if (name.includes(term)) {
+          return true;
+        }
+      }
+
+      // ALBUM MATCH
+      if (album.includes(term)) {
+        return true;
+      }
+
+      // term not satisfied
+      return false;
+    });
+  });
+}
+
 updateSortIndicators();
   const f = ownedFilterSelect.value;
   if (f === 'owned') items = items.filter(i => owned[i.id]);

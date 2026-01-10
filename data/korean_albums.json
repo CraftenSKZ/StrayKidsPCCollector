@@ -257,7 +257,7 @@
   },
   {
     "id": "iamnot-unit-01",
-    "name": "Chan-Lix-Hyun",
+    "name": "Bang Chan-Felix-Hyunjin",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -265,7 +265,7 @@
   },
   {
     "id": "iamnot-unit-02",
-    "name": "Chan-Lix-I.N.",
+    "name": "Bang Chan-Felix-I.N.",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -273,7 +273,7 @@
   },
   {
     "id": "iamnot-unit-03",
-    "name": "Chan-Bin-HAN",
+    "name": "Bang Chan-Changbin-HAN",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -281,7 +281,7 @@
   },
   {
     "id": "iamnot-unit-04",
-    "name": "Chan-Seung-I.N.",
+    "name": "Bang Chan-Seungmin-I.N.",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -289,7 +289,7 @@
   },
   {
     "id": "iamnot-unit-05",
-    "name": "Chan-HAN-Lix",
+    "name": "Bang Chan-HAN-Felix",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -297,7 +297,7 @@
   },
   {
     "id": "iamnot-unit-06",
-    "name": "Chan-Hyun-Seung",
+    "name": "Bang Chan-Hyunjin-Seungmin",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -305,7 +305,7 @@
   },
   {
     "id": "iamnot-unit-07",
-    "name": "Lino-Bin-HAN",
+    "name": "Lee Know-Changbin-HAN",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -313,7 +313,7 @@
   },
   {
     "id": "iamnot-unit-08",
-    "name": "Lino-Hyun-Lix",
+    "name": "Lee Know-Hyunjin-Felix",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -321,7 +321,7 @@
   },
   {
     "id": "iamnot-unit-09",
-    "name": "Lino-Hyun-HAN",
+    "name": "Lee Know-Hyunjin-HAN",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -329,7 +329,7 @@
   },
   {
     "id": "iamnot-unit-10",
-    "name": "Lino-Bin-Lix",
+    "name": "Lee Know-Changbin-Felix",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -337,7 +337,7 @@
   },
   {
     "id": "iamnot-unit-11",
-    "name": "Bin-Hyun-Seung",
+    "name": "Changbin-Hyunjin-Seungmin",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -345,7 +345,7 @@
   },
   {
     "id": "iamnot-unit-12",
-    "name": "Hyun-Seung-I.N.",
+    "name": "Hyunjin-Seungmin-I.N.",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -353,7 +353,7 @@
   },
   {
     "id": "iamnot-unit-13",
-    "name": "Bin-Lix-Seung",
+    "name": "Changbin-Felix-Seungmin",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -361,7 +361,7 @@
   },
   {
     "id": "iamnot-unit-14",
-    "name": "Lix-Seung-I.N.",
+    "name": "Felix-Seungmin-I.N.",
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
@@ -2768,330 +2768,330 @@
     "img": null
   },
   {
-    "id": "inlife-bangchan-01",
+    "id": "inlive-bangchan-01",
     "name": "Double sided A",
     "member": "Bang Chan",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-bangchan-02",
+    "id": "inlive-bangchan-02",
     "name": "Double sided B",
     "member": "Bang Chan",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-bangchan-03",
+    "id": "inlive-bangchan-03",
     "name": "Concept",
     "member": "Bang Chan",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-bangchan-04",
+    "id": "inlive-bangchan-04",
     "name": "Framed pc",
     "member": "Bang Chan",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-leeknow-01",
+    "id": "inlive-leeknow-01",
     "name": "Double sided A",
     "member": "Lee Know",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-leeknow-02",
+    "id": "inlive-leeknow-02",
     "name": "Double sided B",
     "member": "Lee Know",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-leeknow-03",
+    "id": "inlive-leeknow-03",
     "name": "Concept",
     "member": "Lee Know",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-leeknow-04",
+    "id": "inlive-leeknow-04",
     "name": "Framed pc",
     "member": "Lee Know",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-changbin-01",
+    "id": "inlive-changbin-01",
     "name": "Double sided A",
     "member": "Changbin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-changbin-02",
+    "id": "inlive-changbin-02",
     "name": "Double sided B",
     "member": "Changbin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-changbin-03",
+    "id": "inlive-changbin-03",
     "name": "Concept",
     "member": "Changbin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-changbin-04",
+    "id": "inlive-changbin-04",
     "name": "Framed pc",
     "member": "Changbin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-hyunjin-01",
+    "id": "inlive-hyunjin-01",
     "name": "Double sided A",
     "member": "Hyunjin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-hyunjin-02",
+    "id": "inlive-hyunjin-02",
     "name": "Double sided B",
     "member": "Hyunjin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-hyunjin-03",
+    "id": "inlive-hyunjin-03",
     "name": "Concept",
     "member": "Hyunjin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-hyunjin-04",
+    "id": "inlive-hyunjin-04",
     "name": "Framed pc",
     "member": "Hyunjin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-han-01",
+    "id": "inlive-han-01",
     "name": "Double sided A",
     "member": "HAN",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-han-02",
+    "id": "inlive-han-02",
     "name": "Double sided B",
     "member": "HAN",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-han-03",
+    "id": "inlive-han-03",
     "name": "Concept",
     "member": "HAN",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-han-04",
+    "id": "inlive-han-04",
     "name": "Framed pc",
     "member": "HAN",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-felix-01",
+    "id": "inlive-felix-01",
     "name": "Double sided A",
     "member": "Felix",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-felix-02",
+    "id": "inlive-felix-02",
     "name": "Double sided B",
     "member": "Felix",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-felix-03",
+    "id": "inlive-felix-03",
     "name": "Concept",
     "member": "Felix",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-felix-04",
+    "id": "inlive-felix-04",
     "name": "Framed pc",
     "member": "Felix",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-seungmin-01",
+    "id": "inlive-seungmin-01",
     "name": "Double sided A",
     "member": "Seungmin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-seungmin-02",
+    "id": "inlive-seungmin-02",
     "name": "Double sided B",
     "member": "Seungmin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-seungmin-03",
+    "id": "inlive-seungmin-03",
     "name": "Concept",
     "member": "Seungmin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-seungmin-04",
+    "id": "inlive-seungmin-04",
     "name": "Framed pc",
     "member": "Seungmin",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-in-01",
+    "id": "inlive-in-01",
     "name": "Double sided A",
     "member": "I.N.",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-in-02",
+    "id": "inlive-in-02",
     "name": "Double sided B",
     "member": "I.N.",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-in-03",
+    "id": "inlive-in-03",
     "name": "Concept",
     "member": "I.N.",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-in-04",
+    "id": "inlive-in-04",
     "name": "Framed pc",
     "member": "I.N.",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-05",
+    "id": "inlive-unit-05",
     "name": "DanceRacha B",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-06",
+    "id": "inlive-unit-06",
     "name": "DanceRacha C",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-07",
+    "id": "inlive-unit-07",
     "name": "VocalRacha A",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-08",
+    "id": "inlive-unit-08",
     "name": "VocalRacha B",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-09",
+    "id": "inlive-unit-09",
     "name": "VocalRacha C",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-01",
+    "id": "inlive-unit-01",
     "name": "3Racha A",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-02",
+    "id": "inlive-unit-02",
     "name": "3Racha B",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-03",
+    "id": "inlive-unit-03",
     "name": "3Racha C",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
   {
-    "id": "inlife-unit-04",
+    "id": "inlive-unit-04",
     "name": "DanceRacha A",
     "member": "UNIT",
-    "album": "IN LIFE",
+    "album": "IN LIVE",
     "category": "korean_albums",
     "img": null
   },
@@ -4249,7 +4249,7 @@
   },
   {
     "id": "oddinary-unit-01",
-    "name": "Black- Chan Lee Know",
+    "name": "Black- Bang Chan Lee Know",
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
@@ -4257,7 +4257,7 @@
   },
   {
     "id": "oddinary-unit-02",
-    "name": "Black- Chan Lix",
+    "name": "Black- Bang Chan Lix",
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
@@ -4313,7 +4313,7 @@
   },
   {
     "id": "oddinary-unit-09",
-    "name": "Blue- Chan Changbin",
+    "name": "Blue- Bang Chan Changbin",
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
@@ -4321,7 +4321,7 @@
   },
   {
     "id": "oddinary-unit-10",
-    "name": "Blue- Chan Seungmin",
+    "name": "Blue- Bang Chan Seungmin",
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
@@ -4377,7 +4377,7 @@
   },
   {
     "id": "oddinary-unit-17",
-    "name": "Red- Chan HAN",
+    "name": "Red- Bang Chan HAN",
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
@@ -4385,7 +4385,7 @@
   },
   {
     "id": "oddinary-unit-18",
-    "name": "Red- Chan I.N.",
+    "name": "Red- Bang Chan I.N.",
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
@@ -5593,7 +5593,7 @@
   },
   {
     "id": "rockstar-unit-01",
-    "name": "Chan Changbin",
+    "name": "Bang Chan Changbin",
     "member": "UNIT",
     "album": " ROCK-STAR",
     "category": "korean_albums",
@@ -6265,7 +6265,7 @@
   },
   {
     "id": "ate-unit-01",
-    "name": "ChkChk- Chan Felix",
+    "name": "ChkChk- Bang Chan Felix",
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
@@ -6297,7 +6297,7 @@
   },
   {
     "id": "ate-unit-05",
-    "name": "Boom- Chan Changbin",
+    "name": "Boom- Bang Chan Changbin",
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
@@ -6905,7 +6905,7 @@
   },
   {
     "id": "hop-unit-01",
-    "name": "Hiptape-Chan Felix",
+    "name": "Hiptape-Bang Chan Felix",
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
@@ -6937,7 +6937,7 @@
   },
   {
     "id": "hop-unit-05",
-    "name": "Skzhop-Chan Lee Know",
+    "name": "Skzhop-Bang Chan Lee Know",
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
@@ -7545,7 +7545,7 @@
   },
   {
     "id": "karma-unit-01",
-    "name": "Chan Lee Know Changbin",
+    "name": "Bang Chan Lee Know Changbin",
     "member": "UNIT",
     "album": "Karma",
     "category": "korean_albums",
@@ -8417,7 +8417,7 @@
   },
   {
     "id": "doit-unit-01",
-    "name": "Black-Chan HAN",
+    "name": "Black- Bang Chan HAN",
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
@@ -8449,7 +8449,7 @@
   },
   {
     "id": "doit-unit-05",
-    "name": "Pink- Chan Seungmin",
+    "name": "Pink- Bang Chan Seungmin",
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
