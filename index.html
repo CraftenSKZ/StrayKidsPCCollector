@@ -31,21 +31,14 @@
     <span id="backupStatus"></span>
   </div>
 </div>
-<div class="panel top-bar">
-  <div class="tabs">
-    <button data-category="korean_albums" onclick="setCategory('korean_albums')" class="active">
-      Korean Albums
-    </button>
-    <button data-category="japanese_albums" onclick="setCategory('japanese_albums')">
-      Japanese Albums
-    </button>
-    <button data-category="korean_pob" onclick="setCategory('korean_pob')">
-      Korean POB
-    </button>
-    <button data-category="japanese_pob" onclick="setCategory('japanese_pob')">
-      Japanese POB
-    </button>
-  </div>
+<div class="panel controls">
+  <label for="categorySelect">Category</label>
+  <select id="categorySelect" onchange="setCategory(this.value)">
+    <option value="korean_albums">Korean Albums</option>
+    <option value="japanese_albums">Japanese Albums</option>
+    <option value="korean_pob">Korean POB</option>
+    <option value="japanese_pob">Japanese POB</option>
+  </select>
 
   <div class="controls">
     <input id="search" placeholder="Search" />
@@ -55,6 +48,7 @@
       <option value="unowned">Unowned</option>
       <option value="hearted">❤️ Wishlist</option>
     </select>
+  </div>
   </div>
 </div>
 
@@ -66,6 +60,7 @@
 <button id="toggleAlbumsBtn" onclick="toggleAllAlbums()"> Collapse All </button>
 <button onclick="setViewMode('list')">List View</button>
 <button onclick="setViewMode('grid')">Grid View</button>
+<button id="exportWishlistBtn">Export Wishlist</button>
 
 <div class="table-wrapper"></div>
 <table>
@@ -94,6 +89,9 @@
 
 
 <!-- Scripts and failsafes-->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script type="module" src="js/app.js"></script>
+
 <script type="module" src="js/app.js"></script>
 <script>
 // Failsafe binding for Export button on GitHub Pages

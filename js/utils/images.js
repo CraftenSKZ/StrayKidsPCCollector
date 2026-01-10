@@ -28,15 +28,27 @@ export function resolveImageSrc(item) {
 /**
  * Apply common image behavior (lazy, size, fallback)
  */
-export function applyImageProps(img, item) {
+// export function applyImageProps(img, item) {
+//   img.src = resolveImageSrc(item);
+//   img.loading = 'lazy';
+//   img.decoding = 'async';
+//   img.width = 50;
+//   img.height = 80;
+
+//   img.onerror = () => {
+//     img.onerror = null;
+//     img.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
+//   };
+// }
+export function applyImageProps(img, item, { eager = false } = {}) {
   img.src = resolveImageSrc(item);
-  img.loading = 'lazy';
+  img.alt = item.name || '';
+  img.loading = eager ? 'eager' : 'lazy';
   img.decoding = 'async';
-  img.width = 50;
-  img.height = 80;
+  img.fetchPriority = eager ? 'high' : 'low';
 
   img.onerror = () => {
     img.onerror = null;
-    img.src = `${BASE_PATH}assets/images/ui/placeholder.webp`;
+    img.src = `${BASE_PATH}/assets/images/ui/placeholder.webp`;
   };
 }

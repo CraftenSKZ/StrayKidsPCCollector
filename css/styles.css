@@ -508,6 +508,28 @@ th:hover {
   }
 }
 
+/* ===== Export button spinner ===== */
+.export-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  vertical-align: middle;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* =========================
    Heart Button – Base
    ========================= */
@@ -537,9 +559,6 @@ th:hover {
   border-radius: 6px;
   display: block;
 }
-
-
-
 
 /* Mobile list view heart (below image) */
 @media (max-width: 720px) {
@@ -809,4 +828,171 @@ td img {
 .check-all-btn.show-tooltip::after {
   opacity: 1;
   transform: translate(-50%, 0);
+}
+
+
+/* ===== Wishlist Export Layout ===== */
+#wishlist-export {
+  position: fixed;
+  left: -99999px;
+  top: 0;
+
+  /* 🔑 let content define width */
+  width: fit-content;
+  max-width: none;
+
+  padding: 24px;
+  background: #0f0f10;
+  color: #fff;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+
+
+#wishlist-export h2 {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+/* ===== Wishlist Album Headers ===== */
+#wishlist-export .wishlist-album {
+  margin-bottom: 28px;
+  width: fit-content;
+}
+
+#wishlist-export .wishlist-album-title {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  text-align: left;
+}
+
+#wishlist-export .wishlist-item {
+  padding: 6px 6px 8px;        /* tighter padding */
+  width: 66px;                /* snug fit around 50px image */
+  box-sizing: border-box;
+}
+
+#wishlist-export .wishlist-item img {
+  width: 50px;
+  height: 80px;
+  max-width: 50px;
+  max-height: 80px;
+  object-fit: contain;
+  background: #111;       /* subtle frame for transparency */
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+
+#wishlist-export .wishlist-grid {
+  gap: 10px;   /* was 14px */
+  justify-content: start;  /* left align */
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+.wishlist-item {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+.wishlist-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.wishlist-name {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+#wishlist-export .wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 66px);
+  gap: 10px;
+}
+
+#wishlist-export .wishlist-item {
+  width: 66px;
+  padding: 6px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  text-align: center;
+
+  /* critical: let height shrink to content */
+  min-height: unset;
+}
+
+#wishlist-export .wishlist-item img {
+  width: 50px;
+  height: 80px;
+  max-width: 50px;
+  max-height: 80px;
+
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+#wishlist-export .wishlist-name {
+  font-size: 0.7rem;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Compact Album Separators ===== */
+#wishlist-export .wishlist-album {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+#wishlist-export .wishlist-album-title {
+  margin: 0 0 8px;     /* tighter spacing */
+  padding-bottom: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ===== Toast Notification ===== */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #111;
+  color: #fff;
+
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #333;
+
+  font-size: 0.9rem;
+  z-index: 9999;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Visible state */
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-6px);
 }

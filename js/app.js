@@ -279,6 +279,40 @@ function createHeartButton(itemId) {
   return btn;
 }
 
+/**********************************
+ * Set export wishlist button state
+ * ********************************/
+function setExportWishlistDisabled(disabled) {
+  const btn = document.getElementById("exportWishlistBtn");
+  if (!btn) return;
+
+  if (disabled) {
+    // Save original label once
+    if (!btn.dataset.originalText) {
+      btn.dataset.originalText = btn.innerHTML;
+    }
+
+    btn.disabled = true;
+    btn.style.opacity = "0.6";
+    btn.style.cursor = "not-allowed";
+
+    btn.innerHTML = `
+      <span class="export-spinner"></span>
+      Preparing…
+    `;
+  } else {
+    btn.disabled = false;
+    btn.style.opacity = "1";
+    btn.style.cursor = "pointer";
+
+    // Restore original label
+    if (btn.dataset.originalText) {
+      btn.innerHTML = btn.dataset.originalText;
+      delete btn.dataset.originalText;
+    }
+  }
+}
+
 
 
 
@@ -377,6 +411,83 @@ function updateBackupStatus(justBackedUp = false) {
   }
 }
 
+/**********************
+ * Export wishlist
+ * ********************/
+// window.exportWishlist = function () {
+//   // Get all hearted item IDs
+//   const heartedIds = Object.keys(localStorage)
+//     .filter(k => k.startsWith('heart_') && localStorage.getItem(k) === 'true')
+//     .map(k => k.replace('heart_', ''));
+
+//   if (!heartedIds.length) {
+//     alert('No wishlist items yet!');
+//     return;
+//   }
+
+//   // Match against your master item list
+//   const items = allAlbumItems.filter(i => heartedIds.includes(String(i.id)));
+
+//   // Open a new tab
+//   const w = window.open('', '_blank');
+
+//   // Basic document
+//   w.document.write(`
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta charset="UTF-8">
+// <title>My Wishlist</title>
+// <link rel="stylesheet" href="${BASE_PATH}css/styles.css">
+// <style>
+//   body {
+//     background: #0f0f10;
+//     color: #eaeaea;
+//     padding: 16px;
+//   }
+//   h1 {
+//     text-align: center;
+//     margin-bottom: 16px;
+//   }
+//   .album-grid {
+//     max-width: 1400px;
+//   }
+//   .grid-card .heart-btn {
+//     display: none; /* no interaction */
+//   }
+// </style>
+// </head>
+// <body>
+// <h1>❤️ My Photocard Wishlist</h1>
+// <div class="album-grid">
+// </div>
+// </body>
+// </html>
+// `);
+
+//   const grid = w.document.querySelector('.album-grid');
+
+//   items.forEach(item => {
+//     const card = w.document.createElement('div');
+//     card.className = 'grid-card';
+
+//     const img = w.document.createElement('img');
+//     img.src = resolveImageSrc(item.image);
+//     img.alt = item.name;
+
+//     const name = w.document.createElement('div');
+//     name.className = 'grid-name';
+//     name.textContent = item.name;
+
+//     card.appendChild(img);
+//     card.appendChild(name);
+//     grid.appendChild(card);
+//   });
+
+//   w.document.close();
+// };
+
+
 /********************
  * DOM references
  ********************/
@@ -386,6 +497,189 @@ const list = document.getElementById('list');
 const cardList = document.getElementById('cardList');
 const memberFilters = document.getElementById('memberFilters');
 const progress = document.getElementById('progress');
+
+/********************
+ * Toast helper
+ *******************/
+function showToast(message, {
+  duration = 3000,
+  persistent = false
+} = {}) {
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.textContent = message;
+
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(() => {
+    toast.classList.add("show");
+  });
+
+  if (!persistent) {
+    setTimeout(() => hideToast(toast), duration);
+  }
+
+  return toast;
+}
+
+function hideToast(toast) {
+  if (!toast) return;
+  toast.classList.remove("show");
+  setTimeout(() => toast.remove(), 250);
+}
+
+
+
+
+/*********************************
+ * Export wishlist button listener
+ * ******************************/
+document
+  .getElementById("exportWishlistBtn")
+  .addEventListener("click", exportWishlistImage);
+
+function exportWishlistImage() {
+  setExportWishlistDisabled(true);
+  const allItems = CATALOG[category] || [];
+
+  // Get wishlisted items from localStorage
+  const wishlistItems = allItems.filter(
+    item => localStorage.getItem(`heart_${item.id}`) === 'true'
+  );
+
+  // 🚫 Stop if empty
+  if (wishlistItems.length === 0) {
+    showToast("Your wishlist is empty, Heart/Wishlist some cards first!");
+      setExportWishlistDisabled(false); // ✅ re-enable
+    return;
+  }
+  
+  // Show progress toast
+  const progressToast = showToast(
+  "⏳ Preparing wishlist…",
+  { persistent: true }
+);
+
+  // Create container for rendering
+  const container = document.createElement("div");
+  container.id = "wishlist-export";
+
+  // Update progress toast
+  progressToast.textContent = "🖼️ Rendering wishlist image…";
+
+  // Sort by album, then name
+  wishlistItems.sort((a, b) => {
+    const albumA = a.album || '';
+    const albumB = b.album || '';
+    if (albumA !== albumB) return albumA.localeCompare(albumB);
+    return (a.name || '').localeCompare(b.name || '');
+  });
+
+  // Group by album
+  const itemsByAlbum = {};
+  wishlistItems.forEach(item => {
+    const album = item.album || 'Unknown Album';
+    if (!itemsByAlbum[album]) itemsByAlbum[album] = [];
+    itemsByAlbum[album].push(item);
+  });
+
+//   // Build HTML
+//   const itemsHTML = Object.entries(itemsByAlbum)
+//     .map(([album, items]) => `
+//       <div class="wishlist-album">
+//         <h3 class="wishlist-album-title">${album}</h3>
+//         <div class="wishlist-grid">
+//           ${items
+//         .map(item => `
+//           <div class="wishlist-item">
+//             <img
+//               src="${resolveImageSrc(item)}"
+//               loading="eager"
+//               decoding="sync"
+//               crossorigin="anonymous"
+//             >
+//             <div class="wishlist-name">${item.name}</div>
+//           </div>
+//         `)
+//             .join("")}
+//         </div>
+//       </div>
+//     `)
+//     .join("");
+
+// container.innerHTML = `
+//   <h2>My Stray Kids PC Wishlist ❤️</h2>
+//   ${itemsHTML}
+// `;
+
+container.innerHTML = `<h2>My Stray Kids PC Wishlist ❤️</h2>`;
+
+Object.entries(itemsByAlbum).forEach(([album, items]) => {
+  const albumWrap = document.createElement('div');
+  albumWrap.className = 'wishlist-album';
+
+  const title = document.createElement('h3');
+  title.className = 'wishlist-album-title';
+  title.textContent = album;
+  albumWrap.appendChild(title);
+
+  const grid = document.createElement('div');
+  grid.className = 'wishlist-grid';
+
+  items.forEach(item => {
+    const itemWrap = document.createElement('div');
+    itemWrap.className = 'wishlist-item';
+
+    const img = document.createElement('img');
+    applyImageProps(img, item, { eager: true });
+    img.setAttribute('crossorigin', 'anonymous');
+
+    const name = document.createElement('div');
+    name.className = 'wishlist-name';
+    name.textContent = item.name;
+
+    itemWrap.appendChild(img);
+    itemWrap.appendChild(name);
+    grid.appendChild(itemWrap);
+  });
+
+  albumWrap.appendChild(grid);
+  container.appendChild(albumWrap);
+});
+
+
+  document.body.appendChild(container);
+
+html2canvas(container, {
+  backgroundColor: "#0f0f10",
+  scale: 2,
+  useCORS: true
+}).then(canvas => {
+  hideToast(progressToast);
+
+  showToast("✅ Wishlist exported!");
+
+  const link = document.createElement("a");
+  link.download = "skz-wishlist.png";
+  link.href = canvas.toDataURL("image/png");
+  link.click();
+
+  container.remove();
+
+  setExportWishlistDisabled(false); // ✅ re-enable
+}).catch(err => {
+  hideToast(progressToast);
+  showToast("❌ Failed to export wishlist");
+  console.error(err);
+
+  setExportWishlistDisabled(false); // ✅ re-enable on error
+});
+
+
+}
+
+
+
 
 /********************
  * Event listeners
@@ -557,15 +851,12 @@ window.setViewMode = setViewMode;
 function setCategory(c) {
   category = c;
 
-  document.querySelectorAll('.tabs button').forEach(btn => {
-    btn.classList.toggle(
-      'active',
-      btn.dataset.category === c
-    );
-  });
+  const select = document.getElementById('categorySelect');
+  if (select) select.value = c;
 
   render();
 }
+
 window.setCategory = setCategory;
 
 function toggle(id) {
@@ -970,9 +1261,6 @@ list.appendChild(tr);
 //********************
 // Mobile card view
 //********************/
-//********************
-// Mobile card view
-//********************/
 const card = document.createElement('div');
 card.className = 'card' + (owned[i.id] ? ' owned' : '');
 card.appendChild(
@@ -1254,10 +1542,17 @@ document.querySelectorAll('.info-tooltip').forEach(tip => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const select = document.getElementById('categorySelect');
+  if (select) select.value = category;
+});
+
+
 /********************
  * Boot
  ********************/
 loadCatalog()
+
   .then(() => {
     render();
     updateBackupStatus();
