@@ -1,0 +1,433 @@
+/* Info icon container */
+.export-hint {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ℹ icon */
+.info-icon {
+  font-size: 1rem;
+  color: var(--muted);
+  cursor: help;
+  user-select: none;
+}
+
+/* =========================
+   Heart Button – Base
+   ========================= */
+.heart-btn {
+  position: absolute;
+  z-index: 10;
+  font-size: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* List view photocard wrapper (for heart overlay) */
+.pc-img-wrap {
+  position: relative;
+  display: inline-block;
+  bottom: 4px;
+  right: 4px;
+}
+
+/* Ensure list-view images size correctly */
+.pc-img-wrap img {
+  width: 50px;
+  border-radius: 6px;
+  display: block;
+}
+
+/* Grid heart positioning */
+.grid-card .heart-btn {
+  bottom: 6px;
+  right: 6px;
+}
+
+/* Remove focus outline from heart button */
+.card-heart:focus {
+  outline: none;
+}
+
+/* Tooltip */
+.info-tooltip {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  z-index: 100; /* ✅ higher than panels */
+
+  min-width: 260px;
+  max-width: 320px;
+
+  background: #111;
+  color: var(--text);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px 12px;
+
+  font-size: 0.85rem;
+  line-height: 1.4;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show on hover or focus (mobile friendly) */
+.info-icon:hover + .info-tooltip,
+.info-icon:focus + .info-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Optional: make Import look like a button */
+.import-btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.tabs button {
+  background: #1a1a1d;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.tabs button.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(225,29,46,0.4);
+}
+
+.progress {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.members label {
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+/* ===== Member Filter Chips ===== */
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.member-chip {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.member-chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.member-chip span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: #1f1f1f;
+  border: 1px solid #444;
+  color: #ccc;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Checked state */
+.member-chip input:checked + span {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Hover / focus */
+.member-chip:hover span {
+  border-color: var(--accent);
+}
+
+/* Keyboard focus */
+.member-chip input:focus-visible + span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ===== TABLE STYLES ===== */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Center and constrain list table */
+.table-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Row striping and hover effect */
+tbody tr:nth-child(even):not(.album-header) {
+  background: #242424;
+}
+
+tbody tr:hover:not(.album-header) {
+  background: #2b2b2b;
+}
+
+/* Column sizing */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 56px; /* checkbox */
+  text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 40%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 20%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 80px; /* image */
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th,
+td {
+  border: 1px solid;
+  border-color: var(--border);
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+th {
+  background: var(--panel-alt);
+  color: var(--text);
+  font-weight: 600;
+}
+
+tr.owned {
+  background: #141416;
+  color: var(--muted);
+}
+
+img {
+  width: 50px;
+  opacity: .9;
+}
+
+tr.owned img {
+  opacity: .3;
+}
+
+.card-list {
+  display: none;
+}
+
+.card {
+  background: #222;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.card.owned {
+  opacity: .6;
+}
+
+.card img {
+  width: 56px;
+  border-radius: 6px;
+}
+
+.card .title {
+  font-weight: bold;
+}
+
+.card .meta {
+  font-size: .9em;
+  color: #ccc;
+}
+
+.grid-empty-hint {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 14px 0;
+  opacity: 0.85;
+}
+
+/*Sortable Table Headers*/
+th {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+th:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Album Header Styles */
+.album-header {
+  background: linear-gradient(
+    90deg,
+    rgba(225,29,46,0.12),
+    transparent
+  );
+  font-weight: bold;
+  border-top: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+/* Make the entire row feel like a banner */
+.album-header td {
+  padding: 12px 10px;
+}
+
+.album-header-card {
+  background: linear-gradient(
+    90deg,
+    rgba(225,29,46,0.12),
+    transparent
+  );
+  border: 1px solid var(--border);
+  padding:10px;
+  border-radius:10px;
+  margin:12px auto 6px;
+  font-weight:bold;
+  cursor:pointer;
+  text-align:center;
+  flex-wrap: wrap;
+}
+
+.album-toggle-icon {
+  display: inline-block;
+  width: 1em;
+  margin-right: 6px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.album-toggle-icon.open {
+  transform: rotate(90deg);
+}
+
+.check-all-btn {
+  margin-left: 12px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.check-all-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.check-all-btn {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Tooltip bubble */
+.check-all-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 10%;
+  transform: translate(-50%, 4px);
+
+  width: max-content;
+  max-width: min(90%, 320px);
+
+  background: rgba(20, 20, 20, 0.95);
+  color: #ffd966;
+  padding: 8px 10px;
+  border-radius: 6px;
+
+  font-size: 0.7rem;
+  line-height: 1.35;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  z-index: 1000;
+}
+
+/* Show tooltip when armed */
+.check-all-btn.show-tooltip::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* Empty album hint – desktop */
+.album-empty-row td {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  background: linear-gradient(
+    to right,
+    rgba(201,162,77,0.05),
+    rgba(0,0,0,0),
+    rgba(201,162,77,0.05)
+  );
+}
+
+/* Empty album hint – mobile */
+.album-empty-card {
+  text-align: center;
+  padding: 10px;
+  margin: 6px 0 12px;
+  font-style: italic;
+  color: #777;
+  opacity: 0.85;
+}

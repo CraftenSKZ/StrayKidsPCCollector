@@ -1,0 +1,103 @@
+.grid-active table,
+.grid-active .card-list {
+  display: none !important;
+}
+
+.grid-active .grid-view {
+  display: block;
+}
+
+/* Grid View Styles */
+.grid-view {
+  padding: 0.5rem;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* MAX 10 per row */
+  gap: 12px;
+
+  /* Center grid under album title */
+  justify-content: center;
+  max-width: 1500px; /* prevents full-page stretch */
+  margin: 0 auto 16px;
+}
+
+/* Desktop-only grid card size boost */
+@media (min-width: 1024px) {
+  .album-grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .grid-card img {
+    width: 60px;
+    height: 150px;
+  }
+
+  .grid-card {
+    padding: 8px;
+  }
+
+  .grid-name {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .album-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .album-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .album-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: #1f1f1f;
+  position: relative;
+}
+
+.grid-card img {
+  width: 70px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.grid-name {
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.15;
+  color: #eaeaea;
+}
+
+.grid-card .checkbox {
+  align-self: end;
+  margin-top: 6px;
+}
+
+.grid-card.owned {
+  opacity: 0.4;
+}

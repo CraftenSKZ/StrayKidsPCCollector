@@ -1,0 +1,217 @@
+/* ===== Wishlist Export Layout ===== */
+#wishlist-export {
+  position: fixed;
+  left: -99999px;
+  top: 0;
+
+  /* 🔑 let content define width */
+  width: fit-content;
+  max-width: none;
+
+  padding: 24px;
+  background: #0f0f10;
+  color: #fff;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+
+#wishlist-export h2 {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+/* ===== Wishlist Album Headers ===== */
+#wishlist-export .wishlist-album {
+  margin-bottom: 28px;
+  width: fit-content;
+}
+
+#wishlist-export .wishlist-album-title {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  text-align: left;
+}
+
+#wishlist-export .wishlist-item {
+  padding: 6px 6px 8px;        /* tighter padding */
+  width: 66px;                /* snug fit around 50px image */
+  box-sizing: border-box;
+}
+
+#wishlist-export .wishlist-item img {
+  width: 50px;
+  height: 80px;
+  max-width: 50px;
+  max-height: 80px;
+  object-fit: contain;
+  background: #111;       /* subtle frame for transparency */
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+
+#wishlist-export .wishlist-grid {
+  gap: 10px;   /* was 14px */
+  justify-content: start;  /* left align */
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+.wishlist-item {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+.wishlist-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.wishlist-name {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+#wishlist-export .wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 66px);
+  gap: 10px;
+}
+
+#wishlist-export .wishlist-item {
+  width: 66px;
+  padding: 6px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  text-align: center;
+
+  /* critical: let height shrink to content */
+  min-height: unset;
+}
+
+#wishlist-export .wishlist-item img {
+  width: 50px;
+  height: 80px;
+  max-width: 50px;
+  max-height: 80px;
+
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+#wishlist-export .wishlist-name {
+  font-size: 0.7rem;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Compact Album Separators ===== */
+#wishlist-export .wishlist-album {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+#wishlist-export .wishlist-album-title {
+  margin: 0 0 8px;     /* tighter spacing */
+  padding-bottom: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ===== Wishlist Export Footer ===== */
+#wishlist-export .wishlist-footer {
+  margin-top: 32px;
+  padding-top: 12px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#wishlist-export .wishlist-footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+#wishlist-export .wishlist-footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Gold Wishlist Highlight
+   ========================= */
+
+/* List view & mobile card */
+.pc-img-wrap.wishlist-gold img,
+.card.wishlist-gold img {
+  border: 2px solid #d4af37;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.6),
+    0 0 8px rgba(212, 175, 55, 0.35);
+}
+
+/* Grid view card */
+.grid-card.wishlist-gold {
+  border: 2px solid #d4af37;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.6),
+    0 0 10px rgba(212, 175, 55, 0.35);
+}
+
+/* Soft gold sheen behind photocard */
+.wishlist-gold img {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.18),
+      rgba(0, 0, 0, 0) 60%
+    ),
+    #111;
+}
+
+/* Optional: slightly lift priority cards */
+.wishlist-gold {
+  position: relative;
+}
+
+/* =========================
+   Gold Wishlist Export Card
+   ========================= */
+
+/* Gold border + subtle glow around entire export card */
+#wishlist-export .wishlist-item.wishlist-gold {
+  border: 2px solid #d4af37;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.12),
+      rgba(0, 0, 0, 0) 65%
+    ),
+    #1f1f1f;
+
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.55),
+    0 0 10px rgba(212, 175, 55, 0.35);
+}
+
+/* Optional: slightly brighter name text for priority items */
+#wishlist-export .wishlist-item.wishlist-gold .wishlist-name {
+  color: #ffd966;
+}

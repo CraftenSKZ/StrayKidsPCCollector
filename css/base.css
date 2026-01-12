@@ -1,0 +1,37 @@
+:root {
+  /* Base */
+  --bg: #0f0f10;
+  --panel: #18181b;
+  --panel-alt: #1f1f23;
+
+  /* Text */
+  --text: #eaeaea;
+  --muted: #a1a1aa;
+
+  /* Stray Kids accent */
+  --accent: #e11d2e;        /* SKZ red */
+  --accent-soft: #7f1d1d;   /* dark red */
+  --accent-glow: #f43f5e;   /* highlight */
+
+  /* Borders */
+  --border: #2a2a2f;
+}
+
+body {
+  font-family: Segoe UI, Arial, sans-serif;
+  position: relative;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: .3px;
+}

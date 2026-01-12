@@ -1,0 +1,50 @@
+@media (max-width: 720px){
+  body{padding:12px}
+  table{display:none}
+  .card-list{display:block}
+
+  /* --- MOBILE CARD LAYOUT FIX --- */
+  .card {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* checkbox | text | image */
+      min-height: 96px; /* locks height */
+    align-items: center;
+    gap: 10px;
+  }
+
+/* Ensure image never affects layout */
+.card img {
+  width: 50px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+  /* Keep text in the middle */
+  .card > div {
+    grid-column: 2;
+  }
+}
+
+/* Mobile list view heart (below image) */
+@media (max-width: 720px) {
+   .card {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+      /* Force photocard to the right */
+    .card .pc-img-wrap {
+    grid-column: 3;
+    justify-self: end;
+    position: relative;
+  }
+
+}
+
+@media (min-width: 721px) {
+  .pc-img-wrap .heart-btn {
+    bottom: -9px;
+    right: -14px;
+    transform: translate(0, 0);
+  }
+}
