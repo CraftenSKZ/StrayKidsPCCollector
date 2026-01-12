@@ -473,82 +473,6 @@ function updateBackupStatus(justBackedUp = false) {
   }
 }
 
-/**********************
- * Export wishlist
- * ********************/
-// window.exportWishlist = function () {
-//   // Get all hearted item IDs
-//   const heartedIds = Object.keys(localStorage)
-//     .filter(k => k.startsWith('heart_') && localStorage.getItem(k) === 'true')
-//     .map(k => k.replace('heart_', ''));
-
-//   if (!heartedIds.length) {
-//     alert('No wishlist items yet!');
-//     return;
-//   }
-
-//   // Match against your master item list
-//   const items = allAlbumItems.filter(i => heartedIds.includes(String(i.id)));
-
-//   // Open a new tab
-//   const w = window.open('', '_blank');
-
-//   // Basic document
-//   w.document.write(`
-// <!DOCTYPE html>
-// <html>
-// <head>
-// <meta charset="UTF-8">
-// <title>My Wishlist</title>
-// <link rel="stylesheet" href="${BASE_PATH}css/styles.css">
-// <style>
-//   body {
-//     background: #0f0f10;
-//     color: #eaeaea;
-//     padding: 16px;
-//   }
-//   h1 {
-//     text-align: center;
-//     margin-bottom: 16px;
-//   }
-//   .album-grid {
-//     max-width: 1400px;
-//   }
-//   .grid-card .heart-btn {
-//     display: none; /* no interaction */
-//   }
-// </style>
-// </head>
-// <body>
-// <h1>❤️ My Photocard Wishlist</h1>
-// <div class="album-grid">
-// </div>
-// </body>
-// </html>
-// `);
-
-//   const grid = w.document.querySelector('.album-grid');
-
-//   items.forEach(item => {
-//     const card = w.document.createElement('div');
-//     card.className = 'grid-card';
-
-//     const img = w.document.createElement('img');
-//     img.src = resolveImageSrc(item.image);
-//     img.alt = item.name;
-
-//     const name = w.document.createElement('div');
-//     name.className = 'grid-name';
-//     name.textContent = item.name;
-
-//     card.appendChild(img);
-//     card.appendChild(name);
-//     grid.appendChild(card);
-//   });
-
-//   w.document.close();
-// };
-
 
 /********************
  * DOM references
@@ -633,7 +557,7 @@ const wishlistItems = sortItemsLikeUI(
   allItems.filter(item => {
     const heart = localStorage.getItem(`heart_${item.id}`);
 
-    // ❤️ must be wishlisted (legacy + red + gold)
+    // ❤️ must be wishlisted (legacy true + red + gold)
     if (heart !== 'true' && heart !== 'red' && heart !== 'gold') {
       return false;
     }
@@ -673,14 +597,6 @@ const wishlistItems = sortItemsLikeUI(
   // Update progress toast
   progressToast.textContent = "🖼️ Rendering wishlist image…";
 
-  // Sort by album, then name
-  // wishlistItems.sort((a, b) => {
-  //   const albumA = a.album || '';
-  //   const albumB = b.album || '';
-  //   if (albumA !== albumB) return albumA.localeCompare(albumB);
-  //   return (a.name || '').localeCompare(b.name || '');
-  // });
-
   // Group by album
   const itemsByAlbum = {};
   wishlistItems.forEach(item => {
@@ -689,34 +605,6 @@ const wishlistItems = sortItemsLikeUI(
     itemsByAlbum[album].push(item);
   });
 
-//   // Build HTML
-//   const itemsHTML = Object.entries(itemsByAlbum)
-//     .map(([album, items]) => `
-//       <div class="wishlist-album">
-//         <h3 class="wishlist-album-title">${album}</h3>
-//         <div class="wishlist-grid">
-//           ${items
-//         .map(item => `
-//           <div class="wishlist-item">
-//             <img
-//               src="${resolveImageSrc(item)}"
-//               loading="eager"
-//               decoding="sync"
-//               crossorigin="anonymous"
-//             >
-//             <div class="wishlist-name">${item.name}</div>
-//           </div>
-//         `)
-//             .join("")}
-//         </div>
-//       </div>
-//     `)
-//     .join("");
-
-// container.innerHTML = `
-//   <h2>My Stray Kids PC Wishlist ❤️</h2>
-//   ${itemsHTML}
-// `;
 
 container.innerHTML = `<h2>My Stray Kids PC Wishlist ❤️</h2>`;
 
