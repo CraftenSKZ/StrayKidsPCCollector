@@ -1823,7 +1823,13 @@ document.querySelectorAll('.info-tooltip').forEach(tip => {
 document.addEventListener('DOMContentLoaded', () => {
   const select = document.getElementById('categorySelect');
   if (select) select.value = category;
+
+  const exportBtn = document.getElementById('exportBtn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', exportData);
+  }
 });
+
 
 
 /********************
