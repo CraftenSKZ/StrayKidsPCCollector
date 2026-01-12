@@ -218,9 +218,11 @@ function getAlbumStats(_, allAlbumItems) {
   const ownedCount = allAlbumItems.filter(i => owned[i.id]).length;
   const unownedCount = total - ownedCount;
 
-  const heartedCount = allAlbumItems.filter(i =>
-    localStorage.getItem(`heart_${i.id}`) === 'true'
-  ).length;
+  const heartedCount = allAlbumItems.filter(i => {
+  const v = localStorage.getItem(`heart_${i.id}`);
+  return v === 'true' || v === 'red' || v === 'gold';
+  }).length;
+
 
   const percent = total
     ? Math.round((ownedCount / total) * 100)
@@ -276,25 +278,68 @@ function isAlbumExpanded(album) {
 function createHeartButton(itemId) {
   const btn = document.createElement('button');
   btn.type = 'button';
+  btn.className = 'heart-btn';
 
   const heartKey = `heart_${itemId}`;
-  const isHearted = localStorage.getItem(heartKey) === 'true';
 
-  btn.textContent = isHearted ? '❤️' : '🤍';
+  // ---- BACKWARD COMPATIBILITY ----
+  // Old data: 'true'  → red
+  // New data: 'red' | 'gold'
+  let state = localStorage.getItem(heartKey);
 
-  // Styling
-  btn.className = 'heart-btn';
+  if (state === 'true') {
+    state = 'red';
+    localStorage.setItem(heartKey, 'red');
+  }
+
+function applyState() {
+switch (state) {
+    case 'red':
+      btn.textContent = '❤️';
+      break;
+    case 'gold':
+      btn.textContent = '💛';
+      break;
+    default:
+      btn.textContent = '🤍';
+  }
+}
+
+
+  applyState();
 
   btn.onclick = (e) => {
     e.stopPropagation();
-    const newState = btn.textContent === '🤍';
-    btn.textContent = newState ? '❤️' : '🤍';
-    localStorage.setItem(heartKey, newState);
+
+    // Cycle: empty → red → gold → empty
+    if (!state) state = 'red';
+    else if (state === 'red') state = 'gold';
+    else state = null;
+
+    if (state) {
+      localStorage.setItem(heartKey, state);
+    } else {
+      localStorage.removeItem(heartKey);
+    }
+
+    applyState();
     render();
   };
 
   return btn;
 }
+
+/***************************
+ * Apply wishlist gold class
+ * ************************/
+function applyWishlistGoldClass(container, itemId) {
+  const heart = localStorage.getItem(`heart_${itemId}`);
+
+  if (heart === 'gold') {
+    container.classList.add('wishlist-gold');
+  }
+}
+
 
 /**********************************
  * Set export wishlist button state
@@ -586,8 +631,10 @@ const activeMembers = getActiveMemberFilters();
 
 const wishlistItems = sortItemsLikeUI(
   allItems.filter(item => {
-    // ❤️ must be hearted
-    if (localStorage.getItem(`heart_${item.id}`) !== 'true') {
+    const heart = localStorage.getItem(`heart_${item.id}`);
+
+    // ❤️ must be wishlisted (legacy + red + gold)
+    if (heart !== 'true' && heart !== 'red' && heart !== 'gold') {
       return false;
     }
 
@@ -604,6 +651,7 @@ const wishlistItems = sortItemsLikeUI(
     return true;
   })
 );
+
 
   // 🚫 Stop if empty
   if (wishlistItems.length === 0) {
@@ -687,6 +735,11 @@ Object.entries(itemsByAlbum).forEach(([album, items]) => {
   items.forEach(item => {
     const itemWrap = document.createElement('div');
     itemWrap.className = 'wishlist-item';
+    // 💛 Gold wishlist styling for export
+    if (localStorage.getItem(`heart_${item.id}`) === 'gold') {
+      itemWrap.classList.add('wishlist-gold');
+    }
+
 
     const img = document.createElement('img');
     applyImageProps(img, item, { eager: true });
@@ -1576,6 +1629,8 @@ const tdImg = document.createElement('td');
 // Image wrapper (for heart overlay)
 const imgWrap = document.createElement('div');
 imgWrap.className = 'pc-img-wrap';
+applyWishlistGoldClass(imgWrap, i.id);
+
 
 const tableImg = document.createElement('img');
 applyImageProps(tableImg, i);
@@ -1594,6 +1649,7 @@ list.appendChild(tr);
 //********************/
 const card = document.createElement('div');
 card.className = 'card' + (owned[i.id] ? ' owned' : '');
+applyWishlistGoldClass(card, i.id);
 card.appendChild(
   createCheckbox(!!owned[i.id], () => toggle(i.id))
 );
@@ -1798,7 +1854,7 @@ if (albumItems.length === 0) {
     albumItems.forEach(i => {
       const card = document.createElement('div');
       card.className = 'grid-card' + (owned[i.id] ? ' owned' : '');
-
+      applyWishlistGoldClass(card, i.id);
       /* Image
       const img = document.createElement('img');
       img.src = resolveImageSrc(i);

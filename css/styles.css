@@ -1013,3 +1013,78 @@ td img {
   opacity: 1;
   transform: translateX(-50%) translateY(-6px);
 }
+
+.heart-btn {
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.heart-btn:hover {
+  transform: scale(1.15);
+}
+
+/* Gold heart emphasis */
+.heart-btn:has(:not(*)) {
+  /* no-op for browser safety */
+}
+
+/* =========================
+   Gold Wishlist Highlight
+   ========================= */
+
+/* List view & mobile card */
+.pc-img-wrap.wishlist-gold img,
+.card.wishlist-gold img {
+  border: 2px solid #d4af37;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.6),
+    0 0 8px rgba(212, 175, 55, 0.35);
+}
+
+/* Grid view card */
+.grid-card.wishlist-gold {
+  border: 2px solid #d4af37;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.6),
+    0 0 10px rgba(212, 175, 55, 0.35);
+}
+
+/* Soft gold sheen behind photocard */
+.wishlist-gold img {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.18),
+      rgba(0, 0, 0, 0) 60%
+    ),
+    #111;
+}
+
+/* Optional: slightly lift priority cards */
+.wishlist-gold {
+  position: relative;
+}
+
+/* =========================
+   Gold Wishlist Export Card
+   ========================= */
+
+/* Gold border + subtle glow around entire export card */
+#wishlist-export .wishlist-item.wishlist-gold {
+  border: 2px solid #d4af37;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.12),
+      rgba(0, 0, 0, 0) 65%
+    ),
+    #1f1f1f;
+
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.55),
+    0 0 10px rgba(212, 175, 55, 0.35);
+}
+
+/* Optional: slightly brighter name text for priority items */
+#wishlist-export .wishlist-item.wishlist-gold .wishlist-name {
+  color: #ffd966;
+}
