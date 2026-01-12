@@ -1340,7 +1340,10 @@ updateSortIndicators();
   const f = ownedFilterSelect.value;
   if (f === 'owned') items = items.filter(i => owned[i.id]);
   if (f === 'unowned') items = items.filter(i => !owned[i.id]);
-  if (f === 'hearted') {items = items.filter(i => {return localStorage.getItem(`heart_${i.id}`) === 'true';
+  if (f === 'hearted') {
+      items = items.filter(i => {
+      const v = localStorage.getItem(`heart_${i.id}`);
+      return v === 'true' || v === 'red' || v === 'gold';
   });
 }
 
