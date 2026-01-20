@@ -42,8 +42,8 @@ const MEMBER_ORDER = [
   'I.N.',
   'UNIT'
 ];
-
-
+// LocalStorage save which category was selected
+const CATEGORY_KEY = 'skz_selected_category';
 
 //*****************************************
 // Update sort indicators in table headers
@@ -855,7 +855,7 @@ const CATEGORIES = [
 ];
 
 const CATALOG = {};
-let category = 'korean_albums';
+let category = localStorage.getItem(CATEGORY_KEY) || 'korean_albums';
 
 async function loadCatalog() {
   for (const cat of CATEGORIES) {
@@ -1037,6 +1037,8 @@ window.setViewMode = setViewMode;
  ********************/
 function setCategory(c) {
   category = c;
+
+  localStorage.setItem(CATEGORY_KEY, c);
 
   const select = document.getElementById('categorySelect');
   if (select) select.value = c;
