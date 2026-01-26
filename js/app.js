@@ -1949,3 +1949,8 @@ loadCatalog()
   .catch(err => {
     document.body.innerHTML = `<pre>${err.message}</pre>`;
   });
+  items.forEach(item => {
+  if (!item.set) {
+    console.warn('Missing set:', item);
+  }
+});
