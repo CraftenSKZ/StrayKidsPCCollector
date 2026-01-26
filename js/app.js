@@ -17,18 +17,60 @@ function restoreScrollPos(pos) {
   window.scrollTo(pos.x, pos.y);
 }
 
+//Sort grid items helper
+function sortGridItems(items) {
+  return [...items].sort((a, b) => {
+    let va, vb;
+
+    if (gridSortMode === 'member') {
+      const ia = MEMBER_ORDER.indexOf(a.member);
+      const ib = MEMBER_ORDER.indexOf(b.member);
+
+      if (ia !== -1 && ib !== -1) return ia - ib;
+      if (ia !== -1) return -1;
+      if (ib !== -1) return 1;
+
+      va = a.member || '';
+      vb = b.member || '';
+    } else {
+      // gridSortMode === 'set'
+      va = a.set || '';
+      vb = b.set || '';
+    }
+
+    if (va < vb) return -1;
+    if (va > vb) return 1;
+    return 0;
+  });
+}
+
+
+
 //********************
 // Sorting handler
 //********************/
+// function setSort(key) {
+//   if (sortState.key === key) {
+//     sortState.dir *= -1; // toggle direction
+//   } else {
+//     sortState.key = key;
+//     sortState.dir = 1;
+//   }
+//   render();
+// }
 function setSort(key) {
+  if (!['collected', 'set', 'member'].includes(key)) return;
+
   if (sortState.key === key) {
-    sortState.dir *= -1; // toggle direction
+    sortState.dir *= -1;
   } else {
     sortState.key = key;
     sortState.dir = 1;
   }
+
   render();
 }
+
 
 // Member order for sorting
 const MEMBER_ORDER = [
@@ -49,11 +91,11 @@ const CATEGORY_KEY = 'skz_selected_category';
 // Update sort indicators in table headers
 //****************************************/
 function updateSortIndicators() {
-  const map = {
-    collected: 'th-collected',
-    name: 'th-name',
-    member: 'th-member'
-  };
+const map = {
+  collected: 'th-collected',
+  set: 'th-type',
+  member: 'th-member'
+};
 
   // Reset all headers
   Object.values(map).forEach(id => {
@@ -966,9 +1008,9 @@ function sortItems(items) {
         va = owned[a.id] ? 1 : 0;
         vb = owned[b.id] ? 1 : 0;
         break;
-      case 'name':
-        va = a.name || '';
-        vb = b.name || '';
+      case 'set':
+        va = a.set || '';
+        vb = b.set || '';
         break;
       case 'member':
         va = a.member || '';
@@ -1023,13 +1065,52 @@ function sortItemsLikeUI(items) {
 // View mode handler
 //********************/
 let viewMode = localStorage.getItem('viewMode') || 'list'; // 'list' | 'grid'
+let gridSortMode = localStorage.getItem('gridSortMode') || 'member';
 
 function setViewMode(mode) {
   viewMode = mode;
   localStorage.setItem('viewMode', mode);
+
+  // Toggle grid sort popup
+  const gridSort = document.getElementById('gridSortWrapper');
+  if (gridSort) {
+    gridSort.hidden = mode !== 'grid';
+  }
+
+  // 🔹 Active state for view buttons
+  const listBtn = document.getElementById('listViewBtn');
+  const gridBtn = document.getElementById('gridViewBtn');
+
+  if (listBtn) {
+    listBtn.classList.toggle('active', mode === 'list');
+  }
+  if (gridBtn) {
+    gridBtn.classList.toggle('active', mode === 'grid');
+  }
+
   render();
 }
 
+function setGridSort(mode) {
+  if (!['member', 'set'].includes(mode)) return;
+
+  gridSortMode = mode;
+  localStorage.setItem('gridSortMode', mode);
+
+  const memberBtn = document.getElementById('gridSortMemberBtn');
+  const setBtn = document.getElementById('gridSortSetBtn');
+
+  if (memberBtn) {
+    memberBtn.classList.toggle('active', mode === 'member');
+  }
+  if (setBtn) {
+    setBtn.classList.toggle('active', mode === 'set');
+  }
+
+  render();
+}
+
+window.setGridSort = setGridSort;
 window.setViewMode = setViewMode;
 
 /********************
@@ -1156,7 +1237,20 @@ let matchedMember = null; // ✅ DEFINE ONCE, TOP-LEVEL
   let items = allItems;
 
 // Handle view mode 
-const gridView = document.getElementById('gridView');
+// 🔹 Sync grid sort button active state
+const gridMemberBtn = document.getElementById('gridSortMemberBtn');
+const gridSetBtn = document.getElementById('gridSortSetBtn');
+
+if (gridMemberBtn && gridSetBtn) {
+  gridMemberBtn.classList.toggle(
+    'active',
+    gridSortMode === 'member'
+  );
+  gridSetBtn.classList.toggle(
+    'active',
+    gridSortMode === 'set'
+  );
+}
 
 // ✅ APPLY CLASS FIRST
 document.body.classList.toggle('grid-active', viewMode === 'grid');
@@ -1248,7 +1342,7 @@ if (!matchedMember) {
 
 
 // Sort items
-  /*items = sortItems(items);*/
+  items = sortItems(items);
 
   buildMemberFilters(CATALOG[category] || []);
 
@@ -1508,9 +1602,17 @@ if (sortedAlbumItems.length === 0) {
       );
       tr.appendChild(tdCb);
 
-      const tdName = document.createElement('td');
-      tdName.textContent = i.name;
-      tr.appendChild(tdName);
+const tdName = document.createElement('td');
+/*
+  Visible text  → i.name
+  Hidden text   → i.set (zero-padded, used for sorting)
+*/
+tdName.innerHTML = `
+  <span class="type-visible">${i.name}</span>
+  <span class="type-set-hidden">${i.set || ''}</span>
+`;
+
+tr.appendChild(tdName);
 
       const tdMember = document.createElement('td');
       tdMember.textContent = i.member || '';
@@ -1744,7 +1846,9 @@ if (albumItems.length === 0) {
     const grid = document.createElement('div');
     grid.className = 'album-grid';
 
-    albumItems.forEach(i => {
+    const sortedGridItems = sortGridItems(albumItems);
+
+    sortedGridItems.forEach(i => {
       const card = document.createElement('div');
       card.className = 'grid-card' + (owned[i.id] ? ' owned' : '');
       applyWishlistGoldClass(card, i.id);
@@ -1838,9 +1942,8 @@ document.addEventListener('DOMContentLoaded', () => {
  * Boot
  ********************/
 loadCatalog()
-
   .then(() => {
-    render();
+    setViewMode(viewMode); // 🔹 sync active state + render
     updateBackupStatus();
   })
   .catch(err => {

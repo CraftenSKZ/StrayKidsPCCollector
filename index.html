@@ -58,8 +58,15 @@
 
 <!--Expand/Collapse Albums Toggle, and List View/Grid View buttons-->
 <button id="toggleAlbumsBtn" onclick="toggleAllAlbums()"> Collapse All </button>
-<button onclick="setViewMode('list')">List View</button>
-<button onclick="setViewMode('grid')">Grid View</button>
+<button id="listViewBtn" class="view-toggle-btn" onclick="setViewMode('list')">List View</button>
+<button id="gridViewBtn" class="view-toggle-btn" onclick="setViewMode('grid')">Grid View</button>
+
+<div id="gridSortWrapper" class="grid-sort-wrapper" hidden>
+  <button id="gridSortMemberBtn" class="view-toggle-btn" onclick="setGridSort('member')">Sort by member</button>
+  <button id="gridSortSetBtn" class="view-toggle-btn" onclick="setGridSort('set')">Sort by set</button>
+</div>
+
+
 <button id="exportWishlistBtn">Export Wishlist to image</button>
 
 <div class="table-wrapper"></div>
@@ -69,8 +76,8 @@
 <th id="th-collected" tabindex="0" role="button" onclick="setSort('collected')">
   Collected
 </th>
-<th id="th-name" tabindex="0" role="button" onclick="setSort('name')">
-  Name
+<th id="th-type" tabindex="0" role="button" onclick="setSort('set')">
+  Type
 </th>
 <th id="th-member" tabindex="0" role="button" onclick="setSort('member')">
   Member

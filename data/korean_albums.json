@@ -5,7 +5,7 @@
     "member": "Bang Chan",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-bangchan-02",
@@ -13,7 +13,7 @@
     "member": "Bang Chan",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-leeknow-01",
@@ -21,7 +21,7 @@
     "member": "Lee Know",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-leeknow-02",
@@ -29,7 +29,7 @@
     "member": "Lee Know",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-changbin-01",
@@ -37,7 +37,7 @@
     "member": "Changbin",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-changbin-02",
@@ -45,7 +45,7 @@
     "member": "Changbin",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-hyunjin-01",
@@ -53,7 +53,7 @@
     "member": "Hyunjin",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-hyunjin-02",
@@ -61,7 +61,7 @@
     "member": "Hyunjin",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-han-01",
@@ -69,7 +69,7 @@
     "member": "HAN",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-han-02",
@@ -77,7 +77,7 @@
     "member": "HAN",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-felix-01",
@@ -85,7 +85,7 @@
     "member": "Felix",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-felix-02",
@@ -93,7 +93,7 @@
     "member": "Felix",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-seungmin-01",
@@ -101,7 +101,7 @@
     "member": "Seungmin",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-seungmin-02",
@@ -109,7 +109,7 @@
     "member": "Seungmin",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "mixtape-in-01",
@@ -117,7 +117,7 @@
     "member": "I.N.",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "mixtape-in-02",
@@ -125,7 +125,7 @@
     "member": "I.N.",
     "album": "Mixtape",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-bangchan-01",
@@ -133,7 +133,7 @@
     "member": "Bang Chan",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-bangchan-02",
@@ -141,7 +141,7 @@
     "member": "Bang Chan",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-leeknow-01",
@@ -149,7 +149,7 @@
     "member": "Lee Know",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-leeknow-02",
@@ -157,7 +157,7 @@
     "member": "Lee Know",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-changbin-01",
@@ -165,7 +165,7 @@
     "member": "Changbin",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-changbin-02",
@@ -173,7 +173,7 @@
     "member": "Changbin",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-hyunjin-01",
@@ -181,7 +181,7 @@
     "member": "Hyunjin",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-hyunjin-02",
@@ -189,7 +189,7 @@
     "member": "Hyunjin",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-han-01",
@@ -197,7 +197,7 @@
     "member": "HAN",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-han-02",
@@ -205,7 +205,7 @@
     "member": "HAN",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-felix-01",
@@ -213,7 +213,7 @@
     "member": "Felix",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-felix-02",
@@ -221,7 +221,7 @@
     "member": "Felix",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-seungmin-01",
@@ -229,7 +229,7 @@
     "member": "Seungmin",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-seungmin-02",
@@ -237,7 +237,7 @@
     "member": "Seungmin",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-in-01",
@@ -245,7 +245,7 @@
     "member": "I.N.",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamnot-in-02",
@@ -253,7 +253,7 @@
     "member": "I.N.",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamnot-unit-01",
@@ -261,7 +261,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-02",
@@ -269,7 +269,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-03",
@@ -277,7 +277,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-04",
@@ -285,7 +285,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-05",
@@ -293,7 +293,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-06",
@@ -301,7 +301,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-07",
@@ -309,7 +309,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-08",
@@ -317,7 +317,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-09",
@@ -325,7 +325,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-10",
@@ -333,7 +333,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-11",
@@ -341,7 +341,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-12",
@@ -349,7 +349,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-13",
@@ -357,7 +357,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamnot-unit-14",
@@ -365,7 +365,7 @@
     "member": "UNIT",
     "album": "I am NOT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-bangchan-01",
@@ -373,7 +373,7 @@
     "member": "Bang Chan",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-bangchan-02",
@@ -381,7 +381,7 @@
     "member": "Bang Chan",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-bangchan-03",
@@ -389,7 +389,7 @@
     "member": "Bang Chan",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-bangchan-04",
@@ -397,7 +397,7 @@
     "member": "Bang Chan",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-bangchan-05",
@@ -405,7 +405,7 @@
     "member": "Bang Chan",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-leeknow-01",
@@ -413,7 +413,7 @@
     "member": "Lee Know",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-leeknow-02",
@@ -421,7 +421,7 @@
     "member": "Lee Know",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-leeknow-03",
@@ -429,7 +429,7 @@
     "member": "Lee Know",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-leeknow-04",
@@ -437,7 +437,7 @@
     "member": "Lee Know",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-leeknow-05",
@@ -445,7 +445,7 @@
     "member": "Lee Know",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-changbin-01",
@@ -453,7 +453,7 @@
     "member": "Changbin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-changbin-02",
@@ -461,7 +461,7 @@
     "member": "Changbin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-changbin-03",
@@ -469,7 +469,7 @@
     "member": "Changbin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-changbin-04",
@@ -477,7 +477,7 @@
     "member": "Changbin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-changbin-05",
@@ -485,7 +485,7 @@
     "member": "Changbin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-hyunjin-01",
@@ -493,7 +493,7 @@
     "member": "Hyunjin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-hyunjin-02",
@@ -501,7 +501,7 @@
     "member": "Hyunjin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-hyunjin-03",
@@ -509,7 +509,7 @@
     "member": "Hyunjin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-hyunjin-04",
@@ -517,7 +517,7 @@
     "member": "Hyunjin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-hyunjin-05",
@@ -525,7 +525,7 @@
     "member": "Hyunjin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-han-01",
@@ -533,7 +533,7 @@
     "member": "HAN",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-han-02",
@@ -541,7 +541,7 @@
     "member": "HAN",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-han-03",
@@ -549,7 +549,7 @@
     "member": "HAN",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-han-04",
@@ -557,7 +557,7 @@
     "member": "HAN",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-han-05",
@@ -565,7 +565,7 @@
     "member": "HAN",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-felix-01",
@@ -573,7 +573,7 @@
     "member": "Felix",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-felix-02",
@@ -581,7 +581,7 @@
     "member": "Felix",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-felix-03",
@@ -589,7 +589,7 @@
     "member": "Felix",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-felix-04",
@@ -597,7 +597,7 @@
     "member": "Felix",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-felix-05",
@@ -605,7 +605,7 @@
     "member": "Felix",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-seungmin-01",
@@ -613,7 +613,7 @@
     "member": "Seungmin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-seungmin-02",
@@ -621,7 +621,7 @@
     "member": "Seungmin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-seungmin-03",
@@ -629,7 +629,7 @@
     "member": "Seungmin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-seungmin-04",
@@ -637,7 +637,7 @@
     "member": "Seungmin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-seungmin-05",
@@ -645,7 +645,7 @@
     "member": "Seungmin",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamwho-in-01",
@@ -653,7 +653,7 @@
     "member": "I.N.",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamwho-in-02",
@@ -661,7 +661,7 @@
     "member": "I.N.",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamwho-in-03",
@@ -669,7 +669,7 @@
     "member": "I.N.",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamwho-in-04",
@@ -677,7 +677,7 @@
     "member": "I.N.",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamwho-in-05",
@@ -685,7 +685,7 @@
     "member": "I.N.",
     "album": "I am WHO",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-bangchan-01",
@@ -693,7 +693,7 @@
     "member": "Bang Chan",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-bangchan-02",
@@ -701,7 +701,7 @@
     "member": "Bang Chan",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-bangchan-03",
@@ -709,7 +709,7 @@
     "member": "Bang Chan",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-bangchan-04",
@@ -717,7 +717,7 @@
     "member": "Bang Chan",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-bangchan-05",
@@ -725,7 +725,7 @@
     "member": "Bang Chan",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-leeknow-01",
@@ -733,7 +733,7 @@
     "member": "Lee Know",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-leeknow-02",
@@ -741,7 +741,7 @@
     "member": "Lee Know",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-leeknow-03",
@@ -749,7 +749,7 @@
     "member": "Lee Know",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-leeknow-04",
@@ -757,7 +757,7 @@
     "member": "Lee Know",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-leeknow-05",
@@ -765,7 +765,7 @@
     "member": "Lee Know",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-changbin-01",
@@ -773,7 +773,7 @@
     "member": "Changbin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-changbin-02",
@@ -781,7 +781,7 @@
     "member": "Changbin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-changbin-03",
@@ -789,7 +789,7 @@
     "member": "Changbin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-changbin-04",
@@ -797,7 +797,7 @@
     "member": "Changbin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-changbin-05",
@@ -805,7 +805,7 @@
     "member": "Changbin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-hyunjin-01",
@@ -813,7 +813,7 @@
     "member": "Hyunjin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-hyunjin-02",
@@ -821,7 +821,7 @@
     "member": "Hyunjin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-hyunjin-03",
@@ -829,7 +829,7 @@
     "member": "Hyunjin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-hyunjin-04",
@@ -837,7 +837,7 @@
     "member": "Hyunjin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-hyunjin-05",
@@ -845,7 +845,7 @@
     "member": "Hyunjin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-han-01",
@@ -853,7 +853,7 @@
     "member": "HAN",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-han-02",
@@ -861,7 +861,7 @@
     "member": "HAN",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-han-03",
@@ -869,7 +869,7 @@
     "member": "HAN",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-han-04",
@@ -877,7 +877,7 @@
     "member": "HAN",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-han-05",
@@ -885,7 +885,7 @@
     "member": "HAN",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-felix-01",
@@ -893,7 +893,7 @@
     "member": "Felix",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-felix-02",
@@ -901,7 +901,7 @@
     "member": "Felix",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-felix-03",
@@ -909,7 +909,7 @@
     "member": "Felix",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-felix-04",
@@ -917,7 +917,7 @@
     "member": "Felix",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-felix-05",
@@ -925,7 +925,7 @@
     "member": "Felix",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-seungmin-01",
@@ -933,7 +933,7 @@
     "member": "Seungmin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-seungmin-02",
@@ -941,7 +941,7 @@
     "member": "Seungmin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-seungmin-03",
@@ -949,7 +949,7 @@
     "member": "Seungmin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-seungmin-04",
@@ -957,7 +957,7 @@
     "member": "Seungmin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-seungmin-05",
@@ -965,7 +965,7 @@
     "member": "Seungmin",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-in-01",
@@ -973,7 +973,7 @@
     "member": "I.N.",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "iamyou-in-02",
@@ -981,7 +981,7 @@
     "member": "I.N.",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "iamyou-in-03",
@@ -989,7 +989,7 @@
     "member": "I.N.",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "iamyou-in-04",
@@ -997,7 +997,7 @@
     "member": "I.N.",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "iamyou-in-05",
@@ -1005,7 +1005,7 @@
     "member": "I.N.",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "iamyou-unit-01",
@@ -1013,7 +1013,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-02",
@@ -1021,7 +1021,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-03",
@@ -1029,7 +1029,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-04",
@@ -1037,7 +1037,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-05",
@@ -1045,7 +1045,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-06",
@@ -1053,7 +1053,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-07",
@@ -1061,7 +1061,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-08",
@@ -1069,7 +1069,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-09",
@@ -1077,7 +1077,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-10",
@@ -1085,7 +1085,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-11",
@@ -1093,7 +1093,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-12",
@@ -1101,7 +1101,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-13",
@@ -1109,7 +1109,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-14",
@@ -1117,7 +1117,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-15",
@@ -1125,7 +1125,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-16",
@@ -1133,7 +1133,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-17",
@@ -1141,7 +1141,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-18",
@@ -1149,7 +1149,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-19",
@@ -1157,7 +1157,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-20",
@@ -1165,7 +1165,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-21",
@@ -1173,7 +1173,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-22",
@@ -1181,7 +1181,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-23",
@@ -1189,7 +1189,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-24",
@@ -1197,7 +1197,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-25",
@@ -1205,7 +1205,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-26",
@@ -1213,7 +1213,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-27",
@@ -1221,7 +1221,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "iamyou-unit-28",
@@ -1229,7 +1229,7 @@
     "member": "UNIT",
     "album": " I am YOU",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-bangchan-01",
@@ -1237,7 +1237,7 @@
     "member": "Bang Chan",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-bangchan-02",
@@ -1245,7 +1245,7 @@
     "member": "Bang Chan",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-bangchan-03",
@@ -1253,7 +1253,7 @@
     "member": "Bang Chan",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-bangchan-04",
@@ -1261,7 +1261,7 @@
     "member": "Bang Chan",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-bangchan-05",
@@ -1269,7 +1269,7 @@
     "member": "Bang Chan",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-bangchan-06",
@@ -1277,7 +1277,7 @@
     "member": "Bang Chan",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-leeknow-01",
@@ -1285,7 +1285,7 @@
     "member": "Lee Know",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-leeknow-02",
@@ -1293,7 +1293,7 @@
     "member": "Lee Know",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-leeknow-03",
@@ -1301,7 +1301,7 @@
     "member": "Lee Know",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-leeknow-04",
@@ -1309,7 +1309,7 @@
     "member": "Lee Know",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-leeknow-05",
@@ -1317,7 +1317,7 @@
     "member": "Lee Know",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-leeknow-06",
@@ -1325,7 +1325,7 @@
     "member": "Lee Know",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-changbin-01",
@@ -1333,7 +1333,7 @@
     "member": "Changbin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-changbin-02",
@@ -1341,7 +1341,7 @@
     "member": "Changbin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-changbin-03",
@@ -1349,7 +1349,7 @@
     "member": "Changbin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-changbin-04",
@@ -1357,7 +1357,7 @@
     "member": "Changbin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-changbin-05",
@@ -1365,7 +1365,7 @@
     "member": "Changbin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-changbin-06",
@@ -1373,7 +1373,7 @@
     "member": "Changbin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-hyunjin-01",
@@ -1381,7 +1381,7 @@
     "member": "Hyunjin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-hyunjin-02",
@@ -1389,7 +1389,7 @@
     "member": "Hyunjin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-hyunjin-03",
@@ -1397,7 +1397,7 @@
     "member": "Hyunjin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-hyunjin-04",
@@ -1405,7 +1405,7 @@
     "member": "Hyunjin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-hyunjin-05",
@@ -1413,7 +1413,7 @@
     "member": "Hyunjin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-hyunjin-06",
@@ -1421,7 +1421,7 @@
     "member": "Hyunjin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-han-01",
@@ -1429,7 +1429,7 @@
     "member": "HAN",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-han-02",
@@ -1437,7 +1437,7 @@
     "member": "HAN",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-han-03",
@@ -1445,7 +1445,7 @@
     "member": "HAN",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-han-04",
@@ -1453,7 +1453,7 @@
     "member": "HAN",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-han-05",
@@ -1461,7 +1461,7 @@
     "member": "HAN",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-han-06",
@@ -1469,7 +1469,7 @@
     "member": "HAN",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-felix-01",
@@ -1477,7 +1477,7 @@
     "member": "Felix",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-felix-02",
@@ -1485,7 +1485,7 @@
     "member": "Felix",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-felix-03",
@@ -1493,7 +1493,7 @@
     "member": "Felix",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-felix-04",
@@ -1501,7 +1501,7 @@
     "member": "Felix",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-felix-05",
@@ -1509,7 +1509,7 @@
     "member": "Felix",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-felix-06",
@@ -1517,7 +1517,7 @@
     "member": "Felix",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-seungmin-01",
@@ -1525,7 +1525,7 @@
     "member": "Seungmin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-seungmin-02",
@@ -1533,7 +1533,7 @@
     "member": "Seungmin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-seungmin-03",
@@ -1541,7 +1541,7 @@
     "member": "Seungmin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-seungmin-04",
@@ -1549,7 +1549,7 @@
     "member": "Seungmin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-seungmin-05",
@@ -1557,7 +1557,7 @@
     "member": "Seungmin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-seungmin-06",
@@ -1565,7 +1565,7 @@
     "member": "Seungmin",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl1miroh-in-01",
@@ -1573,7 +1573,7 @@
     "member": "I.N.",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl1miroh-in-02",
@@ -1581,7 +1581,7 @@
     "member": "I.N.",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl1miroh-in-03",
@@ -1589,7 +1589,7 @@
     "member": "I.N.",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl1miroh-in-04",
@@ -1597,7 +1597,7 @@
     "member": "I.N.",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl1miroh-in-05",
@@ -1605,7 +1605,7 @@
     "member": "I.N.",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl1miroh-in-06",
@@ -1613,7 +1613,7 @@
     "member": "I.N.",
     "album": "Clé 1: Miroh",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cl2yellowwood-bangchan-01",
@@ -1621,7 +1621,7 @@
     "member": "Bang Chan",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-bangchan-02",
@@ -1629,7 +1629,7 @@
     "member": "Bang Chan",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-bangchan-03",
@@ -1637,7 +1637,7 @@
     "member": "Bang Chan",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-bangchan-04",
@@ -1645,7 +1645,7 @@
     "member": "Bang Chan",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-bangchan-05",
@@ -1653,7 +1653,7 @@
     "member": "Bang Chan",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-leeknow-01",
@@ -1661,7 +1661,7 @@
     "member": "Lee Know",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-leeknow-02",
@@ -1669,7 +1669,7 @@
     "member": "Lee Know",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-leeknow-03",
@@ -1677,7 +1677,7 @@
     "member": "Lee Know",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-leeknow-04",
@@ -1685,7 +1685,7 @@
     "member": "Lee Know",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-leeknow-05",
@@ -1693,7 +1693,7 @@
     "member": "Lee Know",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-changbin-01",
@@ -1701,7 +1701,7 @@
     "member": "Changbin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-changbin-02",
@@ -1709,7 +1709,7 @@
     "member": "Changbin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-changbin-03",
@@ -1717,7 +1717,7 @@
     "member": "Changbin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-changbin-04",
@@ -1725,7 +1725,7 @@
     "member": "Changbin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-changbin-05",
@@ -1733,7 +1733,7 @@
     "member": "Changbin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-hyunjin-01",
@@ -1741,7 +1741,7 @@
     "member": "Hyunjin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-hyunjin-02",
@@ -1749,7 +1749,7 @@
     "member": "Hyunjin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-hyunjin-03",
@@ -1757,7 +1757,7 @@
     "member": "Hyunjin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-hyunjin-04",
@@ -1765,7 +1765,7 @@
     "member": "Hyunjin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-hyunjin-05",
@@ -1773,7 +1773,7 @@
     "member": "Hyunjin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-han-01",
@@ -1781,7 +1781,7 @@
     "member": "HAN",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-han-02",
@@ -1789,7 +1789,7 @@
     "member": "HAN",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-han-03",
@@ -1797,7 +1797,7 @@
     "member": "HAN",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-han-04",
@@ -1805,7 +1805,7 @@
     "member": "HAN",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-han-05",
@@ -1813,7 +1813,7 @@
     "member": "HAN",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-felix-01",
@@ -1821,7 +1821,7 @@
     "member": "Felix",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-felix-02",
@@ -1829,7 +1829,7 @@
     "member": "Felix",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-felix-03",
@@ -1837,7 +1837,7 @@
     "member": "Felix",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-felix-04",
@@ -1845,7 +1845,7 @@
     "member": "Felix",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-felix-05",
@@ -1853,7 +1853,7 @@
     "member": "Felix",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-seungmin-01",
@@ -1861,7 +1861,7 @@
     "member": "Seungmin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-seungmin-02",
@@ -1869,7 +1869,7 @@
     "member": "Seungmin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-seungmin-03",
@@ -1877,7 +1877,7 @@
     "member": "Seungmin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-seungmin-04",
@@ -1885,7 +1885,7 @@
     "member": "Seungmin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-seungmin-05",
@@ -1893,7 +1893,7 @@
     "member": "Seungmin",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cl2yellowwood-in-01",
@@ -1901,7 +1901,7 @@
     "member": "I.N.",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cl2yellowwood-in-02",
@@ -1909,7 +1909,7 @@
     "member": "I.N.",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cl2yellowwood-in-03",
@@ -1917,7 +1917,7 @@
     "member": "I.N.",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cl2yellowwood-in-04",
@@ -1925,7 +1925,7 @@
     "member": "I.N.",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cl2yellowwood-in-05",
@@ -1933,7 +1933,7 @@
     "member": "I.N.",
     "album": "Clé 2: Yellow Wood",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-bangchan-01",
@@ -1941,7 +1941,7 @@
     "member": "Bang Chan",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-bangchan-02",
@@ -1949,7 +1949,7 @@
     "member": "Bang Chan",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-bangchan-03",
@@ -1957,7 +1957,7 @@
     "member": "Bang Chan",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-bangchan-04",
@@ -1965,7 +1965,7 @@
     "member": "Bang Chan",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-bangchan-05",
@@ -1973,7 +1973,7 @@
     "member": "Bang Chan",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-bangchan-06",
@@ -1981,7 +1981,7 @@
     "member": "Bang Chan",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-leeknow-01",
@@ -1989,7 +1989,7 @@
     "member": "Lee Know",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-leeknow-02",
@@ -1997,7 +1997,7 @@
     "member": "Lee Know",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-leeknow-03",
@@ -2005,7 +2005,7 @@
     "member": "Lee Know",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-leeknow-04",
@@ -2013,7 +2013,7 @@
     "member": "Lee Know",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-leeknow-05",
@@ -2021,7 +2021,7 @@
     "member": "Lee Know",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-leeknow-06",
@@ -2029,7 +2029,7 @@
     "member": "Lee Know",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-changbin-01",
@@ -2037,7 +2037,7 @@
     "member": "Changbin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-changbin-02",
@@ -2045,7 +2045,7 @@
     "member": "Changbin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-changbin-03",
@@ -2053,7 +2053,7 @@
     "member": "Changbin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-changbin-04",
@@ -2061,7 +2061,7 @@
     "member": "Changbin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-changbin-05",
@@ -2069,7 +2069,7 @@
     "member": "Changbin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-changbin-06",
@@ -2077,7 +2077,7 @@
     "member": "Changbin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-hyunjin-01",
@@ -2085,7 +2085,7 @@
     "member": "Hyunjin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-hyunjin-02",
@@ -2093,7 +2093,7 @@
     "member": "Hyunjin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-hyunjin-03",
@@ -2101,7 +2101,7 @@
     "member": "Hyunjin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-hyunjin-04",
@@ -2109,7 +2109,7 @@
     "member": "Hyunjin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-hyunjin-05",
@@ -2117,7 +2117,7 @@
     "member": "Hyunjin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-hyunjin-06",
@@ -2125,7 +2125,7 @@
     "member": "Hyunjin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-han-01",
@@ -2133,7 +2133,7 @@
     "member": "HAN",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-han-02",
@@ -2141,7 +2141,7 @@
     "member": "HAN",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-han-03",
@@ -2149,7 +2149,7 @@
     "member": "HAN",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-han-04",
@@ -2157,7 +2157,7 @@
     "member": "HAN",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-han-05",
@@ -2165,7 +2165,7 @@
     "member": "HAN",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-han-06",
@@ -2173,7 +2173,7 @@
     "member": "HAN",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-felix-01",
@@ -2181,7 +2181,7 @@
     "member": "Felix",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-felix-02",
@@ -2189,7 +2189,7 @@
     "member": "Felix",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-felix-03",
@@ -2197,7 +2197,7 @@
     "member": "Felix",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-felix-04",
@@ -2205,7 +2205,7 @@
     "member": "Felix",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-felix-05",
@@ -2213,7 +2213,7 @@
     "member": "Felix",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-felix-06",
@@ -2221,7 +2221,7 @@
     "member": "Felix",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-seungmin-01",
@@ -2229,7 +2229,7 @@
     "member": "Seungmin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-seungmin-02",
@@ -2237,7 +2237,7 @@
     "member": "Seungmin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-seungmin-03",
@@ -2245,7 +2245,7 @@
     "member": "Seungmin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-seungmin-04",
@@ -2253,7 +2253,7 @@
     "member": "Seungmin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-seungmin-05",
@@ -2261,7 +2261,7 @@
     "member": "Seungmin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-seungmin-06",
@@ -2269,7 +2269,7 @@
     "member": "Seungmin",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "cllevanter-in-01",
@@ -2277,7 +2277,7 @@
     "member": "I.N.",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "cllevanter-in-02",
@@ -2285,7 +2285,7 @@
     "member": "I.N.",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "cllevanter-in-03",
@@ -2293,7 +2293,7 @@
     "member": "I.N.",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "cllevanter-in-04",
@@ -2301,7 +2301,7 @@
     "member": "I.N.",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "cllevanter-in-05",
@@ -2309,7 +2309,7 @@
     "member": "I.N.",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "cllevanter-in-06",
@@ -2317,7 +2317,7 @@
     "member": "I.N.",
     "album": "Clé: Levanter",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-bangchan-01",
@@ -2325,7 +2325,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-bangchan-02",
@@ -2333,7 +2333,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-bangchan-03",
@@ -2341,7 +2341,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-bangchan-04",
@@ -2349,7 +2349,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-bangchan-05",
@@ -2357,7 +2357,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-bangchan-06",
@@ -2365,7 +2365,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-bangchan-07",
@@ -2373,7 +2373,7 @@
     "member": "Bang Chan",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-leeknow-01",
@@ -2381,7 +2381,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-leeknow-02",
@@ -2389,7 +2389,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-leeknow-03",
@@ -2397,7 +2397,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-leeknow-04",
@@ -2405,7 +2405,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-leeknow-05",
@@ -2413,7 +2413,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-leeknow-06",
@@ -2421,7 +2421,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-leeknow-07",
@@ -2429,7 +2429,7 @@
     "member": "Lee Know",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-changbin-01",
@@ -2437,7 +2437,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-changbin-02",
@@ -2445,7 +2445,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-changbin-03",
@@ -2453,7 +2453,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-changbin-04",
@@ -2461,7 +2461,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-changbin-05",
@@ -2469,7 +2469,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-changbin-06",
@@ -2477,7 +2477,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-changbin-07",
@@ -2485,7 +2485,7 @@
     "member": "Changbin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-hyunjin-01",
@@ -2493,7 +2493,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-hyunjin-02",
@@ -2501,7 +2501,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-hyunjin-03",
@@ -2509,7 +2509,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-hyunjin-04",
@@ -2517,7 +2517,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-hyunjin-05",
@@ -2525,7 +2525,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-hyunjin-06",
@@ -2533,7 +2533,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-hyunjin-07",
@@ -2541,7 +2541,7 @@
     "member": "Hyunjin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-han-01",
@@ -2549,7 +2549,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-han-02",
@@ -2557,7 +2557,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-han-03",
@@ -2565,7 +2565,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-han-04",
@@ -2573,7 +2573,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-han-05",
@@ -2581,7 +2581,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-han-06",
@@ -2589,7 +2589,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-han-07",
@@ -2597,7 +2597,7 @@
     "member": "HAN",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-felix-01",
@@ -2605,7 +2605,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-felix-02",
@@ -2613,7 +2613,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-felix-03",
@@ -2621,7 +2621,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-felix-04",
@@ -2629,7 +2629,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-felix-05",
@@ -2637,7 +2637,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-felix-06",
@@ -2645,7 +2645,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-felix-07",
@@ -2653,7 +2653,7 @@
     "member": "Felix",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-seungmin-01",
@@ -2661,7 +2661,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-seungmin-02",
@@ -2669,7 +2669,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-seungmin-03",
@@ -2677,7 +2677,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-seungmin-04",
@@ -2685,7 +2685,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-seungmin-05",
@@ -2693,7 +2693,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-seungmin-06",
@@ -2701,7 +2701,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-seungmin-07",
@@ -2709,7 +2709,7 @@
     "member": "Seungmin",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "golive-in-01",
@@ -2717,7 +2717,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "golive-in-02",
@@ -2725,7 +2725,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "golive-in-03",
@@ -2733,7 +2733,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "golive-in-04",
@@ -2741,7 +2741,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "golive-in-05",
@@ -2749,7 +2749,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "golive-in-06",
@@ -2757,7 +2757,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "golive-in-07",
@@ -2765,7 +2765,7 @@
     "member": "I.N.",
     "album": "GO LIVE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "inlife-bangchan-01",
@@ -2773,7 +2773,7 @@
     "member": "Bang Chan",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-bangchan-02",
@@ -2781,7 +2781,7 @@
     "member": "Bang Chan",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-bangchan-03",
@@ -2789,7 +2789,7 @@
     "member": "Bang Chan",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-bangchan-04",
@@ -2797,7 +2797,7 @@
     "member": "Bang Chan",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-leeknow-01",
@@ -2805,7 +2805,7 @@
     "member": "Lee Know",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-leeknow-02",
@@ -2813,7 +2813,7 @@
     "member": "Lee Know",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-leeknow-03",
@@ -2821,7 +2821,7 @@
     "member": "Lee Know",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-leeknow-04",
@@ -2829,7 +2829,7 @@
     "member": "Lee Know",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-changbin-01",
@@ -2837,7 +2837,7 @@
     "member": "Changbin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-changbin-02",
@@ -2845,7 +2845,7 @@
     "member": "Changbin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-changbin-03",
@@ -2853,7 +2853,7 @@
     "member": "Changbin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-changbin-04",
@@ -2861,7 +2861,7 @@
     "member": "Changbin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-hyunjin-01",
@@ -2869,7 +2869,7 @@
     "member": "Hyunjin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-hyunjin-02",
@@ -2877,7 +2877,7 @@
     "member": "Hyunjin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-hyunjin-03",
@@ -2885,7 +2885,7 @@
     "member": "Hyunjin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-hyunjin-04",
@@ -2893,7 +2893,7 @@
     "member": "Hyunjin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-han-01",
@@ -2901,7 +2901,7 @@
     "member": "HAN",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-han-02",
@@ -2909,7 +2909,7 @@
     "member": "HAN",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-han-03",
@@ -2917,7 +2917,7 @@
     "member": "HAN",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-han-04",
@@ -2925,7 +2925,7 @@
     "member": "HAN",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-felix-01",
@@ -2933,7 +2933,7 @@
     "member": "Felix",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-felix-02",
@@ -2941,7 +2941,7 @@
     "member": "Felix",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-felix-03",
@@ -2949,7 +2949,7 @@
     "member": "Felix",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-felix-04",
@@ -2957,7 +2957,7 @@
     "member": "Felix",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-seungmin-01",
@@ -2965,7 +2965,7 @@
     "member": "Seungmin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-seungmin-02",
@@ -2973,7 +2973,7 @@
     "member": "Seungmin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-seungmin-03",
@@ -2981,7 +2981,7 @@
     "member": "Seungmin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-seungmin-04",
@@ -2989,7 +2989,7 @@
     "member": "Seungmin",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-in-01",
@@ -2997,7 +2997,7 @@
     "member": "I.N.",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "inlife-in-02",
@@ -3005,7 +3005,7 @@
     "member": "I.N.",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "inlife-in-03",
@@ -3013,7 +3013,7 @@
     "member": "I.N.",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "inlife-in-04",
@@ -3021,7 +3021,7 @@
     "member": "I.N.",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "inlife-unit-05",
@@ -3029,7 +3029,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-06",
@@ -3037,7 +3037,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-07",
@@ -3045,7 +3045,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-08",
@@ -3053,7 +3053,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-09",
@@ -3061,7 +3061,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-01",
@@ -3069,7 +3069,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-02",
@@ -3077,7 +3077,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-03",
@@ -3085,7 +3085,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "inlife-unit-04",
@@ -3093,7 +3093,7 @@
     "member": "UNIT",
     "album": "IN LIFE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-bangchan-01",
@@ -3101,7 +3101,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-bangchan-02",
@@ -3109,7 +3109,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-bangchan-03",
@@ -3117,7 +3117,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-bangchan-04",
@@ -3125,7 +3125,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-bangchan-05",
@@ -3133,7 +3133,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-bangchan-06",
@@ -3141,7 +3141,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-bangchan-07",
@@ -3149,7 +3149,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-bangchan-08",
@@ -3157,7 +3157,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-bangchan-09",
@@ -3165,7 +3165,7 @@
     "member": "Bang Chan",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-leeknow-01",
@@ -3173,7 +3173,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-leeknow-02",
@@ -3181,7 +3181,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-leeknow-03",
@@ -3189,7 +3189,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-leeknow-04",
@@ -3197,7 +3197,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-leeknow-05",
@@ -3205,7 +3205,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-leeknow-06",
@@ -3213,7 +3213,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-leeknow-07",
@@ -3221,7 +3221,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-leeknow-08",
@@ -3229,7 +3229,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-leeknow-09",
@@ -3237,7 +3237,7 @@
     "member": "Lee Know",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-changbin-01",
@@ -3245,7 +3245,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-changbin-02",
@@ -3253,7 +3253,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-changbin-03",
@@ -3261,7 +3261,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-changbin-04",
@@ -3269,7 +3269,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-changbin-05",
@@ -3277,7 +3277,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-changbin-06",
@@ -3285,7 +3285,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-changbin-07",
@@ -3293,7 +3293,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-changbin-08",
@@ -3301,7 +3301,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-changbin-09",
@@ -3309,7 +3309,7 @@
     "member": "Changbin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-hyunjin-01",
@@ -3317,7 +3317,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-hyunjin-02",
@@ -3325,7 +3325,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-hyunjin-03",
@@ -3333,7 +3333,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-hyunjin-04",
@@ -3341,7 +3341,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-hyunjin-05",
@@ -3349,7 +3349,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-hyunjin-06",
@@ -3357,7 +3357,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-hyunjin-07",
@@ -3365,7 +3365,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-hyunjin-08",
@@ -3373,7 +3373,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-hyunjin-09",
@@ -3381,7 +3381,7 @@
     "member": "Hyunjin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-han-01",
@@ -3389,7 +3389,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-han-02",
@@ -3397,7 +3397,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-han-03",
@@ -3405,7 +3405,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-han-04",
@@ -3413,7 +3413,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-han-05",
@@ -3421,7 +3421,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-han-06",
@@ -3429,7 +3429,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-han-07",
@@ -3437,7 +3437,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-han-08",
@@ -3445,7 +3445,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-han-09",
@@ -3453,7 +3453,7 @@
     "member": "HAN",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-felix-01",
@@ -3461,7 +3461,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-felix-02",
@@ -3469,7 +3469,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-felix-03",
@@ -3477,7 +3477,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-felix-04",
@@ -3485,7 +3485,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-felix-05",
@@ -3493,7 +3493,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-felix-06",
@@ -3501,7 +3501,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-felix-07",
@@ -3509,7 +3509,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-felix-08",
@@ -3517,7 +3517,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-felix-09",
@@ -3525,7 +3525,7 @@
     "member": "Felix",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-seungmin-01",
@@ -3533,7 +3533,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-seungmin-02",
@@ -3541,7 +3541,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-seungmin-03",
@@ -3549,7 +3549,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-seungmin-04",
@@ -3557,7 +3557,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-seungmin-05",
@@ -3565,7 +3565,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-seungmin-06",
@@ -3573,7 +3573,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-seungmin-07",
@@ -3581,7 +3581,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-seungmin-08",
@@ -3589,7 +3589,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-seungmin-09",
@@ -3597,7 +3597,7 @@
     "member": "Seungmin",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "noeasy-in-01",
@@ -3605,7 +3605,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "noeasy-in-02",
@@ -3613,7 +3613,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "noeasy-in-03",
@@ -3621,7 +3621,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "noeasy-in-04",
@@ -3629,7 +3629,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "noeasy-in-05",
@@ -3637,7 +3637,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "noeasy-in-06",
@@ -3645,7 +3645,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "noeasy-in-07",
@@ -3653,7 +3653,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "noeasy-in-08",
@@ -3661,7 +3661,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "noeasy-in-09",
@@ -3669,7 +3669,7 @@
     "member": "I.N.",
     "album": "NOEASY",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "christmasevel-bangchan-01",
@@ -3677,7 +3677,7 @@
     "member": "Bang Chan",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-bangchan-02",
@@ -3685,7 +3685,7 @@
     "member": "Bang Chan",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-bangchan-03",
@@ -3693,7 +3693,7 @@
     "member": "Bang Chan",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-bangchan-04",
@@ -3701,7 +3701,7 @@
     "member": "Bang Chan",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-leeknow-01",
@@ -3709,7 +3709,7 @@
     "member": "Lee Know",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-leeknow-02",
@@ -3717,7 +3717,7 @@
     "member": "Lee Know",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-leeknow-03",
@@ -3725,7 +3725,7 @@
     "member": "Lee Know",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-leeknow-04",
@@ -3733,7 +3733,7 @@
     "member": "Lee Know",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-changbin-01",
@@ -3741,7 +3741,7 @@
     "member": "Changbin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-changbin-02",
@@ -3749,7 +3749,7 @@
     "member": "Changbin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-changbin-03",
@@ -3757,7 +3757,7 @@
     "member": "Changbin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-changbin-04",
@@ -3765,7 +3765,7 @@
     "member": "Changbin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-hyunjin-01",
@@ -3773,7 +3773,7 @@
     "member": "Hyunjin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-hyunjin-02",
@@ -3781,7 +3781,7 @@
     "member": "Hyunjin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-hyunjin-03",
@@ -3789,7 +3789,7 @@
     "member": "Hyunjin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-hyunjin-04",
@@ -3797,7 +3797,7 @@
     "member": "Hyunjin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-han-01",
@@ -3805,7 +3805,7 @@
     "member": "HAN",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-han-02",
@@ -3813,7 +3813,7 @@
     "member": "HAN",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-han-03",
@@ -3821,7 +3821,7 @@
     "member": "HAN",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-han-04",
@@ -3829,7 +3829,7 @@
     "member": "HAN",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-felix-01",
@@ -3837,7 +3837,7 @@
     "member": "Felix",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-felix-02",
@@ -3845,7 +3845,7 @@
     "member": "Felix",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-felix-03",
@@ -3853,7 +3853,7 @@
     "member": "Felix",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-felix-04",
@@ -3861,7 +3861,7 @@
     "member": "Felix",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-seungmin-01",
@@ -3869,7 +3869,7 @@
     "member": "Seungmin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-seungmin-02",
@@ -3877,7 +3877,7 @@
     "member": "Seungmin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-seungmin-03",
@@ -3885,7 +3885,7 @@
     "member": "Seungmin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-seungmin-04",
@@ -3893,7 +3893,7 @@
     "member": "Seungmin",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "christmasevel-in-01",
@@ -3901,7 +3901,7 @@
     "member": "I.N.",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "christmasevel-in-02",
@@ -3909,7 +3909,7 @@
     "member": "I.N.",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "christmasevel-in-03",
@@ -3917,7 +3917,7 @@
     "member": "I.N.",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "christmasevel-in-04",
@@ -3925,7 +3925,7 @@
     "member": "I.N.",
     "album": "Christmas Evel",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-bangchan-01",
@@ -3933,7 +3933,7 @@
     "member": "Bang Chan",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-bangchan-02",
@@ -3941,7 +3941,7 @@
     "member": "Bang Chan",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-bangchan-03",
@@ -3949,7 +3949,7 @@
     "member": "Bang Chan",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-bangchan-04",
@@ -3957,7 +3957,7 @@
     "member": "Bang Chan",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-bangchan-05",
@@ -3965,7 +3965,7 @@
     "member": "Bang Chan",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-leeknow-01",
@@ -3973,7 +3973,7 @@
     "member": "Lee Know",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-leeknow-02",
@@ -3981,7 +3981,7 @@
     "member": "Lee Know",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-leeknow-03",
@@ -3989,7 +3989,7 @@
     "member": "Lee Know",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-leeknow-04",
@@ -3997,7 +3997,7 @@
     "member": "Lee Know",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-leeknow-05",
@@ -4005,7 +4005,7 @@
     "member": "Lee Know",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-changbin-01",
@@ -4013,7 +4013,7 @@
     "member": "Changbin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-changbin-02",
@@ -4021,7 +4021,7 @@
     "member": "Changbin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-changbin-03",
@@ -4029,7 +4029,7 @@
     "member": "Changbin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-changbin-04",
@@ -4037,7 +4037,7 @@
     "member": "Changbin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-changbin-05",
@@ -4045,7 +4045,7 @@
     "member": "Changbin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-hyunjin-01",
@@ -4053,7 +4053,7 @@
     "member": "Hyunjin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-hyunjin-02",
@@ -4061,7 +4061,7 @@
     "member": "Hyunjin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-hyunjin-03",
@@ -4069,7 +4069,7 @@
     "member": "Hyunjin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-hyunjin-04",
@@ -4077,7 +4077,7 @@
     "member": "Hyunjin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-hyunjin-05",
@@ -4085,7 +4085,7 @@
     "member": "Hyunjin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-han-01",
@@ -4093,7 +4093,7 @@
     "member": "HAN",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-han-02",
@@ -4101,7 +4101,7 @@
     "member": "HAN",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-han-03",
@@ -4109,7 +4109,7 @@
     "member": "HAN",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-han-04",
@@ -4117,7 +4117,7 @@
     "member": "HAN",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-han-05",
@@ -4125,7 +4125,7 @@
     "member": "HAN",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-felix-01",
@@ -4133,7 +4133,7 @@
     "member": "Felix",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-felix-02",
@@ -4141,7 +4141,7 @@
     "member": "Felix",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-felix-03",
@@ -4149,7 +4149,7 @@
     "member": "Felix",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-felix-04",
@@ -4157,7 +4157,7 @@
     "member": "Felix",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-felix-05",
@@ -4165,7 +4165,7 @@
     "member": "Felix",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-seungmin-01",
@@ -4173,7 +4173,7 @@
     "member": "Seungmin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-seungmin-02",
@@ -4181,7 +4181,7 @@
     "member": "Seungmin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-seungmin-03",
@@ -4189,7 +4189,7 @@
     "member": "Seungmin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-seungmin-04",
@@ -4197,7 +4197,7 @@
     "member": "Seungmin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-seungmin-05",
@@ -4205,7 +4205,7 @@
     "member": "Seungmin",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-in-01",
@@ -4213,7 +4213,7 @@
     "member": "I.N.",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "oddinary-in-02",
@@ -4221,7 +4221,7 @@
     "member": "I.N.",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "oddinary-in-03",
@@ -4229,7 +4229,7 @@
     "member": "I.N.",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "oddinary-in-04",
@@ -4237,7 +4237,7 @@
     "member": "I.N.",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "oddinary-in-05",
@@ -4245,7 +4245,7 @@
     "member": "I.N.",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "oddinary-unit-01",
@@ -4253,7 +4253,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-02",
@@ -4261,7 +4261,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-03",
@@ -4269,7 +4269,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-04",
@@ -4277,7 +4277,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-05",
@@ -4285,7 +4285,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-06",
@@ -4293,7 +4293,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-07",
@@ -4301,7 +4301,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-08",
@@ -4309,7 +4309,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "oddinary-unit-09",
@@ -4317,7 +4317,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-10",
@@ -4325,7 +4325,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-11",
@@ -4333,7 +4333,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-12",
@@ -4341,7 +4341,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-13",
@@ -4349,7 +4349,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-14",
@@ -4357,7 +4357,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-15",
@@ -4365,7 +4365,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-16",
@@ -4373,7 +4373,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "oddinary-unit-17",
@@ -4381,7 +4381,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-18",
@@ -4389,7 +4389,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-19",
@@ -4397,7 +4397,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-20",
@@ -4405,7 +4405,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-21",
@@ -4413,7 +4413,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-22",
@@ -4421,7 +4421,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-23",
@@ -4429,7 +4429,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "oddinary-unit-24",
@@ -4437,7 +4437,7 @@
     "member": "UNIT",
     "album": "Oddinary",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "maxident-bangchan-01",
@@ -4445,7 +4445,7 @@
     "member": "Bang Chan",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-bangchan-02",
@@ -4453,7 +4453,7 @@
     "member": "Bang Chan",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-bangchan-03",
@@ -4461,7 +4461,7 @@
     "member": "Bang Chan",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-bangchan-04",
@@ -4469,7 +4469,7 @@
     "member": "Bang Chan",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-bangchan-05",
@@ -4477,7 +4477,7 @@
     "member": "Bang Chan",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-bangchan-06",
@@ -4485,7 +4485,7 @@
     "member": "Bang Chan",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-leeknow-01",
@@ -4493,7 +4493,7 @@
     "member": "Lee Know",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-leeknow-02",
@@ -4501,7 +4501,7 @@
     "member": "Lee Know",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-leeknow-03",
@@ -4509,7 +4509,7 @@
     "member": "Lee Know",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-leeknow-04",
@@ -4517,7 +4517,7 @@
     "member": "Lee Know",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-leeknow-05",
@@ -4525,7 +4525,7 @@
     "member": "Lee Know",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-leeknow-06",
@@ -4533,7 +4533,7 @@
     "member": "Lee Know",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-changbin-01",
@@ -4541,7 +4541,7 @@
     "member": "Changbin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-changbin-02",
@@ -4549,7 +4549,7 @@
     "member": "Changbin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-changbin-03",
@@ -4557,7 +4557,7 @@
     "member": "Changbin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-changbin-04",
@@ -4565,7 +4565,7 @@
     "member": "Changbin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-changbin-05",
@@ -4573,7 +4573,7 @@
     "member": "Changbin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-changbin-06",
@@ -4581,7 +4581,7 @@
     "member": "Changbin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-hyunjin-01",
@@ -4589,7 +4589,7 @@
     "member": "Hyunjin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-hyunjin-02",
@@ -4597,7 +4597,7 @@
     "member": "Hyunjin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-hyunjin-03",
@@ -4605,7 +4605,7 @@
     "member": "Hyunjin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-hyunjin-04",
@@ -4613,7 +4613,7 @@
     "member": "Hyunjin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-hyunjin-05",
@@ -4621,7 +4621,7 @@
     "member": "Hyunjin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-hyunjin-06",
@@ -4629,7 +4629,7 @@
     "member": "Hyunjin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-han-01",
@@ -4637,7 +4637,7 @@
     "member": "HAN",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-han-02",
@@ -4645,7 +4645,7 @@
     "member": "HAN",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-han-03",
@@ -4653,7 +4653,7 @@
     "member": "HAN",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-han-04",
@@ -4661,7 +4661,7 @@
     "member": "HAN",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-han-05",
@@ -4669,7 +4669,7 @@
     "member": "HAN",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-han-06",
@@ -4677,7 +4677,7 @@
     "member": "HAN",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-felix-01",
@@ -4685,7 +4685,7 @@
     "member": "Felix",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-felix-02",
@@ -4693,7 +4693,7 @@
     "member": "Felix",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-felix-03",
@@ -4701,7 +4701,7 @@
     "member": "Felix",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-felix-04",
@@ -4709,7 +4709,7 @@
     "member": "Felix",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-felix-05",
@@ -4717,7 +4717,7 @@
     "member": "Felix",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-felix-06",
@@ -4725,7 +4725,7 @@
     "member": "Felix",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-seungmin-01",
@@ -4733,7 +4733,7 @@
     "member": "Seungmin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-seungmin-02",
@@ -4741,7 +4741,7 @@
     "member": "Seungmin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-seungmin-03",
@@ -4749,7 +4749,7 @@
     "member": "Seungmin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-seungmin-04",
@@ -4757,7 +4757,7 @@
     "member": "Seungmin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-seungmin-05",
@@ -4765,7 +4765,7 @@
     "member": "Seungmin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-seungmin-06",
@@ -4773,7 +4773,7 @@
     "member": "Seungmin",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "maxident-in-01",
@@ -4781,7 +4781,7 @@
     "member": "I.N.",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "maxident-in-02",
@@ -4789,7 +4789,7 @@
     "member": "I.N.",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "maxident-in-03",
@@ -4797,7 +4797,7 @@
     "member": "I.N.",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "maxident-in-04",
@@ -4805,7 +4805,7 @@
     "member": "I.N.",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "maxident-in-05",
@@ -4813,7 +4813,7 @@
     "member": "I.N.",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "maxident-in-06",
@@ -4821,7 +4821,7 @@
     "member": "I.N.",
     "album": "Maxident",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "5star-bangchan-01",
@@ -4829,7 +4829,7 @@
     "member": "Bang Chan",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-bangchan-02",
@@ -4837,7 +4837,7 @@
     "member": "Bang Chan",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-bangchan-03",
@@ -4845,7 +4845,7 @@
     "member": "Bang Chan",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-bangchan-04",
@@ -4853,7 +4853,7 @@
     "member": "Bang Chan",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-bangchan-05",
@@ -4861,7 +4861,7 @@
     "member": "Bang Chan",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-leeknow-01",
@@ -4869,7 +4869,7 @@
     "member": "Lee Know",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-leeknow-02",
@@ -4877,7 +4877,7 @@
     "member": "Lee Know",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-leeknow-03",
@@ -4885,7 +4885,7 @@
     "member": "Lee Know",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-leeknow-04",
@@ -4893,7 +4893,7 @@
     "member": "Lee Know",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-leeknow-05",
@@ -4901,7 +4901,7 @@
     "member": "Lee Know",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-changbin-01",
@@ -4909,7 +4909,7 @@
     "member": "Changbin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-changbin-02",
@@ -4917,7 +4917,7 @@
     "member": "Changbin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-changbin-03",
@@ -4925,7 +4925,7 @@
     "member": "Changbin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-changbin-04",
@@ -4933,7 +4933,7 @@
     "member": "Changbin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-changbin-05",
@@ -4941,7 +4941,7 @@
     "member": "Changbin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-hyunjin-01",
@@ -4949,7 +4949,7 @@
     "member": "Hyunjin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-hyunjin-02",
@@ -4957,7 +4957,7 @@
     "member": "Hyunjin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-hyunjin-03",
@@ -4965,7 +4965,7 @@
     "member": "Hyunjin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-hyunjin-04",
@@ -4973,7 +4973,7 @@
     "member": "Hyunjin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-hyunjin-05",
@@ -4981,7 +4981,7 @@
     "member": "Hyunjin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-han-01",
@@ -4989,7 +4989,7 @@
     "member": "HAN",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-han-02",
@@ -4997,7 +4997,7 @@
     "member": "HAN",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-han-03",
@@ -5005,7 +5005,7 @@
     "member": "HAN",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-han-04",
@@ -5013,7 +5013,7 @@
     "member": "HAN",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-han-05",
@@ -5021,7 +5021,7 @@
     "member": "HAN",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-felix-01",
@@ -5029,7 +5029,7 @@
     "member": "Felix",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-felix-02",
@@ -5037,7 +5037,7 @@
     "member": "Felix",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-felix-03",
@@ -5045,7 +5045,7 @@
     "member": "Felix",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-felix-04",
@@ -5053,7 +5053,7 @@
     "member": "Felix",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-felix-05",
@@ -5061,7 +5061,7 @@
     "member": "Felix",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-seungmin-01",
@@ -5069,7 +5069,7 @@
     "member": "Seungmin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-seungmin-02",
@@ -5077,7 +5077,7 @@
     "member": "Seungmin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-seungmin-03",
@@ -5085,7 +5085,7 @@
     "member": "Seungmin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-seungmin-04",
@@ -5093,7 +5093,7 @@
     "member": "Seungmin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-seungmin-05",
@@ -5101,7 +5101,7 @@
     "member": "Seungmin",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "5star-in-01",
@@ -5109,7 +5109,7 @@
     "member": "I.N.",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "5star-in-02",
@@ -5117,7 +5117,7 @@
     "member": "I.N.",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "5star-in-03",
@@ -5125,7 +5125,7 @@
     "member": "I.N.",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "5star-in-04",
@@ -5133,7 +5133,7 @@
     "member": "I.N.",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "5star-in-05",
@@ -5141,7 +5141,7 @@
     "member": "I.N.",
     "album": "5-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-bangchan-01",
@@ -5149,7 +5149,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-bangchan-02",
@@ -5157,7 +5157,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-bangchan-03",
@@ -5165,7 +5165,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-bangchan-04",
@@ -5173,7 +5173,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-bangchan-05",
@@ -5181,7 +5181,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-bangchan-06",
@@ -5189,7 +5189,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-bangchan-07",
@@ -5197,7 +5197,7 @@
     "member": "Bang Chan",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-leeknow-01",
@@ -5205,7 +5205,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-leeknow-02",
@@ -5213,7 +5213,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-leeknow-03",
@@ -5221,7 +5221,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-leeknow-04",
@@ -5229,7 +5229,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-leeknow-05",
@@ -5237,7 +5237,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-leeknow-06",
@@ -5245,7 +5245,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-leeknow-07",
@@ -5253,7 +5253,7 @@
     "member": "Lee Know",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-changbin-01",
@@ -5261,7 +5261,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-changbin-02",
@@ -5269,7 +5269,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-changbin-03",
@@ -5277,7 +5277,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-changbin-04",
@@ -5285,7 +5285,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-changbin-05",
@@ -5293,7 +5293,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-changbin-06",
@@ -5301,7 +5301,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-changbin-07",
@@ -5309,7 +5309,7 @@
     "member": "Changbin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-hyunjin-01",
@@ -5317,7 +5317,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-hyunjin-02",
@@ -5325,7 +5325,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-hyunjin-03",
@@ -5333,7 +5333,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-hyunjin-04",
@@ -5341,7 +5341,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-hyunjin-05",
@@ -5349,7 +5349,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-hyunjin-06",
@@ -5357,7 +5357,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-hyunjin-07",
@@ -5365,7 +5365,7 @@
     "member": "Hyunjin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-han-01",
@@ -5373,7 +5373,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-han-02",
@@ -5381,7 +5381,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-han-03",
@@ -5389,7 +5389,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-han-04",
@@ -5397,7 +5397,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-han-05",
@@ -5405,7 +5405,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-han-06",
@@ -5413,7 +5413,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-han-07",
@@ -5421,7 +5421,7 @@
     "member": "HAN",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-felix-01",
@@ -5429,7 +5429,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-felix-02",
@@ -5437,7 +5437,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-felix-03",
@@ -5445,7 +5445,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-felix-04",
@@ -5453,7 +5453,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-felix-05",
@@ -5461,7 +5461,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-felix-06",
@@ -5469,7 +5469,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-felix-07",
@@ -5477,7 +5477,7 @@
     "member": "Felix",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-seungmin-01",
@@ -5485,7 +5485,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-seungmin-02",
@@ -5493,7 +5493,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-seungmin-03",
@@ -5501,7 +5501,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-seungmin-04",
@@ -5509,7 +5509,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-seungmin-05",
@@ -5517,7 +5517,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-seungmin-06",
@@ -5525,7 +5525,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-seungmin-07",
@@ -5533,7 +5533,7 @@
     "member": "Seungmin",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-in-01",
@@ -5541,7 +5541,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "rockstar-in-02",
@@ -5549,7 +5549,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "rockstar-in-03",
@@ -5557,7 +5557,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "rockstar-in-04",
@@ -5565,7 +5565,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "rockstar-in-05",
@@ -5573,7 +5573,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "rockstar-in-06",
@@ -5581,7 +5581,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "rockstar-in-07",
@@ -5589,7 +5589,7 @@
     "member": "I.N.",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "rockstar-unit-01",
@@ -5597,7 +5597,7 @@
     "member": "UNIT",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "rockstar-unit-02",
@@ -5605,7 +5605,7 @@
     "member": "UNIT",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "rockstar-unit-03",
@@ -5613,7 +5613,7 @@
     "member": "UNIT",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "rockstar-unit-04",
@@ -5621,7 +5621,7 @@
     "member": "UNIT",
     "album": " ROCK-STAR",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-bangchan-01",
@@ -5629,7 +5629,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-bangchan-02",
@@ -5637,7 +5637,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-bangchan-03",
@@ -5645,7 +5645,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-bangchan-04",
@@ -5653,7 +5653,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-bangchan-05",
@@ -5661,7 +5661,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-bangchan-06",
@@ -5669,7 +5669,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-bangchan-07",
@@ -5677,7 +5677,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-bangchan-08",
@@ -5685,7 +5685,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-bangchan-09",
@@ -5693,7 +5693,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-bangchan-10",
@@ -5701,7 +5701,7 @@
     "member": "Bang Chan",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-leeknow-01",
@@ -5709,7 +5709,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-leeknow-02",
@@ -5717,7 +5717,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-leeknow-03",
@@ -5725,7 +5725,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-leeknow-04",
@@ -5733,7 +5733,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-leeknow-05",
@@ -5741,7 +5741,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-leeknow-06",
@@ -5749,7 +5749,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-leeknow-07",
@@ -5757,7 +5757,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-leeknow-08",
@@ -5765,7 +5765,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-leeknow-09",
@@ -5773,7 +5773,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-leeknow-10",
@@ -5781,7 +5781,7 @@
     "member": "Lee Know",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-changbin-01",
@@ -5789,7 +5789,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-changbin-02",
@@ -5797,7 +5797,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-changbin-03",
@@ -5805,7 +5805,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-changbin-04",
@@ -5813,7 +5813,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-changbin-05",
@@ -5821,7 +5821,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-changbin-06",
@@ -5829,7 +5829,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-changbin-07",
@@ -5837,7 +5837,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-changbin-08",
@@ -5845,7 +5845,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-changbin-09",
@@ -5853,7 +5853,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-changbin-10",
@@ -5861,7 +5861,7 @@
     "member": "Changbin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-hyunjin-01",
@@ -5869,7 +5869,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-hyunjin-02",
@@ -5877,7 +5877,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-hyunjin-03",
@@ -5885,7 +5885,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-hyunjin-04",
@@ -5893,7 +5893,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-hyunjin-05",
@@ -5901,7 +5901,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-hyunjin-06",
@@ -5909,7 +5909,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-hyunjin-07",
@@ -5917,7 +5917,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-hyunjin-08",
@@ -5925,7 +5925,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-hyunjin-09",
@@ -5933,7 +5933,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-hyunjin-10",
@@ -5941,7 +5941,7 @@
     "member": "Hyunjin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-han-01",
@@ -5949,7 +5949,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-han-02",
@@ -5957,7 +5957,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-han-03",
@@ -5965,7 +5965,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-han-04",
@@ -5973,7 +5973,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-han-05",
@@ -5981,7 +5981,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-han-06",
@@ -5989,7 +5989,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-han-07",
@@ -5997,7 +5997,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-han-08",
@@ -6005,7 +6005,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-han-09",
@@ -6013,7 +6013,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-han-10",
@@ -6021,7 +6021,7 @@
     "member": "HAN",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-felix-01",
@@ -6029,7 +6029,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-felix-02",
@@ -6037,7 +6037,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-felix-03",
@@ -6045,7 +6045,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-felix-04",
@@ -6053,7 +6053,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-felix-05",
@@ -6061,7 +6061,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-felix-06",
@@ -6069,7 +6069,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-felix-07",
@@ -6077,7 +6077,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-felix-08",
@@ -6085,7 +6085,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-felix-09",
@@ -6093,7 +6093,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-felix-10",
@@ -6101,7 +6101,7 @@
     "member": "Felix",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-seungmin-01",
@@ -6109,7 +6109,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-seungmin-02",
@@ -6117,7 +6117,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-seungmin-03",
@@ -6125,7 +6125,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-seungmin-04",
@@ -6133,7 +6133,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-seungmin-05",
@@ -6141,7 +6141,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-seungmin-06",
@@ -6149,7 +6149,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-seungmin-07",
@@ -6157,7 +6157,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-seungmin-08",
@@ -6165,7 +6165,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-seungmin-09",
@@ -6173,7 +6173,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-seungmin-10",
@@ -6181,7 +6181,7 @@
     "member": "Seungmin",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-in-01",
@@ -6189,7 +6189,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "ate-in-02",
@@ -6197,7 +6197,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "ate-in-03",
@@ -6205,7 +6205,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "ate-in-04",
@@ -6213,7 +6213,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "ate-in-05",
@@ -6221,7 +6221,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "ate-in-06",
@@ -6229,7 +6229,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "ate-in-07",
@@ -6237,7 +6237,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "ate-in-08",
@@ -6245,7 +6245,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "ate-in-09",
@@ -6253,7 +6253,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "ate-in-10",
@@ -6261,7 +6261,7 @@
     "member": "I.N.",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "ate-unit-01",
@@ -6269,7 +6269,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "ate-unit-02",
@@ -6277,7 +6277,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "ate-unit-03",
@@ -6285,7 +6285,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "ate-unit-04",
@@ -6293,7 +6293,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "ate-unit-05",
@@ -6301,7 +6301,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "ate-unit-06",
@@ -6309,7 +6309,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "ate-unit-07",
@@ -6317,7 +6317,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "ate-unit-08",
@@ -6325,7 +6325,7 @@
     "member": "UNIT",
     "album": "ATE",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "hop-bangchan-01",
@@ -6333,7 +6333,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-bangchan-02",
@@ -6341,7 +6341,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-bangchan-03",
@@ -6349,7 +6349,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-bangchan-04",
@@ -6357,7 +6357,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-bangchan-05",
@@ -6365,7 +6365,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-bangchan-06",
@@ -6373,7 +6373,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-bangchan-07",
@@ -6381,7 +6381,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-bangchan-08",
@@ -6389,7 +6389,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-bangchan-09",
@@ -6397,7 +6397,7 @@
     "member": "Bang Chan",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-leeknow-01",
@@ -6405,7 +6405,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-leeknow-02",
@@ -6413,7 +6413,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-leeknow-03",
@@ -6421,7 +6421,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-leeknow-04",
@@ -6429,7 +6429,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-leeknow-05",
@@ -6437,7 +6437,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-leeknow-06",
@@ -6445,7 +6445,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-leeknow-07",
@@ -6453,7 +6453,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-leeknow-08",
@@ -6461,7 +6461,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-leeknow-09",
@@ -6469,7 +6469,7 @@
     "member": "Lee Know",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-changbin-01",
@@ -6477,7 +6477,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-changbin-02",
@@ -6485,7 +6485,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-changbin-03",
@@ -6493,7 +6493,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-changbin-04",
@@ -6501,7 +6501,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-changbin-05",
@@ -6509,7 +6509,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-changbin-06",
@@ -6517,7 +6517,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-changbin-07",
@@ -6525,7 +6525,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-changbin-08",
@@ -6533,7 +6533,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-changbin-09",
@@ -6541,7 +6541,7 @@
     "member": "Changbin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-hyunjin-01",
@@ -6549,7 +6549,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-hyunjin-02",
@@ -6557,7 +6557,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-hyunjin-03",
@@ -6565,7 +6565,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-hyunjin-04",
@@ -6573,7 +6573,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-hyunjin-05",
@@ -6581,7 +6581,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-hyunjin-06",
@@ -6589,7 +6589,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-hyunjin-07",
@@ -6597,7 +6597,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-hyunjin-08",
@@ -6605,7 +6605,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-hyunjin-09",
@@ -6613,7 +6613,7 @@
     "member": "Hyunjin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-han-01",
@@ -6621,7 +6621,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-han-02",
@@ -6629,7 +6629,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-han-03",
@@ -6637,7 +6637,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-han-04",
@@ -6645,7 +6645,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-han-05",
@@ -6653,7 +6653,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-han-06",
@@ -6661,7 +6661,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-han-07",
@@ -6669,7 +6669,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-han-08",
@@ -6677,7 +6677,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-han-09",
@@ -6685,7 +6685,7 @@
     "member": "HAN",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-felix-01",
@@ -6693,7 +6693,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-felix-02",
@@ -6701,7 +6701,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-felix-03",
@@ -6709,7 +6709,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-felix-04",
@@ -6717,7 +6717,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-felix-05",
@@ -6725,7 +6725,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-felix-06",
@@ -6733,7 +6733,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-felix-07",
@@ -6741,7 +6741,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-felix-08",
@@ -6749,7 +6749,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-felix-09",
@@ -6757,7 +6757,7 @@
     "member": "Felix",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-seungmin-01",
@@ -6765,7 +6765,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-seungmin-02",
@@ -6773,7 +6773,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-seungmin-03",
@@ -6781,7 +6781,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-seungmin-04",
@@ -6789,7 +6789,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-seungmin-05",
@@ -6797,7 +6797,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-seungmin-06",
@@ -6805,7 +6805,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-seungmin-07",
@@ -6813,7 +6813,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-seungmin-08",
@@ -6821,7 +6821,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-seungmin-09",
@@ -6829,7 +6829,7 @@
     "member": "Seungmin",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-in-01",
@@ -6837,7 +6837,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "hop-in-02",
@@ -6845,7 +6845,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "hop-in-03",
@@ -6853,7 +6853,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "hop-in-04",
@@ -6861,7 +6861,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "hop-in-05",
@@ -6869,7 +6869,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "hop-in-06",
@@ -6877,7 +6877,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "hop-in-07",
@@ -6885,7 +6885,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "hop-in-08",
@@ -6893,7 +6893,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "hop-in-09",
@@ -6901,7 +6901,7 @@
     "member": "I.N.",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "hop-unit-01",
@@ -6909,7 +6909,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "hop-unit-02",
@@ -6917,7 +6917,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "hop-unit-03",
@@ -6925,7 +6925,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "hop-unit-04",
@@ -6933,7 +6933,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "hop-unit-05",
@@ -6941,7 +6941,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "hop-unit-06",
@@ -6949,7 +6949,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "hop-unit-07",
@@ -6957,7 +6957,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "hop-unit-08",
@@ -6965,7 +6965,7 @@
     "member": "UNIT",
     "album": "HOP",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "karma-bangchan-01",
@@ -6973,7 +6973,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-bangchan-02",
@@ -6981,7 +6981,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-bangchan-03",
@@ -6989,7 +6989,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-bangchan-04",
@@ -6997,7 +6997,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-bangchan-05",
@@ -7005,7 +7005,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-bangchan-06",
@@ -7013,7 +7013,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-bangchan-07",
@@ -7021,7 +7021,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-bangchan-08",
@@ -7029,7 +7029,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-bangchan-09",
@@ -7037,7 +7037,7 @@
     "member": "Bang Chan",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-leeknow-01",
@@ -7045,7 +7045,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-leeknow-02",
@@ -7053,7 +7053,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-leeknow-03",
@@ -7061,7 +7061,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-leeknow-04",
@@ -7069,7 +7069,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-leeknow-05",
@@ -7077,7 +7077,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-leeknow-06",
@@ -7085,7 +7085,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-leeknow-07",
@@ -7093,7 +7093,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-leeknow-08",
@@ -7101,7 +7101,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-leeknow-09",
@@ -7109,7 +7109,7 @@
     "member": "Lee Know",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-changbin-01",
@@ -7117,7 +7117,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-changbin-02",
@@ -7125,7 +7125,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-changbin-03",
@@ -7133,7 +7133,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-changbin-04",
@@ -7141,7 +7141,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-changbin-05",
@@ -7149,7 +7149,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-changbin-06",
@@ -7157,7 +7157,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-changbin-07",
@@ -7165,7 +7165,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-changbin-08",
@@ -7173,7 +7173,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-changbin-09",
@@ -7181,7 +7181,7 @@
     "member": "Changbin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-hyunjin-01",
@@ -7189,7 +7189,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-hyunjin-02",
@@ -7197,7 +7197,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-hyunjin-03",
@@ -7205,7 +7205,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-hyunjin-04",
@@ -7213,7 +7213,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-hyunjin-05",
@@ -7221,7 +7221,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-hyunjin-06",
@@ -7229,7 +7229,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-hyunjin-07",
@@ -7237,7 +7237,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-hyunjin-08",
@@ -7245,7 +7245,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-hyunjin-09",
@@ -7253,7 +7253,7 @@
     "member": "Hyunjin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-han-01",
@@ -7261,7 +7261,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-han-02",
@@ -7269,7 +7269,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-han-03",
@@ -7277,7 +7277,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-han-04",
@@ -7285,7 +7285,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-han-05",
@@ -7293,7 +7293,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-han-06",
@@ -7301,7 +7301,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-han-07",
@@ -7309,7 +7309,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-han-08",
@@ -7317,7 +7317,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-han-09",
@@ -7325,7 +7325,7 @@
     "member": "HAN",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-felix-01",
@@ -7333,7 +7333,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-felix-02",
@@ -7341,7 +7341,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-felix-03",
@@ -7349,7 +7349,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-felix-04",
@@ -7357,7 +7357,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-felix-05",
@@ -7365,7 +7365,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-felix-06",
@@ -7373,7 +7373,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-felix-07",
@@ -7381,7 +7381,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-felix-08",
@@ -7389,7 +7389,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-felix-09",
@@ -7397,7 +7397,7 @@
     "member": "Felix",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-seungmin-01",
@@ -7405,7 +7405,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-seungmin-02",
@@ -7413,7 +7413,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-seungmin-03",
@@ -7421,7 +7421,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-seungmin-04",
@@ -7429,7 +7429,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-seungmin-05",
@@ -7437,7 +7437,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-seungmin-06",
@@ -7445,7 +7445,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-seungmin-07",
@@ -7453,7 +7453,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-seungmin-08",
@@ -7461,7 +7461,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-seungmin-09",
@@ -7469,7 +7469,7 @@
     "member": "Seungmin",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-in-01",
@@ -7477,7 +7477,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "karma-in-02",
@@ -7485,7 +7485,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "karma-in-03",
@@ -7493,7 +7493,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "karma-in-04",
@@ -7501,7 +7501,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "karma-in-05",
@@ -7509,7 +7509,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "karma-in-06",
@@ -7517,7 +7517,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "karma-in-07",
@@ -7525,7 +7525,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "karma-in-08",
@@ -7533,7 +7533,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "karma-in-09",
@@ -7541,7 +7541,7 @@
     "member": "I.N.",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "karma-unit-01",
@@ -7549,7 +7549,7 @@
     "member": "UNIT",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "karma-unit-02",
@@ -7557,7 +7557,7 @@
     "member": "UNIT",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "karma-unit-03",
@@ -7565,7 +7565,7 @@
     "member": "UNIT",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "karma-unit-04",
@@ -7573,7 +7573,7 @@
     "member": "UNIT",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "karma-unit-05",
@@ -7581,7 +7581,7 @@
     "member": "UNIT",
     "album": "Karma",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-bangchan-01",
@@ -7589,7 +7589,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-bangchan-02",
@@ -7597,7 +7597,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-bangchan-03",
@@ -7605,7 +7605,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-bangchan-04",
@@ -7613,7 +7613,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-bangchan-05",
@@ -7621,7 +7621,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-bangchan-06",
@@ -7629,7 +7629,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-bangchan-07",
@@ -7637,7 +7637,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-bangchan-08",
@@ -7645,7 +7645,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-bangchan-09",
@@ -7653,7 +7653,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-bangchan-10",
@@ -7661,7 +7661,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-bangchan-11",
@@ -7669,7 +7669,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-bangchan-12",
@@ -7677,7 +7677,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-bangchan-13",
@@ -7685,7 +7685,7 @@
     "member": "Bang Chan",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-leeknow-01",
@@ -7693,7 +7693,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-leeknow-02",
@@ -7701,7 +7701,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-leeknow-03",
@@ -7709,7 +7709,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-leeknow-04",
@@ -7717,7 +7717,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-leeknow-05",
@@ -7725,7 +7725,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-leeknow-06",
@@ -7733,7 +7733,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-leeknow-07",
@@ -7741,7 +7741,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-leeknow-08",
@@ -7749,7 +7749,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-leeknow-09",
@@ -7757,7 +7757,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-leeknow-10",
@@ -7765,7 +7765,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-leeknow-11",
@@ -7773,7 +7773,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-leeknow-12",
@@ -7781,7 +7781,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-leeknow-13",
@@ -7789,7 +7789,7 @@
     "member": "Lee Know",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-changbin-01",
@@ -7797,7 +7797,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-changbin-02",
@@ -7805,7 +7805,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-changbin-03",
@@ -7813,7 +7813,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-changbin-04",
@@ -7821,7 +7821,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-changbin-05",
@@ -7829,7 +7829,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-changbin-06",
@@ -7837,7 +7837,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-changbin-07",
@@ -7845,7 +7845,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-changbin-08",
@@ -7853,7 +7853,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-changbin-09",
@@ -7861,7 +7861,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-changbin-10",
@@ -7869,7 +7869,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-changbin-11",
@@ -7877,7 +7877,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-changbin-12",
@@ -7885,7 +7885,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-changbin-13",
@@ -7893,7 +7893,7 @@
     "member": "Changbin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-hyunjin-01",
@@ -7901,7 +7901,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-hyunjin-02",
@@ -7909,7 +7909,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-hyunjin-03",
@@ -7917,7 +7917,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-hyunjin-04",
@@ -7925,7 +7925,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-hyunjin-05",
@@ -7933,7 +7933,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-hyunjin-06",
@@ -7941,7 +7941,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-hyunjin-07",
@@ -7949,7 +7949,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-hyunjin-08",
@@ -7957,7 +7957,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-hyunjin-09",
@@ -7965,7 +7965,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-hyunjin-10",
@@ -7973,7 +7973,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-hyunjin-11",
@@ -7981,7 +7981,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-hyunjin-12",
@@ -7989,7 +7989,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-hyunjin-13",
@@ -7997,7 +7997,7 @@
     "member": "Hyunjin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-han-01",
@@ -8005,7 +8005,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-han-02",
@@ -8013,7 +8013,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-han-03",
@@ -8021,7 +8021,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-han-04",
@@ -8029,7 +8029,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-han-05",
@@ -8037,7 +8037,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-han-06",
@@ -8045,7 +8045,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-han-07",
@@ -8053,7 +8053,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-han-08",
@@ -8061,7 +8061,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-han-09",
@@ -8069,7 +8069,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-han-10",
@@ -8077,7 +8077,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-han-11",
@@ -8085,7 +8085,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-han-12",
@@ -8093,7 +8093,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-han-13",
@@ -8101,7 +8101,7 @@
     "member": "HAN",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-felix-01",
@@ -8109,7 +8109,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-felix-02",
@@ -8117,7 +8117,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-felix-03",
@@ -8125,7 +8125,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-felix-04",
@@ -8133,7 +8133,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-felix-05",
@@ -8141,7 +8141,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-felix-06",
@@ -8149,7 +8149,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-felix-07",
@@ -8157,7 +8157,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-felix-08",
@@ -8165,7 +8165,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-felix-09",
@@ -8173,7 +8173,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-felix-10",
@@ -8181,7 +8181,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-felix-11",
@@ -8189,7 +8189,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-felix-12",
@@ -8197,7 +8197,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-felix-13",
@@ -8205,7 +8205,7 @@
     "member": "Felix",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-seungmin-01",
@@ -8213,7 +8213,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-seungmin-02",
@@ -8221,7 +8221,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-seungmin-03",
@@ -8229,7 +8229,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-seungmin-04",
@@ -8237,7 +8237,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-seungmin-05",
@@ -8245,7 +8245,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-seungmin-06",
@@ -8253,7 +8253,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-seungmin-07",
@@ -8261,7 +8261,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-seungmin-08",
@@ -8269,7 +8269,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-seungmin-09",
@@ -8277,7 +8277,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-seungmin-10",
@@ -8285,7 +8285,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-seungmin-11",
@@ -8293,7 +8293,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-seungmin-12",
@@ -8301,7 +8301,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-seungmin-13",
@@ -8309,7 +8309,7 @@
     "member": "Seungmin",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-in-01",
@@ -8317,7 +8317,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "001"
   },
   {
     "id": "doit-in-02",
@@ -8325,7 +8325,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "002"
   },
   {
     "id": "doit-in-03",
@@ -8333,7 +8333,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "003"
   },
   {
     "id": "doit-in-04",
@@ -8341,7 +8341,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "004"
   },
   {
     "id": "doit-in-05",
@@ -8349,7 +8349,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "005"
   },
   {
     "id": "doit-in-06",
@@ -8357,7 +8357,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "006"
   },
   {
     "id": "doit-in-07",
@@ -8365,7 +8365,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "007"
   },
   {
     "id": "doit-in-08",
@@ -8373,7 +8373,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "008"
   },
   {
     "id": "doit-in-09",
@@ -8381,7 +8381,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "009"
   },
   {
     "id": "doit-in-10",
@@ -8389,7 +8389,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "010"
   },
   {
     "id": "doit-in-11",
@@ -8397,7 +8397,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "011"
   },
   {
     "id": "doit-in-12",
@@ -8405,7 +8405,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "012"
   },
   {
     "id": "doit-in-13",
@@ -8413,7 +8413,7 @@
     "member": "I.N.",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "013"
   },
   {
     "id": "doit-unit-01",
@@ -8421,7 +8421,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "014"
   },
   {
     "id": "doit-unit-02",
@@ -8429,7 +8429,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "014"
   },
   {
     "id": "doit-unit-03",
@@ -8437,7 +8437,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "014"
   },
   {
     "id": "doit-unit-04",
@@ -8445,7 +8445,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "014"
   },
   {
     "id": "doit-unit-05",
@@ -8453,7 +8453,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "015"
   },
   {
     "id": "doit-unit-06",
@@ -8461,7 +8461,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "015"
   },
   {
     "id": "doit-unit-07",
@@ -8469,7 +8469,7 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "015"
   },
   {
     "id": "doit-unit-08",
@@ -8477,6 +8477,6 @@
     "member": "UNIT",
     "album": "DO IT",
     "category": "korean_albums",
-    "img": null
+    "set": "015"
   }
 ]

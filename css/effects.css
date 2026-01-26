@@ -19,6 +19,19 @@
   }
 }
 
+
+/* View mode buttons */
+.view-toggle-btn {
+  opacity: 0.6;
+  transition: opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+.view-toggle-btn.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+
 /* ===== Toast Notification ===== */
 .toast {
   position: fixed;
