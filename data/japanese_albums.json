@@ -5,7 +5,7 @@
     "member": "Bang Chan",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-leeknow-01",
@@ -13,7 +13,7 @@
     "member": "Lee Know",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-changbin-01",
@@ -21,7 +21,7 @@
     "member": "Changbin",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-hyunjin-01",
@@ -29,7 +29,7 @@
     "member": "Hyunjin",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-han-01",
@@ -37,7 +37,7 @@
     "member": "HAN",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-felix-01",
@@ -45,7 +45,7 @@
     "member": "Felix",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-seungmin-01",
@@ -53,7 +53,7 @@
     "member": "Seungmin",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-in-01",
@@ -61,7 +61,7 @@
     "member": "I.N.",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "skz2020-unit-01",
@@ -69,7 +69,7 @@
     "member": "UNIT",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "skz2020-unit-02",
@@ -77,7 +77,7 @@
     "member": "UNIT",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "skz2020-unit-03",
@@ -85,7 +85,7 @@
     "member": "UNIT",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "skz2020-unit-04",
@@ -93,7 +93,7 @@
     "member": "UNIT",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "skz2020-unit-05",
@@ -101,7 +101,7 @@
     "member": "UNIT",
     "album": "SKZ2020",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "top-bangchan-01",
@@ -109,7 +109,7 @@
     "member": "Bang Chan",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-leeknow-01",
@@ -117,7 +117,7 @@
     "member": "Lee Know",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-changbin-01",
@@ -125,7 +125,7 @@
     "member": "Changbin",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-hyunjin-01",
@@ -133,7 +133,7 @@
     "member": "Hyunjin",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-han-01",
@@ -141,7 +141,7 @@
     "member": "HAN",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-felix-01",
@@ -149,7 +149,7 @@
     "member": "Felix",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-seungmin-01",
@@ -157,7 +157,7 @@
     "member": "Seungmin",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-in-01",
@@ -165,7 +165,7 @@
     "member": "I.N.",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "top-unit-01",
@@ -173,7 +173,7 @@
     "member": "UNIT",
     "album": "TOP",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-bangchan-01",
@@ -181,7 +181,7 @@
     "member": "Bang Chan",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-bangchan-02",
@@ -189,7 +189,7 @@
     "member": "Bang Chan",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-bangchan-03",
@@ -197,7 +197,7 @@
     "member": "Bang Chan",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-bangchan-04",
@@ -205,7 +205,7 @@
     "member": "Bang Chan",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-leeknow-01",
@@ -213,7 +213,7 @@
     "member": "Lee Know",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-leeknow-02",
@@ -221,7 +221,7 @@
     "member": "Lee Know",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-leeknow-03",
@@ -229,7 +229,7 @@
     "member": "Lee Know",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-leeknow-04",
@@ -237,7 +237,7 @@
     "member": "Lee Know",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-changbin-01",
@@ -245,7 +245,7 @@
     "member": "Changbin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-changbin-02",
@@ -253,7 +253,7 @@
     "member": "Changbin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-changbin-03",
@@ -261,7 +261,7 @@
     "member": "Changbin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-changbin-04",
@@ -269,7 +269,7 @@
     "member": "Changbin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-hyunjin-01",
@@ -277,7 +277,7 @@
     "member": "Hyunjin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-hyunjin-02",
@@ -285,7 +285,7 @@
     "member": "Hyunjin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-hyunjin-03",
@@ -293,7 +293,7 @@
     "member": "Hyunjin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-hyunjin-04",
@@ -301,7 +301,7 @@
     "member": "Hyunjin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-han-01",
@@ -309,7 +309,7 @@
     "member": "HAN",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-han-02",
@@ -317,7 +317,7 @@
     "member": "HAN",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-han-03",
@@ -325,7 +325,7 @@
     "member": "HAN",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-han-04",
@@ -333,7 +333,7 @@
     "member": "HAN",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-felix-01",
@@ -341,7 +341,7 @@
     "member": "Felix",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-felix-02",
@@ -349,7 +349,7 @@
     "member": "Felix",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-felix-03",
@@ -357,7 +357,7 @@
     "member": "Felix",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-felix-04",
@@ -365,7 +365,7 @@
     "member": "Felix",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-seungmin-01",
@@ -373,7 +373,7 @@
     "member": "Seungmin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-seungmin-02",
@@ -381,7 +381,7 @@
     "member": "Seungmin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-seungmin-03",
@@ -389,7 +389,7 @@
     "member": "Seungmin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-seungmin-04",
@@ -397,7 +397,7 @@
     "member": "Seungmin",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "allin-in-01",
@@ -405,7 +405,7 @@
     "member": "I.N.",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "allin-in-02",
@@ -413,7 +413,7 @@
     "member": "I.N.",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "allin-in-03",
@@ -421,7 +421,7 @@
     "member": "I.N.",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "allin-in-04",
@@ -429,7 +429,7 @@
     "member": "I.N.",
     "album": "ALL IN",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-bangchan-01",
@@ -437,7 +437,7 @@
     "member": "Bang Chan",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-bangchan-02",
@@ -445,7 +445,7 @@
     "member": "Bang Chan",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-bangchan-03",
@@ -453,7 +453,7 @@
     "member": "Bang Chan",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-bangchan-04",
@@ -461,7 +461,7 @@
     "member": "Bang Chan",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-bangchan-05",
@@ -469,7 +469,7 @@
     "member": "Bang Chan",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-leeknow-01",
@@ -477,7 +477,7 @@
     "member": "Lee Know",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-leeknow-02",
@@ -485,7 +485,7 @@
     "member": "Lee Know",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-leeknow-03",
@@ -493,7 +493,7 @@
     "member": "Lee Know",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-leeknow-04",
@@ -501,7 +501,7 @@
     "member": "Lee Know",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-leeknow-05",
@@ -509,7 +509,7 @@
     "member": "Lee Know",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-changbin-01",
@@ -517,7 +517,7 @@
     "member": "Changbin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-changbin-02",
@@ -525,7 +525,7 @@
     "member": "Changbin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-changbin-03",
@@ -533,7 +533,7 @@
     "member": "Changbin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-changbin-04",
@@ -541,7 +541,7 @@
     "member": "Changbin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-changbin-05",
@@ -549,7 +549,7 @@
     "member": "Changbin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-hyunjin-01",
@@ -557,7 +557,7 @@
     "member": "Hyunjin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-hyunjin-02",
@@ -565,7 +565,7 @@
     "member": "Hyunjin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-hyunjin-03",
@@ -573,7 +573,7 @@
     "member": "Hyunjin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-hyunjin-04",
@@ -581,7 +581,7 @@
     "member": "Hyunjin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-hyunjin-05",
@@ -589,7 +589,7 @@
     "member": "Hyunjin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-han-01",
@@ -597,7 +597,7 @@
     "member": "HAN",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-han-02",
@@ -605,7 +605,7 @@
     "member": "HAN",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-han-03",
@@ -613,7 +613,7 @@
     "member": "HAN",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-han-04",
@@ -621,7 +621,7 @@
     "member": "HAN",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-han-05",
@@ -629,7 +629,7 @@
     "member": "HAN",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-felix-01",
@@ -637,7 +637,7 @@
     "member": "Felix",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-felix-02",
@@ -645,7 +645,7 @@
     "member": "Felix",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-felix-03",
@@ -653,7 +653,7 @@
     "member": "Felix",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-felix-04",
@@ -661,7 +661,7 @@
     "member": "Felix",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-felix-05",
@@ -669,7 +669,7 @@
     "member": "Felix",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-seungmin-01",
@@ -677,7 +677,7 @@
     "member": "Seungmin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-seungmin-02",
@@ -685,7 +685,7 @@
     "member": "Seungmin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-seungmin-03",
@@ -693,7 +693,7 @@
     "member": "Seungmin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-seungmin-04",
@@ -701,7 +701,7 @@
     "member": "Seungmin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-seungmin-05",
@@ -709,7 +709,7 @@
     "member": "Seungmin",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "scars-in-01",
@@ -717,7 +717,7 @@
     "member": "I.N.",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "scars-in-02",
@@ -725,7 +725,7 @@
     "member": "I.N.",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "scars-in-03",
@@ -733,7 +733,7 @@
     "member": "I.N.",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "scars-in-04",
@@ -741,7 +741,7 @@
     "member": "I.N.",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "scars-in-05",
@@ -749,7 +749,7 @@
     "member": "I.N.",
     "album": "Scars",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "circus-bangchan-01",
@@ -757,7 +757,7 @@
     "member": "Bang Chan",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-bangchan-02",
@@ -765,7 +765,7 @@
     "member": "Bang Chan",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-bangchan-03",
@@ -773,7 +773,7 @@
     "member": "Bang Chan",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-bangchan-04",
@@ -781,7 +781,7 @@
     "member": "Bang Chan",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-leeknow-01",
@@ -789,7 +789,7 @@
     "member": "Lee Know",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-leeknow-02",
@@ -797,7 +797,7 @@
     "member": "Lee Know",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-leeknow-03",
@@ -805,7 +805,7 @@
     "member": "Lee Know",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-leeknow-04",
@@ -813,7 +813,7 @@
     "member": "Lee Know",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-changbin-01",
@@ -821,7 +821,7 @@
     "member": "Changbin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-changbin-02",
@@ -829,7 +829,7 @@
     "member": "Changbin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-changbin-03",
@@ -837,7 +837,7 @@
     "member": "Changbin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-changbin-04",
@@ -845,7 +845,7 @@
     "member": "Changbin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-hyunjin-01",
@@ -853,7 +853,7 @@
     "member": "Hyunjin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-hyunjin-02",
@@ -861,7 +861,7 @@
     "member": "Hyunjin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-hyunjin-03",
@@ -869,7 +869,7 @@
     "member": "Hyunjin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-hyunjin-04",
@@ -877,7 +877,7 @@
     "member": "Hyunjin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-han-01",
@@ -885,7 +885,7 @@
     "member": "HAN",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-han-02",
@@ -893,7 +893,7 @@
     "member": "HAN",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-han-03",
@@ -901,7 +901,7 @@
     "member": "HAN",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-han-04",
@@ -909,7 +909,7 @@
     "member": "HAN",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-felix-01",
@@ -917,7 +917,7 @@
     "member": "Felix",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-felix-02",
@@ -925,7 +925,7 @@
     "member": "Felix",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-felix-03",
@@ -933,7 +933,7 @@
     "member": "Felix",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-felix-04",
@@ -941,7 +941,7 @@
     "member": "Felix",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-seungmin-01",
@@ -949,7 +949,7 @@
     "member": "Seungmin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-seungmin-02",
@@ -957,7 +957,7 @@
     "member": "Seungmin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-seungmin-03",
@@ -965,7 +965,7 @@
     "member": "Seungmin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-seungmin-04",
@@ -973,7 +973,7 @@
     "member": "Seungmin",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "circus-in-01",
@@ -981,7 +981,7 @@
     "member": "I.N.",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "circus-in-02",
@@ -989,7 +989,7 @@
     "member": "I.N.",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "circus-in-03",
@@ -997,7 +997,7 @@
     "member": "I.N.",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "circus-in-04",
@@ -1005,7 +1005,7 @@
     "member": "I.N.",
     "album": "Circus",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-bangchan-01",
@@ -1013,7 +1013,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-bangchan-02",
@@ -1021,7 +1021,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-bangchan-03",
@@ -1029,7 +1029,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-bangchan-04",
@@ -1037,7 +1037,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-bangchan-05",
@@ -1045,7 +1045,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-bangchan-06",
@@ -1053,7 +1053,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-bangchan-07",
@@ -1061,7 +1061,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-bangchan-08",
@@ -1069,7 +1069,7 @@
     "member": "Bang Chan",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-leeknow-01",
@@ -1077,7 +1077,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-leeknow-02",
@@ -1085,7 +1085,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-leeknow-03",
@@ -1093,7 +1093,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-leeknow-04",
@@ -1101,7 +1101,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-leeknow-05",
@@ -1109,7 +1109,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-leeknow-06",
@@ -1117,7 +1117,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-leeknow-07",
@@ -1125,7 +1125,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-leeknow-08",
@@ -1133,7 +1133,7 @@
     "member": "Lee Know",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-changbin-01",
@@ -1141,7 +1141,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-changbin-02",
@@ -1149,7 +1149,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-changbin-03",
@@ -1157,7 +1157,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-changbin-04",
@@ -1165,7 +1165,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-changbin-05",
@@ -1173,7 +1173,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-changbin-06",
@@ -1181,7 +1181,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-changbin-07",
@@ -1189,7 +1189,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-changbin-08",
@@ -1197,7 +1197,7 @@
     "member": "Changbin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-hyunjin-01",
@@ -1205,7 +1205,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-hyunjin-02",
@@ -1213,7 +1213,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-hyunjin-03",
@@ -1221,7 +1221,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-hyunjin-04",
@@ -1229,7 +1229,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-hyunjin-05",
@@ -1237,7 +1237,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-hyunjin-06",
@@ -1245,7 +1245,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-hyunjin-07",
@@ -1253,7 +1253,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-hyunjin-08",
@@ -1261,7 +1261,7 @@
     "member": "Hyunjin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-han-01",
@@ -1269,7 +1269,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-han-02",
@@ -1277,7 +1277,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-han-03",
@@ -1285,7 +1285,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-han-04",
@@ -1293,7 +1293,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-han-05",
@@ -1301,7 +1301,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-han-06",
@@ -1309,7 +1309,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-han-07",
@@ -1317,7 +1317,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-han-08",
@@ -1325,7 +1325,7 @@
     "member": "HAN",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-felix-01",
@@ -1333,7 +1333,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-felix-02",
@@ -1341,7 +1341,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-felix-03",
@@ -1349,7 +1349,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-felix-04",
@@ -1357,7 +1357,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-felix-05",
@@ -1365,7 +1365,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-felix-06",
@@ -1373,7 +1373,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-felix-07",
@@ -1381,7 +1381,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-felix-08",
@@ -1389,7 +1389,7 @@
     "member": "Felix",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-seungmin-01",
@@ -1397,7 +1397,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-seungmin-02",
@@ -1405,7 +1405,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-seungmin-03",
@@ -1413,7 +1413,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-seungmin-04",
@@ -1421,7 +1421,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-seungmin-05",
@@ -1429,7 +1429,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-seungmin-06",
@@ -1437,7 +1437,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-seungmin-07",
@@ -1445,7 +1445,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-seungmin-08",
@@ -1453,7 +1453,7 @@
     "member": "Seungmin",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "thesound-in-01",
@@ -1461,7 +1461,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "thesound-in-02",
@@ -1469,7 +1469,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "thesound-in-03",
@@ -1477,7 +1477,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "thesound-in-04",
@@ -1485,7 +1485,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "thesound-in-05",
@@ -1493,7 +1493,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "thesound-in-06",
@@ -1501,7 +1501,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "thesound-in-07",
@@ -1509,7 +1509,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "thesound-in-08",
@@ -1517,7 +1517,7 @@
     "member": "I.N.",
     "album": "The Sound",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "socialpath-bangchan-01",
@@ -1525,7 +1525,7 @@
     "member": "Bang Chan",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-bangchan-02",
@@ -1533,7 +1533,7 @@
     "member": "Bang Chan",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-bangchan-03",
@@ -1541,7 +1541,7 @@
     "member": "Bang Chan",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-bangchan-04",
@@ -1549,7 +1549,7 @@
     "member": "Bang Chan",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-bangchan-05",
@@ -1557,7 +1557,7 @@
     "member": "Bang Chan",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-bangchan-06",
@@ -1565,7 +1565,7 @@
     "member": "Bang Chan",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-leeknow-01",
@@ -1573,7 +1573,7 @@
     "member": "Lee Know",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-leeknow-02",
@@ -1581,7 +1581,7 @@
     "member": "Lee Know",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-leeknow-03",
@@ -1589,7 +1589,7 @@
     "member": "Lee Know",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-leeknow-04",
@@ -1597,7 +1597,7 @@
     "member": "Lee Know",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-leeknow-05",
@@ -1605,7 +1605,7 @@
     "member": "Lee Know",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-leeknow-06",
@@ -1613,7 +1613,7 @@
     "member": "Lee Know",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-changbin-01",
@@ -1621,7 +1621,7 @@
     "member": "Changbin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-changbin-02",
@@ -1629,7 +1629,7 @@
     "member": "Changbin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-changbin-03",
@@ -1637,7 +1637,7 @@
     "member": "Changbin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-changbin-04",
@@ -1645,7 +1645,7 @@
     "member": "Changbin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-changbin-05",
@@ -1653,7 +1653,7 @@
     "member": "Changbin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-changbin-06",
@@ -1661,7 +1661,7 @@
     "member": "Changbin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-hyunjin-01",
@@ -1669,7 +1669,7 @@
     "member": "Hyunjin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-hyunjin-02",
@@ -1677,7 +1677,7 @@
     "member": "Hyunjin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-hyunjin-03",
@@ -1685,7 +1685,7 @@
     "member": "Hyunjin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-hyunjin-04",
@@ -1693,7 +1693,7 @@
     "member": "Hyunjin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-hyunjin-05",
@@ -1701,7 +1701,7 @@
     "member": "Hyunjin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-hyunjin-06",
@@ -1709,7 +1709,7 @@
     "member": "Hyunjin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-han-01",
@@ -1717,7 +1717,7 @@
     "member": "HAN",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-han-02",
@@ -1725,7 +1725,7 @@
     "member": "HAN",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-han-03",
@@ -1733,7 +1733,7 @@
     "member": "HAN",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-han-04",
@@ -1741,7 +1741,7 @@
     "member": "HAN",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-han-05",
@@ -1749,7 +1749,7 @@
     "member": "HAN",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-han-06",
@@ -1757,7 +1757,7 @@
     "member": "HAN",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-felix-01",
@@ -1765,7 +1765,7 @@
     "member": "Felix",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-felix-02",
@@ -1773,7 +1773,7 @@
     "member": "Felix",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-felix-03",
@@ -1781,7 +1781,7 @@
     "member": "Felix",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-felix-04",
@@ -1789,7 +1789,7 @@
     "member": "Felix",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-felix-05",
@@ -1797,7 +1797,7 @@
     "member": "Felix",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-felix-06",
@@ -1805,7 +1805,7 @@
     "member": "Felix",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-seungmin-01",
@@ -1813,7 +1813,7 @@
     "member": "Seungmin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-seungmin-02",
@@ -1821,7 +1821,7 @@
     "member": "Seungmin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-seungmin-03",
@@ -1829,7 +1829,7 @@
     "member": "Seungmin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-seungmin-04",
@@ -1837,7 +1837,7 @@
     "member": "Seungmin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-seungmin-05",
@@ -1845,7 +1845,7 @@
     "member": "Seungmin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-seungmin-06",
@@ -1853,7 +1853,7 @@
     "member": "Seungmin",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "socialpath-in-01",
@@ -1861,7 +1861,7 @@
     "member": "I.N.",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "socialpath-in-02",
@@ -1869,7 +1869,7 @@
     "member": "I.N.",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "socialpath-in-03",
@@ -1877,7 +1877,7 @@
     "member": "I.N.",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "socialpath-in-04",
@@ -1885,7 +1885,7 @@
     "member": "I.N.",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "socialpath-in-05",
@@ -1893,7 +1893,7 @@
     "member": "I.N.",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "socialpath-in-06",
@@ -1901,7 +1901,7 @@
     "member": "I.N.",
     "album": "Social Path",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-bangchan-01",
@@ -1909,7 +1909,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-bangchan-02",
@@ -1917,7 +1917,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-bangchan-03",
@@ -1925,7 +1925,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-bangchan-04",
@@ -1933,7 +1933,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-bangchan-05",
@@ -1941,7 +1941,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-bangchan-06",
@@ -1949,7 +1949,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-bangchan-07",
@@ -1957,7 +1957,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-bangchan-08",
@@ -1965,7 +1965,7 @@
     "member": "Bang Chan",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-leeknow-01",
@@ -1973,7 +1973,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-leeknow-02",
@@ -1981,7 +1981,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-leeknow-03",
@@ -1989,7 +1989,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-leeknow-04",
@@ -1997,7 +1997,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-leeknow-05",
@@ -2005,7 +2005,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-leeknow-06",
@@ -2013,7 +2013,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-leeknow-07",
@@ -2021,7 +2021,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-leeknow-08",
@@ -2029,7 +2029,7 @@
     "member": "Lee Know",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-changbin-01",
@@ -2037,7 +2037,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-changbin-02",
@@ -2045,7 +2045,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-changbin-03",
@@ -2053,7 +2053,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-changbin-04",
@@ -2061,7 +2061,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-changbin-05",
@@ -2069,7 +2069,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-changbin-06",
@@ -2077,7 +2077,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-changbin-07",
@@ -2085,7 +2085,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-changbin-08",
@@ -2093,7 +2093,7 @@
     "member": "Changbin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-hyunjin-01",
@@ -2101,7 +2101,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-hyunjin-02",
@@ -2109,7 +2109,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-hyunjin-03",
@@ -2117,7 +2117,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-hyunjin-04",
@@ -2125,7 +2125,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-hyunjin-05",
@@ -2133,7 +2133,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-hyunjin-06",
@@ -2141,7 +2141,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-hyunjin-07",
@@ -2149,7 +2149,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-hyunjin-08",
@@ -2157,7 +2157,7 @@
     "member": "Hyunjin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-han-01",
@@ -2165,7 +2165,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-han-02",
@@ -2173,7 +2173,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-han-03",
@@ -2181,7 +2181,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-han-04",
@@ -2189,7 +2189,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-han-05",
@@ -2197,7 +2197,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-han-06",
@@ -2205,7 +2205,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-han-07",
@@ -2213,7 +2213,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-han-08",
@@ -2221,7 +2221,7 @@
     "member": "HAN",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-felix-01",
@@ -2229,7 +2229,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-felix-02",
@@ -2237,7 +2237,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-felix-03",
@@ -2245,7 +2245,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-felix-04",
@@ -2253,7 +2253,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-felix-05",
@@ -2261,7 +2261,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-felix-06",
@@ -2269,7 +2269,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-felix-07",
@@ -2277,7 +2277,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-felix-08",
@@ -2285,7 +2285,7 @@
     "member": "Felix",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-seungmin-01",
@@ -2293,7 +2293,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-seungmin-02",
@@ -2301,7 +2301,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-seungmin-03",
@@ -2309,7 +2309,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-seungmin-04",
@@ -2317,7 +2317,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-seungmin-05",
@@ -2325,7 +2325,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-seungmin-06",
@@ -2333,7 +2333,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-seungmin-07",
@@ -2341,7 +2341,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-seungmin-08",
@@ -2349,7 +2349,7 @@
     "member": "Seungmin",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "giant-in-01",
@@ -2357,7 +2357,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "giant-in-02",
@@ -2365,7 +2365,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "giant-in-03",
@@ -2373,7 +2373,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "giant-in-04",
@@ -2381,7 +2381,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "giant-in-05",
@@ -2389,7 +2389,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "giant-in-06",
@@ -2397,7 +2397,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "giant-in-07",
@@ -2405,7 +2405,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "giant-in-08",
@@ -2413,7 +2413,7 @@
     "member": "I.N.",
     "album": "Giant",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-bangchan-01",
@@ -2421,7 +2421,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-bangchan-02",
@@ -2429,7 +2429,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-bangchan-03",
@@ -2437,7 +2437,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-bangchan-04",
@@ -2445,7 +2445,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-bangchan-05",
@@ -2453,7 +2453,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-bangchan-06",
@@ -2461,7 +2461,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-bangchan-07",
@@ -2469,7 +2469,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-bangchan-08",
@@ -2477,7 +2477,7 @@
     "member": "Bang Chan",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-leeknow-01",
@@ -2485,7 +2485,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-leeknow-02",
@@ -2493,7 +2493,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-leeknow-03",
@@ -2501,7 +2501,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-leeknow-04",
@@ -2509,7 +2509,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-leeknow-05",
@@ -2517,7 +2517,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-leeknow-06",
@@ -2525,7 +2525,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-leeknow-07",
@@ -2533,7 +2533,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-leeknow-08",
@@ -2541,7 +2541,7 @@
     "member": "Lee Know",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-changbin-01",
@@ -2549,7 +2549,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-changbin-02",
@@ -2557,7 +2557,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-changbin-03",
@@ -2565,7 +2565,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-changbin-04",
@@ -2573,7 +2573,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-changbin-05",
@@ -2581,7 +2581,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-changbin-06",
@@ -2589,7 +2589,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-changbin-07",
@@ -2597,7 +2597,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-changbin-08",
@@ -2605,7 +2605,7 @@
     "member": "Changbin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-hyunjin-01",
@@ -2613,7 +2613,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-hyunjin-02",
@@ -2621,7 +2621,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-hyunjin-03",
@@ -2629,7 +2629,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-hyunjin-04",
@@ -2637,7 +2637,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-hyunjin-05",
@@ -2645,7 +2645,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-hyunjin-06",
@@ -2653,7 +2653,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-hyunjin-07",
@@ -2661,7 +2661,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-hyunjin-08",
@@ -2669,7 +2669,7 @@
     "member": "Hyunjin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-han-01",
@@ -2677,7 +2677,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-han-02",
@@ -2685,7 +2685,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-han-03",
@@ -2693,7 +2693,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-han-04",
@@ -2701,7 +2701,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-han-05",
@@ -2709,7 +2709,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-han-06",
@@ -2717,7 +2717,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-han-07",
@@ -2725,7 +2725,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-han-08",
@@ -2733,7 +2733,7 @@
     "member": "HAN",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-felix-01",
@@ -2741,7 +2741,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-felix-02",
@@ -2749,7 +2749,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-felix-03",
@@ -2757,7 +2757,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-felix-04",
@@ -2765,7 +2765,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-felix-05",
@@ -2773,7 +2773,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-felix-06",
@@ -2781,7 +2781,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-felix-07",
@@ -2789,7 +2789,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-felix-08",
@@ -2797,7 +2797,7 @@
     "member": "Felix",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-seungmin-01",
@@ -2805,7 +2805,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-seungmin-02",
@@ -2813,7 +2813,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-seungmin-03",
@@ -2821,7 +2821,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-seungmin-04",
@@ -2829,7 +2829,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-seungmin-05",
@@ -2837,7 +2837,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-seungmin-06",
@@ -2845,7 +2845,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-seungmin-07",
@@ -2853,7 +2853,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-seungmin-08",
@@ -2861,7 +2861,7 @@
     "member": "Seungmin",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   },
   {
     "id": "hollow-in-01",
@@ -2869,7 +2869,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "001"
+    "set": "001"
   },
   {
     "id": "hollow-in-02",
@@ -2877,7 +2877,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "002"
+    "set": "002"
   },
   {
     "id": "hollow-in-03",
@@ -2885,7 +2885,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "003"
+    "set": "003"
   },
   {
     "id": "hollow-in-04",
@@ -2893,7 +2893,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "004"
+    "set": "004"
   },
   {
     "id": "hollow-in-05",
@@ -2901,7 +2901,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "005"
+    "set": "005"
   },
   {
     "id": "hollow-in-06",
@@ -2909,7 +2909,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "006"
+    "set": "006"
   },
   {
     "id": "hollow-in-07",
@@ -2917,7 +2917,7 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "007"
+    "set": "007"
   },
   {
     "id": "hollow-in-08",
@@ -2925,6 +2925,6 @@
     "member": "I.N.",
     "album": "Hollow",
     "category": "japanese_albums",
-    "img": "008"
+    "set": "008"
   }
 ]
