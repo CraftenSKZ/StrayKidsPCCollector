@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.export-panel {
+  z-index: 20;
+}
+
 /* ℹ icon */
 .info-icon {
   font-size: 1rem;
