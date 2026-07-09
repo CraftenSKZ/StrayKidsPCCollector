@@ -119,6 +119,14 @@
   padding: 0;
 }
 
+#wishlist-export .wishlist-member {
+  font-size: 0.65rem;
+  line-height: 1.15;
+  margin: 2px 0 0;
+  padding: 0;
+  color: #bdbdbd;
+}
+
 /* ===== Compact Album Separators ===== */
 #wishlist-export .wishlist-album {
   padding-bottom: 6px;

@@ -679,8 +679,13 @@ Object.entries(itemsByAlbum).forEach(([album, items]) => {
     name.className = 'wishlist-name';
     name.textContent = item.name;
 
+    const member = document.createElement('div');
+    member.className = 'wishlist-member';
+    member.textContent = item.member || '';
+
     itemWrap.appendChild(img);
     itemWrap.appendChild(name);
+    itemWrap.appendChild(member);
     grid.appendChild(itemWrap);
   });
 
@@ -1874,12 +1879,18 @@ if (albumItems.length === 0) {
       name.className = 'grid-name';
       name.textContent = i.name;
 
+      // Member
+      const member = document.createElement('div');
+      member.className = 'grid-member';
+      member.textContent = i.member || '';
+
       // Checkmark
       const check = createCheckbox(!!owned[i.id], () => toggle(i.id));
 
       card.appendChild(img);
       card.appendChild(heart);
       card.appendChild(name);
+      card.appendChild(member);
       card.appendChild(check);
 
       grid.appendChild(card);
