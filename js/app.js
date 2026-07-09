@@ -3,7 +3,7 @@
  * Works on GitHub Pages
  ***************************************************/
 // Import image utilities
-import { BASE_PATH, resolveImageSrc, applyImageProps } from './utils/images.js';
+import { BASE_PATH, resolveImageSrc, resolvePlaceholderSrc, applyImageProps } from './utils/images.js';
 
 /************** 
  * scroll position saving
@@ -650,6 +650,8 @@ const wishlistItems = sortItemsLikeUI(
 
 container.innerHTML = `<h2>My Stray Kids PC Wishlist ❤️</h2>`;
 
+const exportImagePromises = [];
+
 Object.entries(itemsByAlbum).forEach(([album, items]) => {
   const albumWrap = document.createElement('div');
   albumWrap.className = 'wishlist-album';
@@ -672,8 +674,22 @@ Object.entries(itemsByAlbum).forEach(([album, items]) => {
 
 
     const img = document.createElement('img');
-    applyImageProps(img, item, { eager: true });
-    img.setAttribute('crossorigin', 'anonymous');
+    img.crossOrigin = 'anonymous';
+    img.alt = item.name || '';
+    img.loading = 'eager';
+    img.decoding = 'async';
+    img.fetchPriority = 'high';
+
+    exportImagePromises.push(new Promise(resolve => {
+      img.onload = () => resolve();
+      img.onerror = () => {
+        img.onerror = () => resolve();
+        img.onload = () => resolve();
+        img.src = resolvePlaceholderSrc(item);
+      };
+    }));
+
+    img.src = resolveImageSrc(item);
 
     const name = document.createElement('div');
     name.className = 'wishlist-name';
@@ -708,12 +724,11 @@ container.appendChild(footer);
 
 
   document.body.appendChild(container);
-
-html2canvas(container, {
+Promise.allSettled(exportImagePromises).then(() => html2canvas(container, {
   backgroundColor: "#0f0f10",
   scale: 2,
   useCORS: true
-}).then(canvas => {
+})).then(canvas => {
   hideToast(progressToast);
 
   showToast("✅ Wishlist exported!");
