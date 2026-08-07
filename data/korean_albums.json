@@ -8560,6 +8560,22 @@
     "set": "010"
   },
   {
+    "id": "thisthat-bangchan-11",
+    "name": "This I.D,",
+    "member": "Bang Chan",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-bangchan-12",
+    "name": "That I.D.",
+    "member": "Bang Chan",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
+  },
+  {
     "id": "thisthat-leeknow-01",
     "name": "Truck Version",
     "member": "Lee Know",
@@ -8638,6 +8654,22 @@
     "album": "THIS & THAT",
     "category": "korean_albums",
     "set": "010"
+  },
+  {
+    "id": "thisthat-leeknow-11",
+    "name": "This I.D,",
+    "member": "Lee Know",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-leeknow-12",
+    "name": "That I.D.",
+    "member": "Lee Know",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
   },
   {
     "id": "thisthat-changbin-01",
@@ -8720,6 +8752,22 @@
     "set": "010"
   },
   {
+    "id": "thisthat-changbin-11",
+    "name": "This I.D,",
+    "member": "Changbin",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-changbin-12",
+    "name": "That I.D.",
+    "member": "Changbin",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
+  },
+  {
     "id": "thisthat-hyunjin-01",
     "name": "Truck Version",
     "member": "Hyunjin",
@@ -8798,6 +8846,22 @@
     "album": "THIS & THAT",
     "category": "korean_albums",
     "set": "010"
+  },
+  {
+    "id": "thisthat-hyunjin-11",
+    "name": "This I.D,",
+    "member": "Hyunjin",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-hyunjin-12",
+    "name": "That I.D.",
+    "member": "Hyunjin",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
   },
   {
     "id": "thisthat-han-01",
@@ -8880,6 +8944,22 @@
     "set": "010"
   },
   {
+    "id": "thisthat-han-11",
+    "name": "This I.D,",
+    "member": "HAN",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-han-12",
+    "name": "That I.D.",
+    "member": "HAN",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
+  },
+  {
     "id": "thisthat-felix-01",
     "name": "Truck Version",
     "member": "Felix",
@@ -8958,6 +9038,22 @@
     "album": "THIS & THAT",
     "category": "korean_albums",
     "set": "010"
+  },
+  {
+    "id": "thisthat-felix-11",
+    "name": "This I.D,",
+    "member": "Felix",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-felix-12",
+    "name": "That I.D.",
+    "member": "Felix",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
   },
   {
     "id": "thisthat-seungmin-01",
@@ -9040,6 +9136,22 @@
     "set": "010"
   },
   {
+    "id": "thisthat-seungmin-11",
+    "name": "This I.D,",
+    "member": "Seungmin",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-seungmin-12",
+    "name": "That I.D.",
+    "member": "Seungmin",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
+  },
+  {
     "id": "thisthat-in-01",
     "name": "Truck Version",
     "member": "I.N.",
@@ -9120,12 +9232,28 @@
     "set": "010"
   },
   {
+    "id": "thisthat-in-11",
+    "name": "This I.D,",
+    "member": "I.N.",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "011"
+  },
+  {
+    "id": "thisthat-in-12",
+    "name": "That I.D.",
+    "member": "I.N.",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "012"
+  },
+  {
     "id": "thisthat-unit-01",
     "name": "Truck Version Chan & Hyunjin",
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "011"
+    "set": "013"
   },
   {
     "id": "thisthat-unit-02",
@@ -9133,7 +9261,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "011"
+    "set": "013"
   },
   {
     "id": "thisthat-unit-03",
@@ -9141,7 +9269,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "011"
+    "set": "013"
   },
   {
     "id": "thisthat-unit-04",
@@ -9149,7 +9277,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "011"
+    "set": "013"
   },
   {
     "id": "thisthat-unit-05",
@@ -9157,7 +9285,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "012"
+    "set": "014"
   },
   {
     "id": "thisthat-unit-06",
@@ -9165,7 +9293,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "012"
+    "set": "014"
   },
   {
     "id": "thisthat-unit-07",
@@ -9173,7 +9301,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "012"
+    "set": "014"
   },
   {
     "id": "thisthat-unit-08",
@@ -9181,7 +9309,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "012"
+    "set": "014"
   },
   {
     "id": "thisthat-unit-09",
@@ -9189,7 +9317,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "013"
+    "set": "015"
   },
   {
     "id": "thisthat-unit-10",
@@ -9197,7 +9325,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "013"
+    "set": "015"
   },
   {
     "id": "thisthat-unit-11",
@@ -9205,7 +9333,7 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "013"
+    "set": "015"
   },
   {
     "id": "thisthat-unit-12",
@@ -9213,6 +9341,46 @@
     "member": "UNIT",
     "album": "THIS & THAT",
     "category": "korean_albums",
-    "set": "013"
+    "set": "015"
+  },
+  {
+    "id": "thisthat-unit-13",
+    "name": "Orange marble and seafoam green vinyl Chan & Lee Know",
+    "member": "UNIT",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "016"
+  },
+  {
+    "id": "thisthat-unit-14",
+    "name": "Orange marble and seafoam green vinyl Felix & Changbin",
+    "member": "UNIT",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "016"
+  },
+  {
+    "id": "thisthat-unit-15",
+    "name": "Orange marble and seafoam green vinyl Seungmin & Hyunjin",
+    "member": "UNIT",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "016"
+  },
+  {
+    "id": "thisthat-unit-16",
+    "name": "Orange marble and seafoam green vinyl Han & I.N.",
+    "member": "UNIT",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "016"
+  },
+  {
+    "id": "thisthat-unit-17",
+    "name": "Orange marble group unit",
+    "member": "UNIT",
+    "album": "THIS & THAT",
+    "category": "korean_albums",
+    "set": "017"
   }
 ]
